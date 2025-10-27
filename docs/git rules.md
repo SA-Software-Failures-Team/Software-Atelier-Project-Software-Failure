@@ -109,8 +109,8 @@ copy files with GUI but make sure you are working in `img/` folder inside YOUR s
 #### Link to the correct CSS files as directed by your Topic Leader and The CSS team. 
 All layouts for subtopic pages you can choose from are in `src/topics/subtopic-styles/`
 
-**DO NOT CHANGE anything YOURSELF in those `.css` files, DO NOT CREATE another `.css` files YOURSELF (REGARDLESS of the directory).** Keep in mind that all design must be consistent across all subpages. 
-
+**DO NOT CHANGE**  anything ** YOURSELF**  in those `.css` files, **DO NOT CREATE**  another `.css` files ** YOURSELF** (** REGARDLESS of the directory** ).
+Keep in mind that all design must be consistent across all subpages. 
 If you really think you need to add new feature to .css which can be useful to the others as well, contact with Your Topic Leader and CSS leaders to agree what is possible and reasonable regarding our project scope, time and effort constriants.
 
 ### Step 4: Commit Your Changes
