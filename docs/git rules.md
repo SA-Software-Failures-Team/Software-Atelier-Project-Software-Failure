@@ -52,8 +52,8 @@ Before you create a single file, you **MUST** know your assigned path. Adding fi
 #### General Structure Overview:
 
 * **`docs/`**: For LaTeX documents and this guide.
-* **`src/`**: For the 1st level pages and deeper level’s directories.
-  * **`src/topics/`**: This is where all topic’s content lives.
+* **`src/`**: For the 1st level pages and deeper levels directories.
+  * **`src/topics/`**: This is where all topics content lives.
     * **`src/topics/topic_1/`**: Managed by the Topic 1 Team Leader.
        * **`src/topics/topic_1/topic_1_subtopic_1/`**: Work area for the Team Member assigned to Subtopic 1.1.
     * ...and so on for all topics.
@@ -82,7 +82,7 @@ git pull origin main
 
 #### Create a new branch for the specific page(s) you are working on.
    ```bash
-git checkout -b [feature/your_surname”]
+git checkout -b [feature/your_surname]
    ```
 example: `git checkout -b boeing737article/wilinski`
 
@@ -99,34 +99,34 @@ example: `cd src/topics/topic_1/topic_1_subtopic_2/`
 touch [name_of_your_page]
    ```
 example: `touch boeing737_article.html`
-optionally you can create and copy files with GUI but make sure you’re working in your directory!
+optionally you can create and copy files with GUI but make sure you are working in your directory!
 
 #### Add any images to the img/ folder inside YOUR subtopic directory
-copy files with GUI but make sure you’re working in img/ folder inside YOUR subtopic directory
+copy files with GUI but make sure you are working in `img/` folder inside YOUR subtopic directory
 
 #### Remember to add your Author Meta Tag to your HTML!
 
 #### Link to the correct CSS files as directed by your Topic Leader and The CSS team. All layouts for subtopic pages you can choose from are in `src/topics/subtopic-styles/`
-DO NOT CHANGE anything YOURSELF in those .css files, DO NOT CREATE another .css files YOURSELF (REGARDLESS of the directory). Keep in mind that all design must be consistent across all subpages. 
+**DO NOT CHANGE anything YOURSELF in those `.css` files, DO NOT CREATE another `.css` files YOURSELF (REGARDLESS of the directory).** Keep in mind that all design must be consistent across all subpages. 
 
 If you really think you need to add new feature to .css which can be useful to the others as well, contact with Your Topic Leader and CSS leaders to agree what is possible and reasonable regarding our project scope, time and effort constriants.
 
-### Step 3: Commit Your Changes
+### Step 4: Commit Your Changes
 
-#### Add new/changed files from YOUR subtopic directory. Before using ‘git add’ make sure that you’re in YOUR subtopic directory in Terminal because this command will automatically add all the changes inside the directory you’re in.
+#### Add new/changed files from YOUR subtopic directory. Before using `git add` make sure that you are in YOUR subtopic directory in Terminal because this command will automatically add all the changes inside the directory you are in.
    ```bash
 git add . 
    ```
 
 #### Commit the changes with a clear message 
    ```bash
-git commit -m  “[comment about what you’ve changed]”
+git commit -m  “[comment about what you have changed]”
    ```
 example: `git commit -m "Add page for boeing737article"`
 
 ### Step 5: Push Your Branch to GitHub
 
-#### Push your new branch. **NEVER** and **UNDER ANY CIRCUMSTANCES DON’T PUSH DIRECTLY TO `main`**!
+#### Push your new branch. **NEVER and UNDER ANY CIRCUMSTANCES DO NOT PUSH DIRECTLY TO `main`**!
    ```bash
 git push origin [the_same_name_you_created_for_new_branch_in_step_2]
    ```
@@ -137,19 +137,19 @@ example: `git push origin boeing737article/wilinski`
 #### Go to our GitHub repository page in your browser.
 You will see a prompt to **`"Compare & pull request"`**. Click it.
 Set the base branch to main and the compare branch to your feature branch.
-#### Write a clear title (e.g. “Add page for boeing737article”)
+#### Write a clear title (e.g. Add page for boeing737article)
 In the description, tag your reviewers:
-- Tag your Topic Leader
-- Tag the Git Leader
+- **Tag your Topic Leader**
+- **Tag the Git Leader**
 
-### Step 6: Review & Merge
+### Step 7: Review & Merge
 
 #### DO NOT MERGE YOUR OWN PULL REQUEST
 Your Topic Leader and the Git Leader will review your code. They will check:
 - Is the work in the correct folder?
 - Does it have author tag?
 - Does it pass W3C validation?
-- Does it follow the project’s CSS style?
+- Does it follow the projects CSS style?
 
 #### If the request changes, go back to Step 3 (on the same branch), make the changes, and commit/push again. The PR will update automatically. 
 Once approved, a GIT Leader will merge your branch into main. Your work is now part of the project!
