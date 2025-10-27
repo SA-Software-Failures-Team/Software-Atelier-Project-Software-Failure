@@ -27,7 +27,7 @@ Before you can work on the project, you need to copy it (clone it) to your compu
     git config --global user.email "YOUR_EMAIL@example.com"
     git config --global pull.rebase false
     ```
-3.  **Copy the URL:** `https://github.com/SA-Software-Failures-Team/Software-Atelier-Project-Software-Failure.git`.
+3.  **Copy the URL:** (https://github.com/SA-Software-Failures-Team/Software-Atelier-Project-Software-Failure.git).
 4.  **Clone the Repo:** In your terminal, navigate to the folder where you want to store the project (e.g., your `Desktop`). Then, run:
     ```bash
     git clone https://github.com/SA-Software-Failures-Team/Software-Atelier-Project-Software-Failure.git
@@ -47,7 +47,7 @@ Before you create a single file, you **MUST** know your assigned path. Adding fi
 
 **A complete list of all team/topic/subtopic assignments and their exact folder paths can be found here:**
 
-`https://docs.google.com/spreadsheets/d/1ehtSelrlqFtAnusZd8mLAWbOZvuQKinWAU2HNHQAsmA/edit?gid=0#gid=0`
+(https://docs.google.com/spreadsheets/d/1ehtSelrlqFtAnusZd8mLAWbOZvuQKinWAU2HNHQAsmA)
 
 #### General Structure Overview:
 
