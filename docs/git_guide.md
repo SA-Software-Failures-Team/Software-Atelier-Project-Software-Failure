@@ -116,8 +116,9 @@ If you really think you need to add new feature to .css which can be useful to t
 ### Step 4: Commit Your Changes
 
 #### Add new/changed files from YOUR subtopic directory. 
-Before using `git add` make sure that you are in YOUR subtopic directory in Terminal because this command will automatically add all the changes inside the directory you are in.
+Before using `git add` type `git status` to make sure that you **ONLY** modified files in **YOUR** folder. If everything looks correct, add the changes.
    ```bash
+git status
 git add . 
    ```
 
