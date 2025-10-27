@@ -84,7 +84,7 @@ git pull origin main
    ```bash
 git checkout -b [feature/your_surname”]
    ```
-example: git checkout -b boeing737article/wilinski
+example: `git checkout -b boeing737article/wilinski`
 
 ### Step 3: Start working :)
 
@@ -92,13 +92,13 @@ example: git checkout -b boeing737article/wilinski
    ```bash
 cd src/topics/[your_team_topic]/[your subtopic]/
    ```
-example: cd src/topics/topic_1/topic_1_subtopic_2/
+example: `cd src/topics/topic_1/topic_1_subtopic_2/`
 
 #### Create your HTML page inside YOUR folder with Terminal.
    ```bash
 touch [name_of_your_page]
    ```
-example: touch boeing737_article.html
+example: `touch boeing737_article.html`
 optionally you can create and copy files with GUI but make sure you’re working in your directory!
 
 #### Add any images to the img/ folder inside YOUR subtopic directory
@@ -122,20 +122,20 @@ git add .
    ```bash
 git commit -m  “[comment about what you’ve changed]”
    ```
-example: git commit -m "Add page for boeing737article"
+example: `git commit -m "Add page for boeing737article"`
 
 ### Step 5: Push Your Branch to GitHub
 
-#### Push your new branch. **NEVER** and **UNDER ANY CIRCUMSTANCES DON’T PUSH DIRECTLY TO MAIN**!
+#### Push your new branch. **NEVER** and **UNDER ANY CIRCUMSTANCES DON’T PUSH DIRECTLY TO `main`**!
    ```bash
 git push origin [the_same_name_you_created_for_new_branch_in_step_2]
    ```
-example: git push origin boeing737article/wilinski
+example: `git push origin boeing737article/wilinski`
 
 ### Step 6: Open a Pull Request (PR)
 
 #### Go to our GitHub repository page in your browser.
-You will see a prompt to "Compare & pull request". Click it.
+You will see a prompt to **`"Compare & pull request"`**. Click it.
 Set the base branch to main and the compare branch to your feature branch.
 #### Write a clear title (e.g. “Add page for boeing737article”)
 In the description, tag your reviewers:
