@@ -13,30 +13,30 @@
 # -------------------------------------------------------------------
 # Special Page Teams
 # Rule 2: Homepage Team + Git Leader
-/src/homepage.html @Lanae99 @piotrwilinski
-/src/homepage_img/ @Lanae99 @piotrwilinski
+/src/homepage.html @piotrwilinski @Lanae99
+/src/homepage_img/ @piotrwilinski @Lanae99
 
 # Rule 3: About Us Team + Git Leader
 # This covers all files in the about_us folder EXCEPT for the
 # CSS file, which is defined in a more specific rule below.
-/src/about_us/ @Lanae99 @piotrwilinski
+/src/about_us/ @piotrwilinski @Lanae99
 
 # Rule 4: Documentation Team + Git Leader
-/docs/ @Lanae99 @Sloppii8 @piotrwilinski
+/docs/ @piotrwilinski @Lanae99 @Sloppii8
 
 # -------------------------------------------------------------------
 # Topic Leaders
 # Rule 5: Topic Leaders + Git Leader for all files in their folders.
-/src/topics/topic_1/ @skariausi @piotrwilinski
-/src/topics/topic_2/ @BigbyWere @piotrwilinski
-/src/topics/topic_3/ @Fullmonkeyy @piotrwilinski
-/src/topics/topic_4/ @LeonardoAaronRicetti @piotrwilinski
+/src/topics/topic_1/ @piotrwilinski @skariausi
+/src/topics/topic_2/ @piotrwilinski @BigbyWere
+/src/topics/topic_3/ @piotrwilinski @Fullmonkeyy
+/src/topics/topic_4/ @piotrwilinski @LeonardoAaronRicetti
 
 # -------------------------------------------------------------------
 # CSS Leaders (Most Specific Rules)
 # Rule 6: These rules are last, so they OVERWRITE the rules above
 # for these specific files, adding the CSS team.
-/src/main_styles.css @Maks0417 @BastavChatterjee @piotrwilinski
-/src/topics/topics_general_styles.css @Maks0417 @BastavChatterjee @piotrwilinski
-/src/topics/subtopic_styles/ @Maks0417 @BastavChatterjee @piotrwilinski
-/src/about_us/about_us_styles.css @Maks0417 @BastavChatterjee @piotrwilinski
+/src/main_styles.css @piotrwilinski @Maks0417 @BastavChatterjee
+/src/topics/topics_general_styles.css @piotrwilinski @Maks0417 @BastavChatterjee
+/src/topics/subtopic_styles/ @piotrwilinski @Maks0417 @BastavChatterjee
+/src/about_us/about_us_styles.css @piotrwilinski @Maks0417 @BastavChatterjee
