@@ -1,0 +1,82 @@
+body{
+    margin:0;
+    height:100%;
+    width:100%;
+}
+.getopic{
+
+    height:100%;
+    width:100%;
+    display:flex;
+
+}
+.getopic .photo{
+    background-image: url("../topic_3/topic_3_img/cloud.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:35%;
+    bord
+}
+.getopic .description{
+    
+    width:65%;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+
+}
+.getopic h2{
+    font-size: 52pt;
+    width:100%;
+    padding:30px;
+    margin-top:0;
+    color:white;
+    background-color:rgb(0, 0, 0)
+
+}
+.getopic p{
+    font-size: 20pt;
+    padding:20px;
+    line-height: 1.5;
+    width:60%;
+    margin:auto;
+}
+.getopic .description .contdivbut{
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.getopic .description .contdivbut .innercont{
+    margin:auto;
+    margin-top: 20px;
+    width: 35%;
+
+}
+
+.bta{
+
+    font-size: 18pt;
+    padding:10px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+.bta:hover{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.6);
+
+}
+.exit{
+
+    position:absolute;
+    bottom:5%;
+    right:5%;
+    width:fit-content;
+
+}
