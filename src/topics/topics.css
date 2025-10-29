@@ -1,0 +1,88 @@
+body{
+
+    height:1300px;
+    width:100%;
+    margin:0px;
+    
+
+
+}
+#main{
+
+ height:1300px;
+    width:100%;
+    display: flex;
+
+}
+
+.windows{
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;
+}
+#trans{
+
+    background-image: url(topics_img/Transport.jpeg);
+     
+}
+#ener{
+
+    background-image: url(topics_img/energy.jpeg);
+     
+}
+#busin{
+
+    background-image: url(topics_img/business.jpg);
+     
+}
+#health{
+
+    background-image: url(topics_img/medical.jpg);
+     
+}
+
+
+.windows, #desc{
+
+    width:25%;
+    height:100%;
+    transition: width 1s, box-shadow 0.5s, filter 0.5s;
+    filter: brightness(20%);
+
+
+}
+.windows p{
+    display:none;
+}
+
+.windows:hover p{
+    display:block;
+}
+
+.windows:hover{
+
+    width:40%;
+    box-shadow: 0px 20px 50px 20px rgba(0,0,0);
+    filter: brightness(100%);
+
+}
+
+#trans{
+
+    background-image: url(topics_img/Transport.jpeg);
+     
+}
+
+#mtitl{
+
+    position:absolute;
+    color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:32pt;
+    
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+   
+
+}
