@@ -8,18 +8,18 @@
 # General Catch-all
 # Rule 1: The Git Leader is the default owner for any file not
 # matched by the more specific rules below.
-* @piotrwilinski SamueleBertolini04
+* @piotrwilinski @SamueleBertolini04
 
 # -------------------------------------------------------------------
 # Special Page Teams
 # Rule 2: Homepage Team + Git Leader
-/src/homepage.html @piotrwilinski SamueleBertolini04 @Lanae99
-/src/homepage_img/ @piotrwilinski SamueleBertolini04 @Lanae99
+/src/homepage.html @piotrwilinski @SamueleBertolini04 @Lanae99
+/src/homepage_img/ @piotrwilinski @SamueleBertolini04 @Lanae99
 
 # Rule 3: About Us Team + Git Leader
 # This covers all files in the about_us folder EXCEPT for the
 # CSS file, which is defined in a more specific rule below.
-/src/about_us/ @piotrwilinski SamueleBertolini04 @Lanae99
+/src/about_us/ @piotrwilinski @SamueleBertolini04 @Lanae99
 
 # Rule 4: Documentation Team + Git Leader
 /docs/ @piotrwilinski @SamueleBertolini04 @Lanae99 
@@ -27,16 +27,16 @@
 # -------------------------------------------------------------------
 # Topic Leaders
 # Rule 5: Topic Leaders + Git Leader for all files in their folders.
-/src/topics/topic_1/ @piotrwilinski SamueleBertolini04 @skariausi
-/src/topics/topic_2/ @piotrwilinski SamueleBertolini04 @BigbyWere
-/src/topics/topic_3/ @piotrwilinski SamueleBertolini04 @Fullmonkeyy
-/src/topics/topic_4/ @piotrwilinski SamueleBertolini04 @LeonardoAaronRicetti
+/src/topics/topic_1/ @piotrwilinski @SamueleBertolini04 @skariausi
+/src/topics/topic_2/ @piotrwilinski @SamueleBertolini04 @BigbyWere
+/src/topics/topic_3/ @piotrwilinski @SamueleBertolini04 @Fullmonkeyy
+/src/topics/topic_4/ @piotrwilinski @SamueleBertolini04 @LeonardoAaronRicetti
 
 # -------------------------------------------------------------------
 # CSS Leaders (Most Specific Rules)
 # Rule 6: These rules are last, so they OVERWRITE the rules above
 # for these specific files, adding the CSS team.
-/src/main_styles.css @piotrwilinski SamueleBertolini04 @Maks0417 @BastavChatterjee
-/src/topics/topics_general_styles.css @piotrwilinski SamueleBertolini04 @Maks0417 @BastavChatterjee
-/src/topics/subtopic_styles/ @piotrwilinski SamueleBertolini04 @Maks0417 @BastavChatterjee
-/src/about_us/about_us_styles.css @piotrwilinski SamueleBertolini04 @Maks0417 @BastavChatterjee
+/src/main_styles.css @piotrwilinski @SamueleBertolini04 @Maks0417 @BastavChatterjee
+/src/topics/topics_general_styles.css @piotrwilinski @SamueleBertolini04 @Maks0417 @BastavChatterjee
+/src/topics/subtopic_styles/ @piotrwilinski @SamueleBertolini04 @Maks0417 @BastavChatterjee
+/src/about_us/about_us_styles.css @piotrwilinski @SamueleBertolini04 @Maks0417 @BastavChatterjee
