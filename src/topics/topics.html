@@ -1,45 +1,42 @@
 <html>
     <head>
         <link rel="stylesheet" href="topics.css">
+        <title>Topics</title>
+
     </head>
     <body>
 
 
         <div id="main">
 
-            <div id="trans" class="windows" style="background-color: red;">
+            <div id="trans" class="windows">
                 <p>Transporation</p>
+                <div>How the software can rule our public transportation</div>
             </div>
-            <div id="ener" class="windows" style="background-color: rgb(60, 255, 0);">
+            <div id="ener" class="windows">
                 <p>Energy/Infrastructure</p>
+                <div>How the software can choose how to live</div>
+
             </div>
-            <div id="busin" class="windows" style="background-color: rgb(0, 38, 255);">
+            <div id="busin" class="windows">
                 <p>Business-Critical System</p>
+                <div>How the software can control our society</div>
+
             </div>
-            <div id="health" class="windows" style="background-color: rgb(255, 0, 140);">
+            <div id="health" class="windows">
                 <p>Healthcare</p>
+                <div>How the software can destroy life</div>
+
             </div>
             <!--<div id="desc" style="background-color: rgb(208, 69, 145);">win 4</div>-->
 
         </div>
 
-        <h1 id="mtitl" style="display:block; transition: display 1s;">Catastrophic Software Failures</h1>
+        <h1 id="mtitl" style="display:block; ">Catastrophic Software Failures</h1>
 
+        <script src="topics.js"></script>
 
-        <script>
-            let divs=document.getElementsByClassName("windows")
-            for(let i=0; i<divs.length; i++){
-                divs[i].addEventListener("mouseover", ()=>(
-                    document.getElementById("mtitl").style.display="none"
-                ));
-                divs[i].addEventListener("mouseleave", ()=>(
-                    document.getElementById("mtitl").style.display="block"
-                ));
-            }
-            
-           
-        </script>
-
+       
 
     </body>
 

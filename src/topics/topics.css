@@ -19,6 +19,8 @@ body{
   background-size: cover;        
   background-position: center;   
   background-repeat: no-repeat;
+  text-align: center; 
+
 }
 #trans{
 
@@ -53,9 +55,39 @@ body{
 }
 .windows p{
     display:none;
+    width:fit-content;
+    color: white;
+    margin:auto;
+    margin-top:50%;
+    font-size: 32pt;
+    font-family: Roboto;
+    text-shadow: 
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000;
+    font-weight: bold;
+}
+
+.windows div{
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 20pt;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  color: black;
+  text-align: center;
+    display:none;
+    margin-top:10px;
+
 }
 
 .windows:hover p{
+    display:block;
+}
+.windows:hover div{
     display:block;
 }
 
