@@ -136,6 +136,8 @@ git push origin [the_same_name_you_created_for_new_branch_in_step_2]
    ```
 example: `git push origin boeing737article/wilinski`
 
+#### It's critical to write parameters correctly because without them your new branch will not have an upstream and it going to be impossible to push anything.
+
 ### Step 6: Open a Pull Request (PR)
 
 #### Go to our GitHub repository page in your browser.
