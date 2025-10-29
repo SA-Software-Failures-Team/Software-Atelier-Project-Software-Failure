@@ -13,13 +13,13 @@
 # -------------------------------------------------------------------
 # Special Page Teams
 # Rule 2: Homepage Team + Git Leader
-/src/homepage.html @SA-Software-Failures-Team/git_team @Lanae99 @Fullmonkeyy
-/src/homepage_img/ @SA-Software-Failures-Team/git_team @Lanae99 @Fullmonkeyy
+index.html @SA-Software-Failures-Team/git_team @Lanae99 @Fullmonkeyy
+/index_img/ @SA-Software-Failures-Team/git_team @Lanae99 @Fullmonkeyy
 
 # Rule 3: About Us Team + Git Leader
 # This covers all files in the about_us folder EXCEPT for the
 # CSS file, which is defined in a more specific rule below.
-/src/about_us/ @SA-Software-Failures-Team/git_team @Lanae99
+/about_us/ @SA-Software-Failures-Team/git_team @Lanae99
 
 # Rule 4: Documentation Team + Git Leader
 /docs/ @SA-Software-Failures-Team/git_team @SA-Software-Failures-Team/git_team
@@ -27,13 +27,13 @@
 # -------------------------------------------------------------------
 # Topic Leaders
 # Rule 5: Topic Leaders + Git Leader for all files in their folders.
-/src/topics/topic_1/ @SA-Software-Failures-Team/git_team @skariausi
-/src/topics/topic_2/ @SA-Software-Failures-Team/git_team @BigbyWere
-/src/topics/topic_3/ @SA-Software-Failures-Team/git_team @Fullmonkeyy
-/src/topics/topic_4/ @SA-Software-Failures-Team/git_team @LeonardoAaronRicetti
+/topics/topic_1/ @SA-Software-Failures-Team/git_team @skariausi
+/topics/topic_2/ @SA-Software-Failures-Team/git_team @BigbyWere
+/topics/topic_3/ @SA-Software-Failures-Team/git_team @Fullmonkeyy
+/topics/topic_4/ @SA-Software-Failures-Team/git_team @LeonardoAaronRicetti
 
 # -------------------------------------------------------------------
 # CSS Leaders
 # Rule 6: These rules are last, so they OVERWRITE the rules above
 # for these specific files, adding the CSS team.
-/src/**/*.css @SA-Software-Failures-Team/css_team @Fullmonkeyy
+/**/*.css @SA-Software-Failures-Team/css_team @Fullmonkeyy

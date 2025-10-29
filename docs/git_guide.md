@@ -52,10 +52,10 @@ Before you create a single file, you **MUST** know your assigned path. Adding fi
 #### General Structure Overview:
 
 * **`docs/`**: For LaTeX documents and this guide.
-* **`src/`**: For the 1st level pages and deeper levels directories.
-  * **`src/topics/`**: This is where all topics content lives.
-    * **`src/topics/topic_1/`**: Managed by the Topic 1 Team Leader.
-       * **`src/topics/topic_1/topic_1_subtopic_1/`**: Work area for the Team Member assigned to Subtopic 1.1.
+* **`/`**: For the index page and deeper levels directories.
+  * **`/topics/`**: This is where all topics content lives.
+    * **`/topics/topic_1/`**: Managed by the Topic 1 Team Leader.
+       * **`/topics/topic_1/topic_1_subtopic_1/`**: Work area for the Team Member assigned to Subtopic 1.1.
     * ...and so on for all topics.
 
 ---
@@ -90,9 +90,9 @@ example: `git checkout -b boeing737article/wilinski`
 
 #### Navigate with Terminal from local repo directory ONLY TO YOUR assigned folder:
    ```bash
-cd src/topics/[your_team_topic]/[your subtopic]/
+cd /topics/[your_team_topic]/[your subtopic]/
    ```
-example: `cd src/topics/topic_1/topic_1_subtopic_2/`
+example: `cd /topics/topic_1/topic_1_subtopic_2/`
 
 #### Create your HTML page inside YOUR folder with Terminal.
    ```bash
@@ -107,7 +107,7 @@ copy files with GUI but make sure you are working in `img/` folder inside YOUR s
 #### Remember to add your Author Meta Tag to your HTML!
 
 #### Link to the correct CSS files as directed by your Topic Leader and The CSS team. 
-All layouts for subtopic pages you can choose from are in `src/topics/subtopic-styles/`
+All layouts for subtopic pages you can choose from are in `/topics/subtopic-styles/`
 
 **DO NOT CHANGE**  anything **YOURSELF**  in those `.css` files, **DO NOT CREATE**  another `.css` files **YOURSELF** (**REGARDLESS** of the directory). Keep in mind that all design must be consistent across all subpages.
 
