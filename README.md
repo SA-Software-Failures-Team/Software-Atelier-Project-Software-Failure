@@ -10,7 +10,7 @@ This `README` file is the main entry point for our project.
 
 Before you begin working, please review these essential documents:
 
-* **1. How to Work:** **GIT_GUIDE.md** (/docs/GIT_GUIDE.md) <-- **MANDATORY READING FOR EVERYONE!**
+* **1. How to Work:** **GIT_GUIDE.md** (/docs/git_guide.md) <-- **MANDATORY READING FOR EVERYONE!**
 * **2. Who Does What:** **Team & Topic Assignments (Google Sheet)** (https://docs.google.com/spreadsheets/d/1ehtSelrlqFtAnusZd8mLAWbOZvuQKinWAU2HNHQAsmA)
 
 ## Key Roles & Contacts
