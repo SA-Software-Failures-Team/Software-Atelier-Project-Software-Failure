@@ -136,7 +136,11 @@ git push origin [the_same_name_you_created_for_new_branch_in_step_2]
    ```
 example: `git push origin boeing737article/wilinski`
 
-#### It's critical to write parameters correctly because without them your new branch will not have an upstream and it going to be impossible to push anything.
+#### It's critical to write parameters correctly because without them your new branch will not have an upstream and it going to be impossible to push anything. If you don't remember your branch name or you are not sure if you are in proper branch, you can check it. 
+   ```bash
+git branch
+   ```
+You will be shown list of all local branches. The current one is marked with *.
 
 ### Step 6: Open a Pull Request (PR)
 
