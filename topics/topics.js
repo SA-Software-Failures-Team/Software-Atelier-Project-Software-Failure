@@ -21,3 +21,4 @@ document.getElementById("busin").addEventListener("click", ()=>{
 document.getElementById("health").addEventListener("click", ()=>{
     window.location.href="topic_4/topic_4_general.html";
 });
+
