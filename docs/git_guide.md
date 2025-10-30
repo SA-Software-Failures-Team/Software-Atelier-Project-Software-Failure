@@ -55,7 +55,7 @@ Before you create a single file, you **MUST** know your assigned path. Adding fi
 * **`/`**: For the index page and deeper levels directories.
   * **`/topics/`**: This is where all topics content lives.
     * **`/topics/topic_1/`**: Managed by the Topic 1 Team Leader.
-       * **`/topics/topic_1/topic_1_subtopic_1/`**: Work area for the Team Member assigned to Subtopic 1.1.
+       * **`/topics/topic_1/subtopic_1/`**: Work area for the Team Member assigned to Subtopic 1.1.
     * ...and so on for all topics.
 
 ---
@@ -92,7 +92,7 @@ example: `git checkout -b boeing737article/wilinski`
    ```bash
 cd /topics/[your_team_topic]/[your subtopic]/
    ```
-example: `cd /topics/topic_1/topic_1_subtopic_2/`
+example: `cd /topics/topic_1/subtopic_2/`
 
 #### Create your HTML page inside YOUR folder with Terminal.
    ```bash
