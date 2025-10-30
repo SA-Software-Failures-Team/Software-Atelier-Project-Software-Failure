@@ -1,14 +1,13 @@
 body{
-    margin:0;
-    height:100%;
-    width:100%;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
 }
 .getopic{
-
-    height:100%;
-    width:100%;
-    display:flex;
-
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .getopic .photo{
     background-image: url("../topic_3/topic_3_img/cloud.jpg");
@@ -26,20 +25,19 @@ body{
 
 }
 .getopic h2{
-    font-size: 52pt;
-    width:100%;
-    padding:30px;
-    margin-top:0;
-    color:white;
-    background-color:rgb(0, 0, 0)
-
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 0;
+    color: white;
+    background-color: rgb(0, 0, 0)
 }
 .getopic p{
-    font-size: 20pt;
-    padding:20px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    padding: 1.25rem;
     line-height: 1.5;
-    width:60%;
-    margin:auto;
+    width: min(60%, 800px);
+    margin: auto;
 }
 .getopic .description .contdivbut{
     text-align: center;
@@ -48,16 +46,14 @@ body{
     flex-direction: column;
 }
 .getopic .description .contdivbut .innercont{
-    margin:auto;
-    margin-top: 20px;
-    width: 35%;
-
+    margin: auto;
+    margin-top: 1.25rem;
+    width: min(35%, 400px);
 }
 
 .bta{
-
-    font-size: 18pt;
-    padding:10px;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    padding: 0.625rem;
     background-color: rgb(0, 0, 0);
     color:white;
     border-radius: 5px;
