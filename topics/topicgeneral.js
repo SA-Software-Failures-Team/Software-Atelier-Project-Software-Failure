@@ -14,3 +14,41 @@ for(let i=0; i<divs.length; i++){
     }
 }
 
+
+divs=document.getElementsByClassName("one")
+for(let i=0; i<divs.length; i++){
+    divs[i].onclick=function(){
+        temp=window.location.href.slice(0,-20)+"first.html"
+        window.location.href=temp
+      
+    }
+}
+divs=document.getElementsByClassName("two")
+for(let i=0; i<divs.length; i++){
+    divs[i].onclick=function(){
+       temp=window.location.href.slice(0,-20)+"second.html"
+        window.location.href=temp
+          }
+}
+divs=document.getElementsByClassName("three")
+for(let i=0; i<divs.length; i++){
+    divs[i].onclick=function(){
+       temp=window.location.href.slice(0,-20)+"third.html"
+        window.location.href=temp
+          }
+}
+divs=document.getElementsByClassName("four")
+for(let i=0; i<divs.length; i++){
+    divs[i].onclick=function(){
+       temp=window.location.href.slice(0,-20)+"fourth.html"
+        window.location.href=temp
+          }
+}
+
+divs=document.getElementsByClassName("five")
+for(let i=0; i<divs.length; i++){
+    divs[i].onclick=function(){
+       temp=window.location.href.slice(0,-20)+"fifth.html"
+        window.location.href=temp
+          }
+}
