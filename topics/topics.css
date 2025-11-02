@@ -271,17 +271,15 @@ body{
 }
 
 .maingeneraltopic .third{
-    height:35%;
- gap:20px;
-    display: flex;
- 
-    
+  height:35%;
+  gap:20px;
+  display: flex;
   background-color:gray;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   font-size: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
 }
 
 .maingeneraltopic .third> div{
@@ -292,14 +290,15 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: transform 0.3s;
+    transition: transform 0.3s , box-shadow 0.3s;
+    border-radius: 5px;
 
 }
 .maingeneraltopic .third>div:hover{
 
     cursor: pointer;
     transform:scale(110%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 
 }
 
@@ -326,6 +325,13 @@ body{
     font-size: clamp(1rem, 2vw, 1.5rem);
 
 
+
+}
+
+.divslide{
+
+    position:relative;
+    transition: right 0.5s  ;
 
 }
 
