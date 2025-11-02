@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+
+.header{
+    background-image: url('../topic_1/subtopic_1/img/ex.jpeg');
+    height: 40vh;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 40px;
+}
+
+/* Style of the text in content */
+.content-text {
+    width: 60%;
+    padding-right: 40px;
+    text-align: left;
+}
+
+.content-text h2 {
+    color: black;
+}
+
+.content-text p {
+    text-align: justify;
+}
+
+/* Style of the summary content used in aboutme and sport*/
+.content-sum h2{
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 55px;
+}
+
+.content-sum {
+    width: 30%;
+    align-content: center;
+    border-left: 2px solid lab(0% 0 0);
+    padding-left: 25px;
+}
+
+
+.ul-sum {
+    list-style: none;
+    text-align: center;
+    padding-left: 40px;
+    margin: 0;
+}
+
+.li-sum {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.a-sum{
+    color: black;
+    text-decoration: none;
+}
+
+.li-sum:hover>.a-sum{
+    font-weight: bold;
+    width: fit-content;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    color: lab(42.67% 13.61 -48.31);
+}
+
+
+/* Style of the image in the content used in school*/
+.content-image{
+    border-left:2px solid lab(42.67% 13.61 -48.31);
+    padding-left: 20px;
+}
+.content-image img{    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;   
+    margin-top:10px; 
+    padding: 20px;
+}
+
+/* Style of contactme content*/
+.contactme{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.contactme ul{
+    margin-top: 15px;
+    list-style: none;
+}
+
+.contactme ul li{
+    margin-bottom: 15px;
+}
+
+footer{
+    background: lab(0% 0 0);
+    color: white;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
