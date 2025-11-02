@@ -185,3 +185,83 @@ body{
     width: 40%;
     justify-content: center;
 }
+
+
+
+/* main page for each topic   */
+
+.maingeneraltopic {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.maingeneraltopic .first, .second, .third{
+    width:100%
+}
+.maingeneraltopic .first{
+    height:57%;
+    background-color: yellow;   
+}
+.first .top{
+    display: flex;
+    width:100%;
+}
+.top .bta{
+
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+.top .Title{
+
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+
+}
+.maingeneraltopic .second{
+    height:8%;
+    width:100%;
+    background-color: rgb(4, 67, 125);
+    display: flex;
+   
+}
+.second .bta{
+
+    height: fit-content;
+
+}
+.second .pre{
+
+    position: absolute;
+    left:5%;
+
+}
+.second .nex{
+
+    position: absolute;
+    right:5%;
+
+}
+.maingeneraltopic .third{
+    height:35%;
+    background-color: rgb(255, 0, 102);
+    display: flex;
+}
+
+.maingeneraltopic .third div{
+   
+    width:20%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+
+}
