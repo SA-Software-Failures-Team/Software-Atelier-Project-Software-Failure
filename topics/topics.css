@@ -185,28 +185,70 @@ body{
     width: 40%;
     justify-content: center;
 }
+/*             CHOOSE                */
 
+.mainbugvul{
+
+    height:100vh;
+    width:100%;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.bug{
+    background-color: greenyellow;
+    color: green;
+}
+
+.vul{
+    background-color: rgb(255, 82, 82);
+    color: red;
+}
+
+.bug, .vul{
+    width:50%;
+    height:100%;
+    filter: brightness(30%);
+    font:bold 40pt sans-serif;
+    border:none;
+    transition: filter 0.5s;
+
+}
+.bug:hover, .vul:hover{
+
+    filter: brightness(100%);
+    cursor: pointer;
+
+}
 
 
 /* main page for each topic   */
 
 .maingeneraltopic {
     margin: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: red;
+
 }
 
 .maingeneraltopic .first, .second, .third{
-    width:100%
+    width:90%;
+    padding:5%;
+    margin:auto;
 }
 .maingeneraltopic .first{
-    height:57%;
-    background-color: yellow;   
+    height:65%;
+  
+    
 }
 .first .top{
     display: flex;
@@ -228,43 +270,62 @@ body{
     font-weight: bold;
 
 }
-.maingeneraltopic .second{
-    height:8%;
-    width:100%;
-    background-color: rgb(4, 67, 125);
-    display: flex;
-   
-}
-.second .bta{
 
-    height: fit-content;
-
-}
-.second .pre{
-
-    position: absolute;
-    left:5%;
-
-}
-.second .nex{
-
-    position: absolute;
-    right:5%;
-
-}
 .maingeneraltopic .third{
     height:35%;
-    background-color: rgb(255, 0, 102);
+ 
     display: flex;
+    gap:2%;
+    
+  background-color:gray;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 .maingeneraltopic .third div{
    
-    width:20%;
+    width:18%;
     height: 100%;
     background-color: rgb(0, 0, 0);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: transform 0.3s;
+
+}
+.maingeneraltopic .third div:hover{
+
+    cursor: pointer;
+    transform:scale(110%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.first .tagcat
+{
+
+    width:fit-content;
+    height:fit-content;
+    background-color: greenyellow;
+    color: green;
+    border:  green solid 2px;
+    padding:15px;
+    font:20pt;
+    border-radius: 15px;
+    margin-left:20px;
+    margin-top:25px;
+
+
+}
+.first .desc{
+
+    margin: 20px;
+    margin-top: 50px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+
+
 
 }
