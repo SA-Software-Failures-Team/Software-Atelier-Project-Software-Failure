@@ -101,21 +101,33 @@ main {
 .main-pushed {
     margin-left: 250px;
 }
+
+/* lateral image */
+.lateral-image{
+    display: flex;
+    height: 90vh;
+    margin-left: 50px;
+}
+
+
 /*content text*/
 .content-text {
-    width: 60%;
+    width: 80%;
     padding: 40px 60px 40px 60px; 
     text-align: left;
 }
-
-.content-text h2 {
-    color: black;
+.content-text h1{
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
 }
 
 .content-text p {
+    padding-top: 15px;
     text-align: justify;   
     font-size: 20px;
 }
+
+/*Summary */
 
 .content-sum h2{
     position: relative;
@@ -124,13 +136,12 @@ main {
 }
 
 .content-sum {
-    width: 30%;
+    width: 20%;
     align-content: center;
     border-left: 2px solid lab(0% 0 0);
     padding-left: 25px;
 }
 
-/*Summary */
 .ul-sum {
     list-style: none;
     text-align: center;
