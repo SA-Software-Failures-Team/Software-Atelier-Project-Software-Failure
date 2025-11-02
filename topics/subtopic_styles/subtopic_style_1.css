@@ -1,13 +1,64 @@
+/* Author: Samuele Bertolini */
+
+
 *{
     margin: 0;
     font-family: sans-serif;
 }
-.nav{
-    width: 100%;
-    height: 10vh;
-    background-color: black;
+
+.nav {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative; 
+
 }
 
+.hamburger-icon {
+    display: block; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0;
+    z-index: 10; 
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.3s ease; 
+}
+
+#nav-links-container {
+    display: none;
+    background-color: rgba(46, 46, 46, 0.95); 
+    padding-top: 60px; /
+}
+
+.menu-open {
+    display: flex !important;
+}
+
+.nav-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-li a {
+    color: white;
+    padding: 20px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    border-bottom: 1px solid #555;
+}
 .header{
     background-image: url('../topic_1/subtopic_1/img/ex.jpeg');
     height: 40vh;

@@ -14,13 +14,26 @@
     <title>Example</title>
 </head>
 <body>
+    
     <nav class="nav">
         <div class="nav-button">
-            <button class="hamburger-icon">
+            <button class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+        </div>
+        <div id="nav-links-container">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="">Home</a></li>
+                    <li class="nav-li"><a href="">Sub Main Page</a></li>
+                    <li class="nav-li"><a href="">Subtopic 1</a></li>
+                    <li class="nav-li"><a href="">Subtopic 2</a></li>
+                    <li class="nav-li"><a href="">Subtopic 3</a></li>
+                    <li class="nav-li"><a href="">Subtopic 4</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="header"></div>
@@ -56,5 +69,6 @@
     <footer>
         <p>Samuele Bertolini</p>
     </footer>
+    <script src="../../subtopic.js"></script>
 </body>
 </html>

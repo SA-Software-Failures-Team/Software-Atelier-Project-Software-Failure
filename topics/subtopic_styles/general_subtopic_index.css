@@ -1,3 +1,11 @@
+/* Author: Samuele Bertolini, Davide Scappellato*/
+
+.nav-bar{
+    background-color: white;
+}
+
+
+
 body{
     margin: 0;
     height: 100vh;
@@ -59,3 +67,4 @@ body{
     width:fit-content;
 
 }
+
