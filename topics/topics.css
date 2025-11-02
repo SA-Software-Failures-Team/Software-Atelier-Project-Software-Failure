@@ -163,7 +163,6 @@ body{
     border-radius: 5px;
     transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
     border: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;
     margin: 20px;
 }
 .bta:hover{
@@ -207,7 +206,7 @@ body{
 
 .vul{
     background-color: rgb(255, 82, 82);
-    color: red;
+    color: rgb(108, 0, 0);
 }
 
 .bug, .vul{
