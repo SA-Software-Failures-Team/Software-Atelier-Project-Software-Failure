@@ -1,7 +1,9 @@
 let divs=document.getElementsByClassName("bug")
+let temp;
 for(let i=0; i<divs.length; i++){
      divs[i].onclick=function(){
-         window.location.href="/topicgeneral_bug.html"
+        temp=window.location.href.slice(0,-11) +"topicgeneral_b.html"
+         window.location.href=temp
     }
 }
 
@@ -9,7 +11,8 @@ divs=document.getElementsByClassName("vul")
 for(let i=0; i<divs.length; i++){
     divs[i].onclick=function(){
              
-       
-        window.location.href="/topicgeneral_bug.html"
+        temp=window.location.href.slice(0,-11) +"topicgeneral_v.html"
+
+         window.location.href=temp
     }
 }
