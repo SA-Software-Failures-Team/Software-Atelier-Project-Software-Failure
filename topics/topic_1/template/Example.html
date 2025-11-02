@@ -14,7 +14,10 @@
     <title>Example</title>
 </head>
 <body>
-    
+    <!--
+    Nav bar:
+    only adjust the name of the subtopic
+    -->
     <nav class="nav">
         <div class="nav-button">
             <button class="hamburger-icon" onclick="toggleMenu()">
@@ -36,9 +39,14 @@
             </div>
         </div>
     </nav>
-    <div class="header"></div>
+    <img src="../subtopic_1/img/ex.jpeg" alt="background" class="header">
     <main>
-        <!-- Markup of the tect content -->
+        <!-- 
+        Markup of the text content:
+        Every paragraph is separate
+        and have an unique id refered
+        for the link in the summary 
+        -->
         <div class="content-text">
             <h2>Lorem</h2>
             <br>
@@ -54,7 +62,11 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fuga obcaecati quas magni ut officia similique. Et, laborum alias. A quo itaque debitis voluptate quibusdam dicta perspiciatis animi dolores impedit?
             <br>
         </div>
-        <!-- Markup of the content summary -->
+        <!-- 
+        Markup of the content summary 
+        Use the id reference in the href to 
+        point the correct paragraph
+        -->
         <div class="content-sum">
             <ul class="ul-sum">
                 <li class="li-sum"><a href="#first" class="a-sum">Lorem</a></li>

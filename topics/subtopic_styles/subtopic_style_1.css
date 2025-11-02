@@ -6,7 +6,7 @@
 }
 
 
-
+/* Nav Don't modify */
 .nav {
     display: flex;
     justify-content: flex-start; 
@@ -74,8 +74,8 @@
     border-bottom: 1px solid #555;
 }
 
+/* Header image */
 .header{
-    background-image: url('../topic_1/subtopic_1/img/ex.jpeg');
     height: 40vh;
     width: 100%;
 }
@@ -92,7 +92,7 @@ main {
 .main-pushed {
     margin-left: 250px;
 }
-
+/*content text*/
 .content-text {
     width: 60%;
     padding: 40px 60px 40px 60px; 
@@ -104,7 +104,8 @@ main {
 }
 
 .content-text p {
-    text-align: justify;
+    text-align: justify;   
+    font-size: 20px;
 }
 
 .content-sum h2{
@@ -120,7 +121,7 @@ main {
     padding-left: 25px;
 }
 
-
+/*Summary */
 .ul-sum {
     list-style: none;
     text-align: center;
@@ -136,6 +137,7 @@ main {
 }
 
 .a-sum{
+    font-size: 20px;
     color: black;
     text-decoration: none;
 }
@@ -146,36 +148,5 @@ main {
     padding-right: 25px;
     padding-bottom: 25px;
     padding-top: 25px;
-    color: lab(42.67% 13.61 -48.31);
 }
 
-.content-image{
-    border-left:2px solid lab(42.67% 13.61 -48.31);
-    padding-left: 20px;
-}
-.content-image img{    
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 80px;   
-    margin-top:10px; 
-    padding: 20px;
-}
-
-.contactme{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;
-    padding-left: 20px;
-    margin-bottom: 25px;
-}
-
-.contactme ul{
-    margin-top: 15px;
-    list-style: none;
-}
-
-.contactme ul li{
-    margin-bottom: 15px;
-}
