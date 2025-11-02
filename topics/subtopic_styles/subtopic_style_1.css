@@ -1,19 +1,27 @@
-/* Author: Samuele Bertolini */
-
+/* Author: Samuele Bertolini (Aggiornato per transizioni fluide del menu) */
 
 *{
     margin: 0;
     font-family: sans-serif;
 }
 
+
+
 .nav {
     display: flex;
     justify-content: flex-start; 
     align-items: flex-start;
-    background-color: #333;
-    padding: 10px 20px;
-    position: relative; 
+    background-color: black;
+    padding: 10px 0px 10px 20px; 
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    z-index: 20;
+    transition: width 0.3s ease-in-out;
+}
 
+.nav.menu-open-full {
+    width: 250px;
 }
 
 .hamburger-icon {
@@ -34,14 +42,20 @@
     transition: all 0.3s ease; 
 }
 
-#nav-links-container {
-    display: none;
-    background-color: rgba(46, 46, 46, 0.95); 
-    padding-top: 60px; /
+
+#nav-links {
+    display: block;
+    padding-top: 60px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out 0.1s;
+    
+    overflow: hidden; 
 }
 
-.menu-open {
-    display: flex !important;
+.nav.menu-open-full #nav-links {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .nav-ul {
@@ -59,6 +73,7 @@
     font-size: 1.5em;
     border-bottom: 1px solid #555;
 }
+
 .header{
     background-image: url('../topic_1/subtopic_1/img/ex.jpeg');
     height: 40vh;
@@ -66,16 +81,21 @@
 }
 
 main {
+    margin-left: 60px;
+    transition: margin-left 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
     position: relative;
     padding: 40px;
 }
 
-/* Style of the text in content */
+.main-pushed {
+    margin-left: 250px;
+}
+
 .content-text {
     width: 60%;
-    padding-right: 40px;
+    padding: 40px 60px 40px 60px; 
     text-align: left;
 }
 
@@ -87,7 +107,6 @@ main {
     text-align: justify;
 }
 
-/* Style of the summary content used in aboutme and sport*/
 .content-sum h2{
     position: relative;
     margin-bottom: 40px;
@@ -130,8 +149,6 @@ main {
     color: lab(42.67% 13.61 -48.31);
 }
 
-
-/* Style of the image in the content used in school*/
 .content-image{
     border-left:2px solid lab(42.67% 13.61 -48.31);
     padding-left: 20px;
@@ -145,7 +162,6 @@ main {
     padding: 20px;
 }
 
-/* Style of contactme content*/
 .contactme{
     text-align: center;
     display: flex;
@@ -162,14 +178,4 @@ main {
 
 .contactme ul li{
     margin-bottom: 15px;
-}
-
-footer{
-    background: lab(0% 0 0);
-    color: white;
-    height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
 }
