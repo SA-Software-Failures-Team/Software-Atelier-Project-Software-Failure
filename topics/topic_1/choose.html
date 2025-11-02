@@ -1,11 +1,12 @@
 <html>
 <head>
-
+    <link rel="stylesheet" href="../topics.css">
 </head>
 <body>
-    <button id="bug"> bug </button>
-    <button id="vul"> vulnerabilities </button>
-
+    <div class="mainbugvul">
+        <button class="bug"> bug </button>
+        <button class="vul"> vulnerabilities </button>
+    </div>
     <script>
      
         document.getElementById("bug").onclick = function() {
@@ -14,7 +15,7 @@
         document.getElementById("vul").onclick = function() {
             location.href = "topicgeneral_vulnerabilities.html";        
         };  
-        
+
     </script>
 
 </body>

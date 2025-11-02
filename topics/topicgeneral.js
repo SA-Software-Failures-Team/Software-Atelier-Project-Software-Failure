@@ -29,3 +29,4 @@ for(let i=0; i<divs.length; i++){
         window.location.href="subtopic_4/first.html"
     }
 }
+

@@ -64,6 +64,14 @@ onMouseStop(() => {
 
 
 
+divs=document.getElementsByClassName("pre")
+for(let i=0; i<divs.length; i++){
+    divs[i].onclick=function(){
+
+
+        window.location.href="subtopic_1/first.html"
+    }
+}
 
 
 
