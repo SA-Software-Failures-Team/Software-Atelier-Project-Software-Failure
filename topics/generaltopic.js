@@ -37,3 +37,10 @@ for(let i=0; i<divs.length; i++){
           }
 }
 
+divs=document.getElementsByClassName("five")
+for(let i=0; i<divs.length; i++){
+    divs[i].onclick=function(){
+       temp=window.location.href.slice(0,-19)+"subtopic_5/generalsubtopic.html"
+        window.location.href=temp
+          }
+}

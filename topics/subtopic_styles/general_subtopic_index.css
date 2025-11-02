@@ -18,7 +18,6 @@ body{
     flex-wrap: wrap;
 }
 .getopic .photo{
-    background-image: url("../topic_3/topic_3_img/cloud.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

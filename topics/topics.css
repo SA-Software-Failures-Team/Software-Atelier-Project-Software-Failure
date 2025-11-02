@@ -273,9 +273,9 @@ body{
 
 .maingeneraltopic .third{
     height:35%;
- 
+ gap:20px;
     display: flex;
-    gap:2%;
+ 
     
   background-color:gray;
   backdrop-filter: blur(10px);
@@ -285,9 +285,9 @@ body{
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
-.maingeneraltopic .third div{
+.maingeneraltopic .third> div{
    
-    width:18%;
+    width:20%;
     height: 100%;
     background-color: rgb(0, 0, 0);
     background-size: cover;
@@ -296,7 +296,7 @@ body{
     transition: transform 0.3s;
 
 }
-.maingeneraltopic .third div:hover{
+.maingeneraltopic .third>div:hover{
 
     cursor: pointer;
     transform:scale(110%);
@@ -327,5 +327,19 @@ body{
     font-size: clamp(1rem, 2vw, 1.5rem);
 
 
+
+}
+
+.divslide .inside{
+
+    color:white;
+    background-color: black;
+    width:100%;
+    height:fit-content;
+    font-size: 16pt;
+
+    position: relative;
+    top:100%;
+    transform: translateY(-100%);
 
 }
