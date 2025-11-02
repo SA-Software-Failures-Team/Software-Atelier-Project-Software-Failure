@@ -10,16 +10,16 @@
 
 
 document.getElementById("trans").addEventListener("click", ()=>{
-    window.location.href="topic_1/topic_1_general.html";
+    window.location.href="topic_1/choose_1.html";
 });
 document.getElementById("ener").addEventListener("click", ()=>{
-    window.location.href="topic_2/topic_2_general.html";
+    window.location.href="topic_2/choose_2.html";
 });
 document.getElementById("busin").addEventListener("click", ()=>{
-    window.location.href="topic_3/topic_3_general.html";
+    window.location.href="topic_3/choose_3.html";
 });
 document.getElementById("health").addEventListener("click", ()=>{
-    window.location.href="topic_4/topic_4_general.html";
+    window.location.href="topic_4/choose_4.html";
 });
 
 
