@@ -66,7 +66,16 @@
 }
 
 .nav-li a {
-    color: white;
+    color: rgb(171, 169, 169);
+    padding: 20px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    border-bottom: 1px solid #555;
+}
+
+.nav-li a:hover {
+    color: rgb(255, 255, 255);
     padding: 20px 15px;
     text-decoration: none;
     display: block;
