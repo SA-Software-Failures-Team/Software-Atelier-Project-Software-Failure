@@ -118,7 +118,7 @@ main {
 }
 .lateral-image img{
     height: 100%;
-    max-width: fit-content;
+    width: fit-content;
 }
 
 
