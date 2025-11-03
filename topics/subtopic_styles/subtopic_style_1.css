@@ -251,3 +251,34 @@ main>.l1{
 
 
 }
+
+/*four image style*/
+.content-text, .full{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+    margin-left: 10px;
+    box-shadow: 0px 5px 30px rgba(55, 55, 55, 0.7);
+}
+
+.five-template{
+    flex-direction: column;
+}
+
+.four-bottom-image{
+    display: flex;
+    gap: 50px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.four-image-caption{
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+
+.four-bottom-image img{
+    box-shadow: 0px 5px 30px rgba(55, 55, 55, 0.7);
+}
