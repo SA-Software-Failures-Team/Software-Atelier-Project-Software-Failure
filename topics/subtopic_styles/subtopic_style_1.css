@@ -174,3 +174,13 @@ main {
 .on-click-sum{
     display: block;
 }
+
+
+.content-text .inside{
+    display: flex;
+    justify-content: center;
+}
+
+.inside>img{
+    margin:15px;
+}
