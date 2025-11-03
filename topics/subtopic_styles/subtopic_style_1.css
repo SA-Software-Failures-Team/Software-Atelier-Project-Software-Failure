@@ -253,7 +253,7 @@ main>.l1{
 }
 
 /*four image style*/
-.content-text, .full{
+.full{
     border: 1px solid black;
     border-radius: 5px;
     width: fit-content;
