@@ -1,10 +1,15 @@
-/* Author: Samuele Bertolini (Aggiornato per transizioni fluide del menu) */
+/* Author: Samuele Bertolini (Aggiornato per transizioni fluide del menu) and Davide Scapellato */
 
 *{
     margin: 0;
     font-family: sans-serif;
 }
 
+img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /* Nav Don't modify */
 .nav {
@@ -115,6 +120,7 @@ main {
     width: 80%;
     padding: 40px 60px 40px 60px; 
     text-align: left;
+    height: fit-content;
 }
 .content-text h1{
     padding-bottom: 15px;
@@ -184,3 +190,11 @@ main {
 .inside>img{
     margin:15px;
 }
+.lowerimage{
+
+    width:100%;
+    height:30vh;
+    position:relative;
+
+}
+
