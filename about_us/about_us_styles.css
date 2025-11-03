@@ -1,0 +1,92 @@
+/* Author: Ricetti Leonardo */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.header {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.content-text {
+    width: 70%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.content-text h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.content-text p {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.content-sum {
+    width: 25%;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.7);
+    border-left: 2px solid gray;
+}
+
+.ul-sum {
+    list-style: none;
+    padding: 0;
+}
+
+.li-sum {
+    margin-bottom: 10px;
+}
+
+.a-sum {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.a-sum:hover {
+    color: green;
+}
+
+.nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-li {
+    margin: 0 15px;
+}
+
+.nav-li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-li a:hover {
+    color: yellowgreen;
+}
