@@ -139,7 +139,7 @@ main {
     width: 20%;
     align-content: center;
     border-left: 2px solid lab(0% 0 0);
-    padding-left: 25px;
+    padding-left: 15px;
 }
 
 .ul-sum {
@@ -170,3 +170,7 @@ main {
     padding-top: 25px;
 }
 
+/* on click summary */
+.on-click-sum{
+    display: block;
+}
