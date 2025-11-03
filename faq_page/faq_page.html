@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricetti Leonardo">
+    <link rel="stylesheet" href="faq_page.css">
+    <title>FAQ - Catastrophic Failure Systems</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../index.html">Home</a></li>
+                    <li class="nav-li"><a href="../topics/topic.html">Topics</a></li>
+                    <li class="nav-li"><a href="../about/about.html">About</a></li>
+                    <li class="nav-li"><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <img src="../template/image/faq-bg.jpg" alt="background" class="header">
+
+    <main>
+        <div class="content-text">
+            <h1>Frequently Asked Questions</h1>
+            <p><em>Catastrophic Software Failures - Understanding our mission and methods</em></p>
+
+            <br>
+
+            <details>
+                <summary>What is the goal of the Catastrophic Failure Systems project?</summary>
+                <p>
+                    The project aims to study both famous and lesser-known software failures that had catastrophic impacts
+                    — financially, socially, or in terms of human safety.  
+                    Our goal is to create a well-documented digital archive of critical software <strong>bugs</strong> and
+                    <strong>vulnerabilities</strong>, explaining their causes, consequences, and lessons learned.
+                </p>
+            </details>
+
+            <details>
+                <summary>What is the difference between a software bug and a software vulnerability?</summary>
+                <p>
+                    A <strong>bug</strong> is typically an unintentional coding error that causes unexpected behavior in a program.  
+                    A <strong>vulnerability</strong>, instead, is a weakness that can be deliberately exploited by attackers to
+                    perform unauthorized actions. While both can cause failures, vulnerabilities have additional security implications.
+                </p>
+            </details>
+
+            <details>
+                <summary>What are some examples of catastrophic software failures?</summary>
+                <p>
+                    Famous examples include the <strong>Ariane 5 rocket explosion</strong> due to a data conversion bug,
+                    the <strong>Therac-25 radiation overdoses</strong> caused by concurrent software errors,
+                    and the <strong>Heartbleed vulnerability</strong> in OpenSSL which exposed millions of secure systems.
+                </p>
+            </details>
+
+            <details>
+                <summary>How do software failures impact society?</summary>
+                <p>
+                    Software failures can lead to <strong>economic losses, system outages, data breaches, and even loss of life</strong>.  
+                    They can shut down transportation networks, disable power grids, or disrupt healthcare systems.
+                    In a hyperconnected world, a single critical bug can ripple across industries globally.
+                </p>
+            </details>
+
+            <details>
+                <summary>How can developers prevent catastrophic vulnerabilities?</summary>
+                <p>
+                    Developers can follow <strong>secure coding practices</strong> such as:
+                    <ul>
+                        <li>Input validation and sanitization</li>
+                        <li>Proper error handling</li>
+                        <li>Regular code reviews and penetration testing</li>
+                        <li>Using memory-safe languages or tools</li>
+                        <li>Keeping dependencies and libraries up-to-date</li>
+                    </ul>
+                    Preventing vulnerabilities is a proactive effort that must be part of the entire software lifecycle.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why is documentation important in this project?</summary>
+                <p>
+                    Documentation allows us to transform failures into <strong>learning opportunities</strong>.  
+                    By studying causes and consequences, developers, engineers, and students can understand how
+                    to prevent similar incidents in the future. It’s about creating awareness through real-world lessons.
+                </p>
+            </details>
+
+            <details>
+                <summary>Who are the authors and contributors of this project?</summary>
+                <p>
+                    The project is developed by multiple specialized teams:
+                    <ul>
+                        <li><strong>Team Leaders:</strong> Bolcau, Çitaku</li>
+                        <li><strong>Git Leader:</strong> Piotr Wilinski</li>
+                        <li><strong>Git Co-Leaders:</strong> Chatterjee, Brinjevec</li>
+                        <li><strong>CSS Leaders:</strong> Bolcau, Çitaku</li>
+                        <li><strong>Healthcare Team Leader:</strong> Ricetti</li>
+                    </ul>
+                    Each group focuses on a specific topic such as Transportation, Energy, Business, or Healthcare.
+                </p>
+            </details>
+
+            <div class="backbta">← Back to Topics</div>
+        </div>
+    </main>
+
+    <script src="../../subtopic.js"></script>
+</body>
+</html>

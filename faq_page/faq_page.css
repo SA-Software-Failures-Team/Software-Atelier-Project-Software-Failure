@@ -1,0 +1,107 @@
+/* Author: Ricetti Leonardo */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-li {
+    margin: 0 15px;
+}
+
+.nav-li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-li a:hover {
+    color: yellowgreen;
+}
+
+.header {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+main {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-text {
+    width: 80%;
+    max-width: 900px;
+}
+
+.content-text h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.content-text p {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+details {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: black;
+}
+
+summary:hover {
+    color: green;
+}
+
+details[open] summary {
+    color: yellowgreen;
+}
+
+details p, details ul {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.backbta {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.backbta:hover {
+    background-color: yellowgreen;
+}
