@@ -199,17 +199,17 @@ body{
    
 }
 
-.bug{
+.mainbugvul>.bug{
     background-color: greenyellow;
     color: green;
 }
 
-.vul{
+.mainbugvul>.vul{
     background-color: rgb(255, 82, 82);
     color: rgb(108, 0, 0);
 }
 
-.bug, .vul{
+.mainbugvul> .bug, .mainbugvul> .vul{
     width:50%;
     height:100%;
     filter: brightness(30%);
@@ -218,7 +218,7 @@ body{
     transition: filter 0.5s;
 
 }
-.bug:hover, .vul:hover{
+.mainbugvul> .bug:hover, .mainbugvul> .vul:hover{
 
     filter: brightness(100%);
     cursor: pointer;
@@ -276,7 +276,6 @@ body{
   display: flex;
   background-color:gray;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   font-size: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
@@ -307,9 +306,7 @@ body{
 
     width:fit-content;
     height:fit-content;
-    background-color: greenyellow;
-    color: green;
-    border:  green solid 2px;
+   
     padding:15px;
     font:20pt;
     border-radius: 15px;
@@ -318,6 +315,24 @@ body{
 
 
 }
+
+.first .bug{
+
+    background-color: greenyellow;
+    color: green;
+    border:  green solid 2px;
+
+
+}
+.first .vul{
+
+    background-color: rgb(255, 82, 82);
+    color: rgb(108, 0, 0);
+    border: rgb(108, 0, 0) solid 2px;
+
+}
+
+
 .first .desc{
 
     margin: 20px;
