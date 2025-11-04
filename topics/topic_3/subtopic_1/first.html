@@ -1,0 +1,67 @@
+<!-- 
+ This is an example of a subtopic 1 page
+ Here it's defined all the class needed for create the subtopic page
+ USE ONLY FOR REFERENCE DON'T MODIFY 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>What Happened</title>
+</head>
+<body>
+    <!--
+    Nav bar:
+    only adjust the name of the subtopic
+    -->
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                     <li class="nav-li"><a href="generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What heppend</a></li>
+                    <li class="nav-li"><a href="second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact & Scope of the Outage</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned & Broader Implications</a></li>
+                    <li class="nav-li"><a href="fifth.html">Outlook & Mitigation for the Future</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="img/ms.png" alt="background" class="header">
+    <main>
+        <div class="lateral-image">
+            <img src="img/msHD.webp" alt="">
+        </div>
+        <div class="content-text center">
+            <h1>What Happened</h1>
+            <br>
+            <p id="first">
+                On January 25, 2023, Microsoft experienced a large-scale service disruption that affected Microsoft 365 products such as Outlook, Teams, SharePoint, and OneDrive, as well as parts of the Azure cloud network. The issue began early in the morning (around 07:05 UTC), when users worldwide started reporting connection problems, login failures, and difficulties sending messages or accessing files. Microsoft quickly acknowledged the outage via its official service health dashboard and Twitter account, confirming that the problem was related to its internal networking infrastructure rather than an external cyberattack or system overload.
+            <br><br>
+            <p id="second">
+                The disruption was traced back to a network configuration change made within Microsoft’s core wide-area network (WAN). A routine update intended to optimize network performance inadvertently caused a routing issue, leading to widespread packet loss and interruptions in communication between Microsoft’s data centers. Essentially, the network could no longer properly direct traffic between major regions, which cascaded into downtime across several dependent services. These types of incidents are especially impactful for Microsoft because many of its services share a common backbone and authentication system.
+            </p>
+            <br><br>
+            <p id="third">
+               The outage lasted for roughly 90 minutes at its peak, though some users experienced lingering effects for several hours afterward. Microsoft engineers rolled back the problematic network update and restarted affected systems to restore connectivity. Once the fix was applied, most services gradually returned to normal, and Microsoft issued a formal post-incident report explaining the cause and preventive measures being implemented. While short-lived, the outage highlighted how a single misconfigured network command can have a global impact on millions of users relying on cloud services for communication and productivity. </p>
+            
+            </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+
+
+</body>
+</html>
