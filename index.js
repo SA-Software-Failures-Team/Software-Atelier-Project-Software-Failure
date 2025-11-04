@@ -1,3 +1,24 @@
+
+
+const images = [
+    'url("index_img/bgindex.jpg")',
+    'url("index_img/bgindex2.jpg")',
+    'url("index_img/bgindex3.jpg")',
+    'url("index_img/bgindex4.jpg")'
+];
+
+let index = 0;
+let body = document.getElementById('super');
+
+function changeBackground() {
+    body.style.backgroundImage = images[index];
+    index = (index + 1) % images.length; // Loop back
+}
+
+setInterval(changeBackground, 5000); // Change every 5 seconds
+changeBackground();
+
+
 document.addEventListener('DOMContentLoaded', function() {
             // FAQ
             document.querySelectorAll('.faq-question').forEach(button => {

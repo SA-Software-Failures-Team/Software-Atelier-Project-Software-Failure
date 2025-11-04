@@ -1,3 +1,4 @@
+/*
 :root {
     --secondary-color: #3B4537;   
     --primary-color: #D4AF37;
@@ -6,29 +7,46 @@
     --border-color: #e2e8f0;
     --hover-bg: #f1f5f9;
     --card-bg: #1E1E1F;
+}*/
+:root {
+    --secondary-color: #3B4537;   
+    --primary-color: #D4AF37;
+    --bg-color: #ffffff; 
+    --text-color: #000000;
+    --border-color: #e2e8f0;
+    --hover-bg: #f1f5f9;
+    --card-bg: #7f7f7f58;
+    --blurvalue: blur(80px);
 }
+#super{
+    background-size: cover;
 
-body {
-    background-color: var(--bg-color);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     color: var(--text-color);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: background-image 1s ease-in-out, filter 1s ease-in-out;
+
 }
+
+
 
 /* header styles */
 header {
-    background: #141415 !important;
+    background: #000000 !important;
     border-bottom: 1px solid var(--border-color);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link {
-    color: var(--text-color) !important;
+    color: white;
     font-weight: 500;
     transition: color 0.2s;
 }
 
 .nav-link:hover {
-    color: var(--primary-color) !important;
+    color: var(--primary-color) ;
 }
 
 .nav-link.text-secondary {
@@ -50,7 +68,7 @@ header {
 .menu-btn span {
     width: 24px;
     height: 2px;
-    background-color: var(--text-color);
+    background-color: white;
     transition: all 0.3s;
 }
 
@@ -107,7 +125,7 @@ header {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: var(--text-color);
+    color: white;
 }
 
 .sidebar-content {
@@ -120,7 +138,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
-    color: var(--text-color);
+    color: white;
     text-decoration: none;
     border-radius: 6px;
     transition: background 0.2s;
@@ -131,7 +149,7 @@ header {
 
 .menu-item:hover {
     background: var(--hover-bg);
-    color: var(--primary-color);
+    color: black;
 }
 
 .menu-item.has-submenu::after {
@@ -160,7 +178,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 8px 15px 8px 30px;
-    color: var(--text-color);
+    color: white;
     text-decoration: none;
     border-radius: 6px;
     transition: background 0.2s;
@@ -171,7 +189,7 @@ header {
 
 .submenu-item:hover {
     background: var(--hover-bg);
-    color: var(--primary-color);
+    color: black;
 }
 
 .submenu-item.has-submenu::after {
@@ -198,7 +216,7 @@ header {
 .subsubmenu-item {
     display: block;
     padding: 6px 15px 6px 50px;
-    color: var(--text-color);
+    color: white;
     text-decoration: none;
     border-radius: 6px;
     transition: background 0.2s;
@@ -208,7 +226,7 @@ header {
 
 .subsubmenu-item:hover {
     background: var(--hover-bg);
-    color: var(--primary-color);
+    color: black;
 }
 
 /* button styles */
@@ -234,6 +252,7 @@ header {
 /* Main section */
 #introduction {
     background: var(--card-bg);
+     backdrop-filter: blur(80px); 
     border-radius: 40px;
     padding: 60px 40px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -258,8 +277,19 @@ header {
     color: var(--text-color);
 }
 
+#insidecap{
+   
+text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,  
+        -1px 1px 0 #000,  
+        1px 1px 0 #000; /* Bordo nero */
+
+}
+
 .category-card {
     background: var(--card-bg);
+      backdrop-filter: blur(40px); 
     border-radius: 20px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -275,7 +305,8 @@ header {
 }
 
 .category-card h3 {
-    color: var(--primary-color);
+    /*color: var(--primary-color);*/
+    color:black;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -299,6 +330,7 @@ header {
 .faq-section {
     padding: 60px 20px;
     background: var(--card-bg);
+    backdrop-filter: blur(10px); 
     margin-top: 40px;
     border-radius: 40px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
@@ -349,4 +381,26 @@ header {
 .faq-answer.active {
     max-height: 200px;
     opacity: 1;
+}
+
+
+.bta{
+    padding: 0.625rem;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border-radius: 5px;
+    transition: color 0.6s, background-color 0.6s, box-shadow 0.6s;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 20px;
+    text-decoration: none;
+    position:relative;
+    top:20px;
+        border-radius: 40px;
+
+}
+.bta:hover{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    cursor: pointer;
+
 }
