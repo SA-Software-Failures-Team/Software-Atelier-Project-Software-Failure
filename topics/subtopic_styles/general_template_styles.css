@@ -118,7 +118,7 @@ main {
 }
 .lateral-image img{
     height: 100%;
-    width: 100%;
+    width: 15vw;
 }
 
 
@@ -226,28 +226,41 @@ main {
     width:100%;
 }
 
+/*EX3*/
+.secondimage{
+
+    width:18vw;
+
+}
 
 /*Ex 4*/
 .columnarticle{
 
-    width:60%;
+    width:40%;
     margin:auto;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 5px 30px rgba(55, 55, 55, 0.7);
     min-height:100vh;
-    padding:20px;
+    padding:80px;
     border-radius: 5px;
+
     
 }
 
 .columnarticle>h2{
     text-align: center;
     font-size: 20pt;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;    
+    padding:10px
 }
 
 main>.l1{
 
     margin-left:0px;
+    width: 20vw;
+    background-repeat: repeat;
+    
 
 
 }
@@ -281,4 +294,11 @@ main>.l1{
 
 .four-bottom-image img{
     box-shadow: 0px 5px 30px rgba(55, 55, 55, 0.7);
+}
+
+.footimg{
+
+    width:20vw;
+    height:20vh;
+
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Document</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                     <li class="nav-li"><a href="generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What heppend</a></li>
+                    <li class="nav-li"><a href="second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact & Scope of the Outage</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned & Broader Implications</a></li>
+                    <li class="nav-li"><a href="fifth.html">Outlook & Mitigation for the Future</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main >
+        <img class="lateral-image l1" src="img/ms3.png" alt="Example Image 1">
+        <div class="columnarticle">
+            <h2>Impact & Scope of the Outage</h2>
+            <border></border>
+            <p>The January 2023 Microsoft outage had a global impact, disrupting services for millions of users who rely on Microsoft 365 and Azure every day. Businesses, schools, and government organizations experienced interruptions to critical tools such as Microsoft Teams, Outlook, Exchange Online, SharePoint, and OneDrive. For many, this meant they couldn’t send emails, attend online meetings, or access shared documents stored in the cloud. The outage was particularly noticeable in regions across Europe, Asia, and North America, where most of Microsoft’s enterprise customers are located.
+
+                Because Microsoft 365 integrates multiple services through a unified authentication system, the network issue had a cascading effect — even users who weren’t directly affected by the Azure routing problem faced login errors or delays accessing other connected platforms. Organizations dependent on cloud-based collaboration found themselves temporarily offline, forcing teams to rely on alternative communication tools or pause operations until service was restored. The outage exposed how interconnected Microsoft’s cloud ecosystem is and how a single infrastructure issue can ripple across dozens of applications simultaneously.
+
+                Although Microsoft resolved the core network issue within a couple of hours, residual disruptions persisted for some users throughout the day as systems re-synced and queued messages were processed. For businesses running 24/7 operations, even a short-term outage meant measurable productivity losses and service delays. The event highlighted both the strength and fragility of large-scale cloud environments — capable of massive efficiency and global reach, but still vulnerable to internal configuration errors that can momentarily bring digital workflows to a halt.</p>
+        </div>
+        <img class="lateral-image l1"  src="img/ms4.jpg" alt="Example Image 1">
+ 
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+
+</body>
+</html>

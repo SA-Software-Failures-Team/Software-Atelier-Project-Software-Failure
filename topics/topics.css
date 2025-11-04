@@ -184,7 +184,9 @@ body{
     width: 40%;
     justify-content: center;
 }
-/*             CHOOSE                */
+
+
+/*  ------------------------ css for the CHOOSE page  ----------------------------              */
 
 .mainbugvul{
 
@@ -226,7 +228,7 @@ body{
 }
 
 
-/* main page for each topic   */
+/* ------------------------- css for the pages topicgeneral_b.html and  topicgeneral_v.html -----------------------------------------------------------*/
 
 .maingeneraltopic {
     margin: 0;
