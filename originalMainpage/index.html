@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Gabriel Bolcau">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h5 class="mb-0">Catastrophic Software Failures</h5>
+            <button class="sidebar-close" id="closeSidebar">&times;</button>
+        </div>
+        <div class="sidebar-content">
+            <!-- Home -->
+            <a href="index.html" class="menu-item">Home</a>
+            <!--the links should be changed after the html of the subtopic pages are done -->
+            <!-- Topic 1 -->
+            <div class="menu-item has-submenu" data-toggle="topic1">
+                <span>Transportation</span>
+            </div>
+            <div class="submenu" id="topic1">
+                <div class="submenu-item has-submenu" data-toggle="topic1-bugs">
+                    <span>Bugs</span>
+                </div>
+                <div class="subsubmenu" id="topic1-bugs">
+                    <a href="./topics/topic_1/subtopic_1/generalsubtopic.html" class="subsubmenu-item">Subtopic 1</a>
+                    <a href="./topics/topic_1/subtopic_2/generalsubtopic.html" class="subsubmenu-item">Subtopic 2</a>
+                    <a href="./topics/topic_1/subtopic_3/generalsubtopic.html" class="subsubmenu-item">Subtopic 3</a>
+                    <a href="./topics/topic_1/subtopic_4/generalsubtopic.html" class="subsubmenu-item">Subtopic 4</a>
+                    <a href="./topics/topic_1/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
+                </div>
+                
+                <div class="submenu-item has-submenu" data-toggle="topic1-vuln">
+                    <span>Vulnerabilities</span>
+                </div>
+                <div class="subsubmenu" id="topic1-vuln">
+                    <a href="./topics/topic_1/subtopic_6/generalsubtopic.html" class="subsubmenu-item">Subtopic 6</a>
+                    <a href="./topics/topic_1/subtopic_7/generalsubtopic.html" class="subsubmenu-item">Subtopic 7</a>
+                    <a href="./topics/topic_1/subtopic_8/generalsubtopic.html" class="subsubmenu-item">Subtopic 8</a>
+                    <a href="./topics/topic_1/subtopic_9/generalsubtopic.html" class="subsubmenu-item">Subtopic 9</a>
+                    <a href="./topics/topic_1/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
+                </div>
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="menu-item has-submenu" data-toggle="topic2">
+                <span>Energy/Infrastructure</span>
+            </div>
+            <div class="submenu" id="topic2">
+                <div class="submenu-item has-submenu" data-toggle="topic2-bugs">
+                    <span>Bugs</span>
+                </div>
+                <div class="subsubmenu" id="topic2-bugs">
+                    <a href="./topics/topic_2/subtopic_1/generalsubtopic.html" class="subsubmenu-item">Subtopic 1</a>
+                    <a href="./topics/topic_2/subtopic_2/generalsubtopic.html" class="subsubmenu-item">Subtopic 2</a>
+                    <a href="./topics/topic_2/subtopic_3/generalsubtopic.html" class="subsubmenu-item">Subtopic 3</a>
+                    <a href="./topics/topic_2/subtopic_4/generalsubtopic.html" class="subsubmenu-item">Subtopic 4</a>
+                    <a href="./topics/topic_2/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
+                </div>
+                
+                <div class="submenu-item has-submenu" data-toggle="topic2-vuln">
+                    <span>Vulnerabilities</span>
+                </div>
+                <div class="subsubmenu" id="topic2-vuln">
+                    <a href="./topics/topic_2/subtopic_6/generalsubtopic.html" class="subsubmenu-item">Subtopic 6</a>
+                    <a href="./topics/topic_2/subtopic_7/generalsubtopic.html" class="subsubmenu-item">Subtopic 7</a>
+                    <a href="./topics/topic_2/subtopic_8/generalsubtopic.html" class="subsubmenu-item">Subtopic 8</a>
+                    <a href="./topics/topic_2/subtopic_9/generalsubtopic.html" class="subsubmenu-item">Subtopic 9</a>
+                    <a href="./topics/topic_2/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
+                </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="menu-item has-submenu" data-toggle="topic3">
+                <span>Business-Critical System</span>
+            </div>
+            <div class="submenu" id="topic3">
+                 <div class="submenu-item has-submenu" data-toggle="topic3-bugs">
+                    <span>Bugs</span>
+                </div>
+                <div class="subsubmenu" id="topic3-bugs">
+                    <a href="./topics/topic_3/subtopic_1/generalsubtopic.html" class="subsubmenu-item">Subtopic 1</a>
+                    <a href="./topics/topic_3/subtopic_2/generalsubtopic.html" class="subsubmenu-item">Subtopic 2</a>
+                    <a href="./topics/topic_3/subtopic_3/generalsubtopic.html" class="subsubmenu-item">Subtopic 3</a>
+                    <a href="./topics/topic_3/subtopic_4/generalsubtopic.html" class="subsubmenu-item">Subtopic 4</a>
+                    <a href="./topics/topic_3/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
+                </div>
+                
+                <div class="submenu-item has-submenu" data-toggle="topic3-vuln">
+                    <span>Vulnerabilities</span>
+                </div>
+                <div class="subsubmenu" id="topic3-vuln">
+                    <a href="./topics/topic_3/subtopic_6/generalsubtopic.html" class="subsubmenu-item">Subtopic 6</a>
+                    <a href="./topics/topic_3/subtopic_7/generalsubtopic.html" class="subsubmenu-item">Subtopic 7</a>
+                    <a href="./topics/topic_3/subtopic_8/generalsubtopic.html" class="subsubmenu-item">Subtopic 8</a>
+                    <a href="./topics/topic_3/subtopic_9/generalsubtopic.html" class="subsubmenu-item">Subtopic 9</a>
+                    <a href="./topics/topic_3/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
+                </div>
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="menu-item has-submenu" data-toggle="topic4">
+                <span>Healthcare</span>
+            </div>
+            <div class="submenu" id="topic4">
+                <div class="submenu-item has-submenu" data-toggle="topic4-bugs">
+                    <span>Bugs</span>
+                </div>
+                <div class="subsubmenu" id="topic4-bugs">
+                    <a href="./topics/topic_4/subtopic_1/generalsubtopic.html" class="subsubmenu-item">Subtopic 1</a>
+                    <a href="./topics/topic_4/subtopic_2/generalsubtopic.html" class="subsubmenu-item">Subtopic 2</a>
+                    <a href="./topics/topic_4/subtopic_3/generalsubtopic.html" class="subsubmenu-item">Subtopic 3</a>
+                    <a href="./topics/topic_4/subtopic_4/generalsubtopic.html" class="subsubmenu-item">Subtopic 4</a>
+                    <a href="./topics/topic_4/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
+                </div>
+                
+                <div class="submenu-item has-submenu" data-toggle="topic4-vuln">
+                    <span>Vulnerabilities</span>
+                </div>
+                <div class="subsubmenu" id="topic4-vuln">
+                    <a href="./topics/topic_4/subtopic_6/generalsubtopic.html" class="subsubmenu-item">Subtopic 6</a>
+                    <a href="./topics/topic_4/subtopic_7/generalsubtopic.html" class="subsubmenu-item">Subtopic 7</a>
+                    <a href="./topics/topic_4/subtopic_8/generalsubtopic.html" class="subsubmenu-item">Subtopic 8</a>
+                    <a href="./topics/topic_4/subtopic_9/generalsubtopic.html" class="subsubmenu-item">Subtopic 9</a>
+                    <a href="./topics/topic_4/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="p-3">
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <button class="menu-btn" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 text-secondary" style="pointer-events: none">Home</a></li>
+                    <li><a href="#faqs" class="nav-link px-2">FAQs</a></li>
+                    <li><a href="./about_us/about_us.html" class="nav-link px-2">About us</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- introduction -->
+        <section id="introduction" class="container my-5 text-center"> 
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4 fw-bold mb-4">When Code Collapses</h1> 
+                <p class="lead mb-4">
+                    Explore the critical software bugs and vulnerabilities that led to real-world disasters.
+                    Learn from the past to build a safer, more reliable future.
+                </p>
+                <a href="./topics/topics.html" class="btn btn-primary btn-lg">
+                    Start Exploring Topics
+                </a>
+            </div>
+        </section>
+
+        <!-- category section -->
+        <section id="categories" class="container my-5">
+            <h2 class="category-title">What You'll Find Inside</h2> 
+            <div class="row g-4">
+                <!-- category card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <h3>Transportation</h3>
+                        <p>Case studies on failures in automotive, aviation, and aerospace systems.</p>
+                
+                    </div>
+                </div>
+                <!-- category card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <h3>Energy & Infrastructure</h3>
+                        <p>How software bugs have impacted power grids, utilities, and public infrastructure.</p>
+                    </div>
+                </div>
+                <!--category card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <h3>Business-Critical</h3>
+                        <p>The financial and operational impact of failures in banking and commerce systems.</p>
+                    </div>
+                </div>
+                <!-- category card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <h3>Healthcare</h3>
+                        <p>Investigating software errors in medical devices and patient data management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+         <!-- the text is still work in progress-->
+        <section id="faqs" class="faq-section container">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    What is the cost of your service?
+                </button>
+                <div class="faq-answer">
+                    <p>Our pricing depends on the type of service you choose. You can find all the details on our <a href="#pricing">pricing page</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    How can I contact support?
+                </button>
+                <div class="faq-answer">
+                    <p>You can reach out to our support team via the <a href="#contact">contact form</a> or by emailing support@example.com.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    How do I sign up for an account?
+                </button>
+                <div class="faq-answer">
+                    <p>Signing up is easy! Simply click the <a href="#signup" data-bs-toggle="modal" data-bs-target="#registerModal">Sign Up</a> button at the top right of the page and follow the instructions.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Can I cancel my subscription?
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, you can cancel your subscription anytime from your account dashboard. No questions asked!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- footer? still to be decided -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
