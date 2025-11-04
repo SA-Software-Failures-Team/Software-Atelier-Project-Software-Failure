@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../subtopic_styles/subtopic_style_1.css">
     <title>Document</title>
 </head>
-<body>
+<body >
     <nav class="nav">
         <div class="nav-button">
             <button class="hamburger-icon" onclick="toggleMenu()">
@@ -22,9 +22,9 @@
                     <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">General subtopic</a></li>
                     <li class="nav-li"><a href="Ex-Page1.html">Ex page 1</a></li>
                     <li class="nav-li"><a href="Ex-Page2.html">Ex page 2</a></li>
-                    <li class="nav-li"><a href="Ex-page3.html">Ex Page 3</a></li>
-                    <li class="nav-li"><a href="">Subtopic 3</a></li>
-                    <li class="nav-li"><a href="">Subtopic 4</a></li>
+                    <li class="nav-li"><a href="Ex-page3.html">Ex page 3</a></li>
+                    <li class="nav-li"><a href="Ex-page4.html">Ex page 4</a></li>
+                    <li class="nav-li"><a href="Ex-Page5.html">Ex page 5</a></li>
                 </ul>
             </div>
         </div>
@@ -39,22 +39,29 @@
         <div class="content-text">
             <h1>Lorem</h1>
             <br>
-            <p id="first">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta repellendus aperiam soluta dolor? Laboriosam sunt, eos sed distinctio quam fuga suscipit architecto quidem est, dolor, eius soluta perferendis obcaecati.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure odit commodi tempore alias dignissimos impedit officia molestiae. Velit ipsum consequatur blanditiis unde, porro quos commodi consequuntur eos! Eum, omnis.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sit, at modi id accusantium, maiores nesciunt inventore fuga reiciendis quae rem doloribus ad aliquid rerum error debitis optio vero excepturi?
-            </p>
-            <br><br>
-            <p id="second">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta repellendus aperiam soluta dolor? Laboriosam sunt, eos sed distinctio quam fuga suscipit architecto quidem est, dolor, eius soluta perferendis obcaecati.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure odit commodi tempore alias dignissimos impedit officia molestiae. Velit ipsum consequatur blanditiis unde, porro quos commodi consequuntur eos! Eum, omnis.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sit, at modi id accusantium, maiores nesciunt inventore fuga reiciendis quae rem doloribus ad aliquid rerum error debitis optio vero excepturi?
-            </p>
-            <br><br>
-            <p id="third">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta repellendus aperiam soluta dolor? Laboriosam sunt, eos sed distinctio quam fuga suscipit architecto quidem est, dolor, eius soluta perferendis obcaecati.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure odit commodi tempore alias dignissimos impedit officia molestiae. Velit ipsum consequatur blanditiis unde, porro quos commodi consequuntur eos! Eum, omnis.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sit, at modi id accusantium, maiores nesciunt inventore fuga reiciendis quae rem doloribus ad aliquid rerum error debitis optio vero excepturi?
+            <div id="main">
+                <p id="first">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta repellendus aperiam soluta dolor? Laboriosam sunt, eos sed distinctio quam fuga suscipit architecto quidem est, dolor, eius soluta perferendis obcaecati.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure odit commodi tempore alias dignissimos impedit officia molestiae. Velit ipsum consequatur blanditiis unde, porro quos commodi consequuntur eos! Eum, omnis.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sit, at modi id accusantium, maiores nesciunt inventore fuga reiciendis quae rem doloribus ad aliquid rerum error debitis optio vero excepturi?
+                </p>
+                <div class="inside">
+                <p id="second">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta repellendus aperiam soluta dolor? Laboriosam sunt, eos sed distinctio quam fuga suscipit architecto quidem est, dolor, eius soluta perferendis obcaecati.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure odit commodi tempore alias dignissimos impedit officia molestiae. Velit ipsum consequatur blanditiis unde, porro quos commodi consequuntur eos! Eum, omnis.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sit, at modi id accusantium, maiores nesciunt inventore fuga reiciendis quae rem doloribus ad aliquid rerum error debitis optio vero excepturi?
+                </p>
+                    <img src="image/ex.jpeg">
+                </div>
+                <p id="third">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta repellendus aperiam soluta dolor? Laboriosam sunt, eos sed distinctio quam fuga suscipit architecto quidem est, dolor, eius soluta perferendis obcaecati.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure odit commodi tempore alias dignissimos impedit officia molestiae. Velit ipsum consequatur blanditiis unde, porro quos commodi consequuntur eos! Eum, omnis.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sit, at modi id accusantium, maiores nesciunt inventore fuga reiciendis quae rem doloribus ad aliquid rerum error debitis optio vero excepturi?
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="image/ex.jpeg">
+
         </div>
         <!-- 
         Markup of the content summary 
@@ -63,16 +70,16 @@
         -->
         <div class="content-sum">
             <ul class="ul-sum">
-                <li class="li-sum"><a href="#first" class="a-sum 1">Lorem</a></li>
-                <div class="sum-on-click one" style="display: none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique excepturi vero beatae, sequi iste eum dolorum vel quos voluptas ab odio veritatis nesciunt corporis totam ratione alias. Sit, quis.</p></div>
-                <li class="li-sum"><a href="#second" class="a-sum 2">Ipsum</a></li>
-                <div class="sum-on-click two" style="display: none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique excepturi vero beatae, sequi iste eum dolorum vel quos voluptas ab odio veritatis nesciunt corporis totam ratione alias. Sit, quis.</p></div>
-                <li class="li-sum"><a href="#third" class="a-sum 3">Dolorem</a></li>
-                <div class="sum-on-click three" style="display: none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique excepturi vero beatae, sequi iste eum dolorum vel quos voluptas ab odio veritatis nesciunt corporis totam ratione alias. Sit, quis.</p></div>
-                <li class="li-sum"><a href="#fourth" class="a-sum 4">Sit amet</a> </li>
-                <div class="sum-on-click four" style="display: none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique excepturi vero beatae, sequi iste eum dolorum vel quos voluptas ab odio veritatis nesciunt corporis totam ratione alias. Sit, quis.</p></div>
-                <li class="li-sum"><a href="" class="a-sum 5">Display</a></li>
-                <div class="sum-on-click five" style="display: none;"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, tempora iure quis consequuntur odit suscipit sequi corporis at numquam ex est non possimus sint tempore quidem molestiae ipsam repellendus aperiam!</p></div>
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">Lorem</a></li>
+                <div id="one" class="sum-on-click" style="display: none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique excepturi vero beatae, sequi iste eum dolorum vel quos voluptas ab odio veritatis nesciunt corporis totam ratione alias. Sit, quis.</p></div>
+                <li class="li-sum"><a id="n2"  href="#second" class="a-sum ">Ipsum</a></li>
+                <div  id="two"  class="sum-on-click"  style="display: none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique excepturi vero beatae, sequi iste eum dolorum vel quos voluptas ab odio veritatis nesciunt corporis totam ratione alias. Sit, quis.</p></div>
+                <li class="li-sum"><a  id="n3" href="#third" class="a-sum ">Dolorem</a></li>
+                <div  id="three" class="sum-on-click" style="display: none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique excepturi vero beatae, sequi iste eum dolorum vel quos voluptas ab odio veritatis nesciunt corporis totam ratione alias. Sit, quis.</p></div>
+                <li class="li-sum"><a  id="n4" href="#fourth" class="a-sum ">Sit amet</a> </li>
+                <div id="four"  class="sum-on-click " style="display: none;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique excepturi vero beatae, sequi iste eum dolorum vel quos voluptas ab odio veritatis nesciunt corporis totam ratione alias. Sit, quis.</p></div>
+                <li class="li-sum"><a id="n5"  href="#fifth" class="a-sum">Display</a></li>
+                <div id="five"  class="sum-on-click " style="display: none;"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, tempora iure quis consequuntur odit suscipit sequi corporis at numquam ex est non possimus sint tempore quidem molestiae ipsam repellendus aperiam!</p></div>
             </ul>
         </div>
     </main>
