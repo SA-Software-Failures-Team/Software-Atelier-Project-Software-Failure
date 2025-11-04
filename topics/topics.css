@@ -4,6 +4,9 @@ body{
     margin:0px;
     font-family: sans-serif;
 }
+
+
+/* ==================================== css for the 4 colums main page ====================================*/
 #main{
 
     height:100%;
@@ -19,27 +22,19 @@ body{
   text-align: center; 
 
 }
-#trans{
 
-    background-image: url(topics_img/Transport.jpeg);
-     
+#trans{
+    background-image: url(topics_img/Transport.jpeg);   
 }
 #ener{
-
-    background-image: url(topics_img/energy.jpeg);
-     
+    background-image: url(topics_img/energy.jpeg);     
 }
 #busin{
-
-    background-image: url(topics_img/business.jpg);
-     
+    background-image: url(topics_img/business.jpg);   
 }
 #health{
-
-    background-image: url(topics_img/medical.jpg);
-     
+    background-image: url(topics_img/medical.jpg);  
 }
-
 
 .windows, #desc{
 
@@ -96,24 +91,16 @@ body{
 
 }
 
-#trans{
-
-    background-image: url(topics_img/Transport.jpeg);
-     
-}
-
 #mtitl{
 
     position:absolute;
     color:white;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:32pt;
-    
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
    
-
 }
 
 .submain{
@@ -140,6 +127,8 @@ body{
     justify-content: center;
 }
 
+
+
 .footer{
     display: flex;
     height: 20%;
@@ -154,6 +143,9 @@ body{
 .footer-cont{
     padding: 5px;
 }
+
+
+/* ====================================  button main style ======================================================*/
 
 .bta{
     font-size: clamp(1rem, 1.5vw, 1.25rem);
@@ -186,7 +178,7 @@ body{
 }
 
 
-/*  ------------------------ css for the CHOOSE page  ----------------------------              */
+/*  ==================================== css for the CHOOSE page  ====================================   */
 
 .mainbugvul{
 
@@ -228,9 +220,10 @@ body{
 }
 
 
-/* ------------------------- css for the pages topicgeneral_b.html and  topicgeneral_v.html -----------------------------------------------------------*/
+/* ==================================== css for the pages topicgeneral_b.html and  topicgeneral_v.html ========================================================================*/
 
 .maingeneraltopic {
+
     margin: 0;
     height: 100%;
     width: 100%;
@@ -242,13 +235,15 @@ body{
 }
 
 .maingeneraltopic .first, .second, .third{
+
     width:90%;
     padding:5%;
     margin:auto;
+
 }
 .maingeneraltopic .first{
+
     height:65%;
-  
     
 }
 .first .top{
@@ -273,6 +268,7 @@ body{
 }
 
 .maingeneraltopic .third{
+
   height:35%;
   gap:20px;
   display: flex;
@@ -281,6 +277,7 @@ body{
   font-size: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+
 }
 
 .maingeneraltopic .third> div{
@@ -305,17 +302,13 @@ body{
 
 .first .tagcat
 {
-
     width:fit-content;
     height:fit-content;
-   
     padding:15px;
     font:20pt;
     border-radius: 15px;
     margin-left:20px;
     margin-top:25px;
-
-
 }
 
 .first .bug{
@@ -340,9 +333,6 @@ body{
     margin: 20px;
     margin-top: 50px;
     font-size: clamp(1rem, 2vw, 1.5rem);
-
-
-
 }
 
 .divslide{
@@ -359,7 +349,6 @@ body{
     width:100%;
     height:fit-content;
     font-size: 16pt;
-
     position: relative;
     top:100%;
     transform: translateY(-100%);

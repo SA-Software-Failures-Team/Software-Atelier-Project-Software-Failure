@@ -1,4 +1,4 @@
-/* Author: Samuele Bertolini and Davide Scapellato */
+/*======================================== CSS FOR ALL 5 TEMPLATES ===========================================*/
 
 *{
     margin: 0;
@@ -191,7 +191,7 @@ main {
     border-radius: 5px;
 }
 
-
+/* TEMPLATE 3 CSS*/
 .content-text .inside{
     display: flex;
     justify-content: center;
@@ -226,14 +226,14 @@ main {
     width:100%;
 }
 
-/*EX3*/
+
 .secondimage{
 
     width:18vw;
 
 }
 
-/*Ex 4*/
+/* TEMPLATE 4 CSS*/
 .columnarticle{
 
     width:40%;
@@ -265,7 +265,7 @@ main>.l1{
 
 }
 
-/*four image style*/
+/*============== TEMPLATE 5 (four image style) ==============================*/
 .full{
     border: 1px solid black;
     border-radius: 5px;
