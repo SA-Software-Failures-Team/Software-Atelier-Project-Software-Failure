@@ -6,11 +6,17 @@ for(let i=0; i<divs.length; i++){
         window.location.href="../topics.html"
     }
 }
-
+let n=0
 divs=document.getElementsByClassName("one")
 for(let i=0; i<divs.length; i++){
     divs[i].onclick=function(){
-        temp=window.location.href.slice(0,-19)+"subtopic_1/generalsubtopic.html"
+
+
+        if(sessionStorage.getItem("category")=="bug")
+            n=1;
+        else n=6;
+
+        temp=window.location.href.slice(0,-19)+"subtopic_"+n+"/generalsubtopic.html"
         window.location.href=temp
       
     }
@@ -18,29 +24,45 @@ for(let i=0; i<divs.length; i++){
 divs=document.getElementsByClassName("two")
 for(let i=0; i<divs.length; i++){
     divs[i].onclick=function(){
-       temp=window.location.href.slice(0,-19)+"subtopic_2/generalsubtopic.html"
-        window.location.href=temp
-          }
+           if(sessionStorage.getItem("category")=="bug")
+                    n=2;
+                else n=7;
+
+                temp=window.location.href.slice(0,-19)+"subtopic_"+n+"/generalsubtopic.html"
+                window.location.href=temp
+    }
 }
 divs=document.getElementsByClassName("three")
 for(let i=0; i<divs.length; i++){
     divs[i].onclick=function(){
-       temp=window.location.href.slice(0,-19)+"subtopic_3/generalsubtopic.html"
+        if(sessionStorage.getItem("category")=="bug")
+            n=3;
+        else n=8;
+
+        temp=window.location.href.slice(0,-19)+"subtopic_"+n+"/generalsubtopic.html"
         window.location.href=temp
-          }
+    }
 }
 divs=document.getElementsByClassName("four")
 for(let i=0; i<divs.length; i++){
     divs[i].onclick=function(){
-       temp=window.location.href.slice(0,-19)+"subtopic_4/generalsubtopic.html"
+        if(sessionStorage.getItem("category")=="bug")
+            n=4;
+        else n=9;
+
+        temp=window.location.href.slice(0,-19)+"subtopic_"+n+"/generalsubtopic.html"
         window.location.href=temp
-          }
+    }
 }
 
 divs=document.getElementsByClassName("five")
 for(let i=0; i<divs.length; i++){
     divs[i].onclick=function(){
-       temp=window.location.href.slice(0,-19)+"subtopic_5/generalsubtopic.html"
+        if(sessionStorage.getItem("category")=="bug")
+            n=5;
+        else n=10;
+
+        temp=window.location.href.slice(0,-19)+"subtopic_"+n+"/generalsubtopic.html"
         window.location.href=temp
-          }
+    }
 }
