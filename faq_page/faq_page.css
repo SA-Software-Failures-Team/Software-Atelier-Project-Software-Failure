@@ -1,51 +1,113 @@
 /* Author: Ricetti Leonardo */
 
-body {
+body, html {
     margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: sans-serif;
-    background-color: white;
-    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .nav {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
     background-color: black;
-    color: white;
-    width: 100%;
+    padding: 10px 0px 10px 20px; 
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    z-index: 20;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav.menu-open-full {
+    width: 250px;
+}
+
+.hamburger-icon {
+    display: block; 
+    background: none;
+    border: none;
+    cursor: pointer;
     padding: 10px 0;
+    z-index: 10; 
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.3s ease; 
+}
+
+
+#nav-links {
+    display: block;
+    padding-top: 60px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out 0.1s;
+    
+    overflow: hidden; 
+}
+
+.nav.menu-open-full #nav-links {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .nav-ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.nav-li {
-    margin: 0 15px;
+    text-align: center;
 }
 
 .nav-li a {
-    color: white;
+    color: rgb(171, 169, 169);
+    padding: 20px 15px;
     text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    border-bottom: 1px solid #555;
 }
 
 .nav-li a:hover {
-    color: yellowgreen;
+    color: rgb(255, 255, 255);
+    padding: 20px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    border-bottom: 1px solid #555;
 }
 
-.header {
+.header{
+    height: 40vh;
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    filter: brightness(70%);
 }
+
 
 main {
-    margin: 20px;
+    flex: 1;
+    margin-left: 60px;
+    transition: margin-left 0.3s ease-in-out;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    align-items: flex-start; 
+    position: relative;
+    padding: 40px;
+}
+
+.main-pushed {
+    margin-left: 250px;
 }
 
 .content-text {
@@ -56,6 +118,7 @@ main {
 .content-text h1 {
     font-size: 2em;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .content-text p {
@@ -67,41 +130,59 @@ details {
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
 
 summary {
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600; 
     font-size: 1.1em;
     color: black;
+    transition: color 0.3s ease;
+    user-select: none;
+    will-change: color;
 }
 
 summary:hover {
-    color: green;
+    color: rgb(96, 96, 96);
 }
 
 details[open] summary {
-    color: yellowgreen;
+    color: rgb(159, 159, 159);
 }
 
-details p, details ul {
+details p,
+details ul {
     margin-left: 15px;
     margin-top: 10px;
     font-size: 1em;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+    transition: height 0.4s ease, opacity 0.4s ease;
+    will-change: height, opacity;
+}
+
+details[open] p,
+details[open] ul {
+    opacity: 1;
+    height: auto;
 }
 
 .backbta {
-    display: inline-block;
-    margin-top: 40px;
-    background-color: black;
-    color: white;
+    width:fit-content;
     padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
 }
 
-.backbta:hover {
-    background-color: yellowgreen;
+.feet {
+    background: rgb(123, 123, 123);
+    padding: 20px;
+    text-align: center; 
+    color: white;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;     
+    min-height: 30px;
 }

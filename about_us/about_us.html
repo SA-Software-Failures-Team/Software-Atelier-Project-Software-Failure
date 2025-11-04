@@ -5,73 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ricetti Leonardo">
     <link rel="stylesheet" href="about_us_styles.css">
+    <link rel="stylesheet" href="../topics/topics.css">
     <title>About Us</title>
 </head>
 <body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div>
     <main>
         <div class="content-text">
             <h1>Catastrophic Failure Systems</h1>
             <p><em>Project Team Overview</em></p>
 
-            <br>
-            <h2 id="leaders">Leadership</h2>
-            <p>
-                <strong>Team Leaders:</strong> Bolcau, Çitaku<br>
-                <strong>Git Leader:</strong> Piotr Wilinski<br>
-                <strong>Git Co-Leaders:</strong> Chatterjee, Brinjevec<br>
-                <strong>CSS Leaders:</strong> Bolcau, Çitaku
-            </p>
+            <div id="leaders" class="topic-box">
+                <h2>Leadership</h2>
+                <p>
+                    <strong>Team Leaders:</strong> Bolcau, Çitaku<br>
+                    <strong>Git Leader:</strong> Piotr Wilinski<br>
+                    <strong>Git Co-Leaders:</strong> Chatterjee, Brinjevec<br>
+                    <strong>CSS Leaders:</strong> Bolcau, Çitaku
+                </p>
+            </div>
 
-            <br><br>
-            <h2 id="transportation">Transportation</h2>
-            <p>
-                <strong>Leader:</strong> Skaria<br>
-                <strong>Members:</strong> Roscio, Germann Vieira, Brinjevec, Coutinho
-            </p>
-            <p>
-                Transport and aerospace are vital to global stability, enabling trade, communication, and mobility across nations.
-                As these sectors increasingly rely on complex software systems, their efficiency and safety depend on
-                technological precision and reliability. Ensuring the resilience and security of these systems is therefore
-                essential to protect both economic continuity and human safety worldwide.
-            </p>
+            <div id="transportation" class="topic-box">
+                <h2>Transportation</h2>
+                <p>
+                    <strong>Leader:</strong> Skaria<br>
+                    <strong>Members:</strong> Roscio, Germann Vieira, Brinjevec, Coutinho
+                </p>
+                <p>
+                    Transport and aerospace are vital to global stability, enabling trade, communication, and mobility across nations.
+                    As these sectors increasingly rely on complex software systems, their efficiency and safety depend on
+                    technological precision and reliability. Ensuring the resilience and security of these systems is therefore
+                    essential to protect both economic continuity and human safety worldwide.
+                </p>
+            </div>
 
-            <br><br>
-            <h2 id="energy">Energy / Infrastructure</h2>
-            <p>
-                <strong>Leader:</strong> Rissone<br>
-                <strong>Members:</strong> Santagostino, Delipetrev, Cocchiara, Shirkani, Chatterjee
-            </p>
-            <p>
-                Energy and infrastructure systems are the backbone of modern society, powering everything from grids to water plants.
-                A single software failure — be it a bug or cyberattack — can trigger blackouts, disrupt essential services,
-                and threaten national security. Protecting this digital infrastructure is vital for societal survival.
-            </p>
+            <div id="energy" class="topic-box">
+                <h2>Energy / Infrastructure</h2>
+                <p>
+                    <strong>Leader:</strong> Rissone<br>
+                    <strong>Members:</strong> Santagostino, Delipetrev, Cocchiara, Shirkani, Chatterjee
+                </p>
+                <p>
+                    Energy and infrastructure systems are the backbone of modern society, powering everything from grids to water plants.
+                    A single software failure — be it a bug or cyberattack — can trigger blackouts, disrupt essential services,
+                    and threaten national security. Protecting this digital infrastructure is vital for societal survival.
+                </p>
+            </div>
 
-            <br><br>
-            <h2 id="business">Business-Critical Systems</h2>
-            <p>
-                <strong>Leader:</strong> Scapellato<br>
-                <strong>Members:</strong> Bertolini, D’arrigo, Calvello, Bianchi, Poopalan
-            </p>
-            <p>
-                Business-critical systems support essential organizational functions like finance, logistics, and customer service.
-                Their failure can cause major financial loss or reputational harm. Ensuring reliability and recovery capability
-                is crucial for business continuity.
-            </p>
+            <div id="business" class="topic-box">
+                <h2>Business-Critical Systems</h2>
+                <p>
+                    <strong>Leader:</strong> Scapellato<br>
+                    <strong>Members:</strong> Bertolini, D’arrigo, Calvello, Bianchi, Poopalan
+                </p>
+                <p>
+                    Business-critical systems support essential organizational functions like finance, logistics, and customer service.
+                    Their failure can cause major financial loss or reputational harm. Ensuring reliability and recovery capability
+                    is crucial for business continuity.
+                </p>
+            </div>
 
-            <br><br>
-            <h2 id="healthcare">Healthcare</h2>
-            <p>
-                <strong>Leader:</strong> Ricetti<br>
-                <strong>Members:</strong> Albonico, Spanò, Lazarevic, Wilinski
-            </p>
-            <p>
-                Healthcare technology is central to patient safety, from diagnostics to life-support systems.
-                Software bugs or vulnerabilities are direct threats to human lives — a single error can result in
-                misdiagnosis or treatment failure. Reliability here is a matter of life and death.
-            </p>
+            <div id="healthcare" class="topic-box">
+                <h2>Healthcare</h2>
+                <p>
+                    <strong>Leader:</strong> Ricetti<br>
+                    <strong>Members:</strong> Albonico, Spanò, Lazarevic, Wilinski
+                </p>
+                <p>
+                    Healthcare technology is central to patient safety, from diagnostics to life-support systems.
+                    Software bugs or vulnerabilities are direct threats to human lives — a single error can result in
+                    misdiagnosis or treatment failure. Reliability here is a matter of life and death.
+                </p>
+            </div>
+            <div class="bta backbta">← Back to Topics</div>
         </div>
     </main>
-
+</div>
+    <script src="/../topics/subtopic.js"></script>
 </body>
 </html>
