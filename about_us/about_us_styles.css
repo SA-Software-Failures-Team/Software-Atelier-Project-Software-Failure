@@ -3,90 +3,154 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: white;
-    color: black;
+    background-color: #ffffff; 
+    color: #121212; 
 }
 
-.header {
+.nav {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    background-color: black;
+    padding: 10px 0px 10px 20px; 
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    z-index: 20;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav.menu-open-full {
+    width: 250px;
+}
+
+.hamburger-icon {
+    display: block; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0;
+    z-index: 10; 
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.3s ease; 
+}
+
+
+#nav-links {
+    display: block;
+    padding-top: 60px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out 0.1s;
+    
+    overflow: hidden; 
+}
+
+.nav.menu-open-full #nav-links {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nav-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-li a {
+    color: rgb(171, 169, 169);
+    padding: 20px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    border-bottom: 1px solid #555;
+}
+
+.nav-li a:hover {
+    color: rgb(255, 255, 255);
+    padding: 20px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    border-bottom: 1px solid #555;
+}
+
+.header{
+    height: 40vh;
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    filter: brightness(70%);
 }
 
 main {
+    margin-left: 60px;
+    transition: margin-left 0.3s ease-in-out;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin: 20px;
+    position: relative;
+    padding: 40px;
+}
+
+.main-pushed {
+    margin-left: 250px;
 }
 
 .content-text {
-    width: 70%;
+    width: 100%;
     text-align: justify;
     padding: 20px;
+}
+
+.topic-box {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    border-left: 8px solid transparent;
+}
+
+#transportation.topic-box {
+    border-left-color: rgba(241, 103, 103);
+}
+
+#energy.topic-box {
+    border-left-color: rgba(255, 217, 61);
+}
+
+#business.topic-box {
+    border-left-color: rgba(107, 203, 118);
+}
+
+#healthcare.topic-box {
+    border-left-color: rgba(77, 150, 255);
 }
 
 .content-text h1 {
     font-size: 2em;
     font-weight: bold;
+    color: #000000;
+}
+
+.content-text h2 {
+    margin-top: 0;
+    color: #000000;
 }
 
 .content-text p {
     font-size: 1em;
     line-height: 1.6em;
+    color: #333333;
 }
 
-.content-sum {
-    width: 25%;
-    padding: 20px;
-    background-color: rgba(240, 240, 240, 0.7);
-    border-left: 2px solid gray;
-}
-
-.ul-sum {
-    list-style: none;
-    padding: 0;
-}
-
-.li-sum {
-    margin-bottom: 10px;
-}
-
-.a-sum {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.a-sum:hover {
-    color: green;
-}
-
-.nav {
-    background-color: black;
-    color: white;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.nav-ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-li {
-    margin: 0 15px;
-}
-
-.nav-li a {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-li a:hover {
-    color: yellowgreen;
+.backbta {
+    width:fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
