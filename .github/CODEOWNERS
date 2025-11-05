@@ -1,4 +1,5 @@
 # This file maps repository paths to their designated reviewers (Code Owners).
+# Author: Piotr Wilinski
 # Rules are checked from top to bottom. The LAST matching rule for a given
 # file will be used.
 #
@@ -19,7 +20,7 @@ index.html @SA-Software-Failures-Team/git_team @Lanae99 @Fullmonkeyy
 # Rule 3: About Us Team + Git Leader
 # This covers all files in the about_us folder EXCEPT for the
 # CSS file, which is defined in a more specific rule below.
-/about_us/ @SA-Software-Failures-Team/git_team @Lanae99
+/about_us/ @SA-Software-Failures-Team/git_team @Lanae99 @Fullmonkeyy
 
 # Rule 4: Documentation Team + Git Leader
 /docs/ @SA-Software-Failures-Team/git_team @SA-Software-Failures-Team/git_team
