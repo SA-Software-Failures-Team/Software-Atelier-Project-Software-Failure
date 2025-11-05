@@ -313,5 +313,6 @@ transition: background-image 1s ease-in-out; /* Smooth fade */
     position: relative;
     top:100%;
     transform: translateY(-100%);
+    border-radius: 5px; 
 
 }

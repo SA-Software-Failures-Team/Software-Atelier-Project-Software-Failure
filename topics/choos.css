@@ -41,7 +41,7 @@ img{
     border-radius: 20px;
     margin-top:20vh;
     transition: transform 0.2s;
-
+    color: white;
 }
 .buttt:hover{
 
