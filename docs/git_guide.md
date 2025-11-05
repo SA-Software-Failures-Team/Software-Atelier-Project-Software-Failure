@@ -1,4 +1,5 @@
 # Software Atelier Project Software Failure - 2025: Git Workflow & Project Guide
+Author: Piotr Wilinski
 
 This document is a manual for how we use Git and manage our project.
 

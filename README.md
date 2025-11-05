@@ -1,4 +1,5 @@
 # Software Atelier Project Software Failure
+Author: Piotr Wilinski
 
 Welcome to the project repository for the Software Atelier Project: Software Failure. Our topic is a website documenting catastrophic software failures and vulnerabilities.
 
@@ -20,7 +21,7 @@ If you have questions, please contact the correct leader:
 * **Project Leader:** `Emira Çitaku	/ @emiraqitaku3`, `Leonardo Gabriel Bolcau	/ @Lanae99`
 * **Git Leader:** `Piotr Wilinski / @piotrwilinski`
 * **Git Co-Leader:** `Samuele Bertolini / @SamueleBertolini04`
-* **CSS Leaders:** `Maks Brinjevec / @Maks0417`, `Bastav Chatterjee / @BastavChatterjee`
+* **CSS Leaders:** `Davide Scapellato / @FullMonkey`, `Maks Brinjevec / @Maks0417`, `Bastav Chatterjee / @BastavChatterjee`
 * **Topic 1 Leader:** `Sanjay Skaria / @skariausi`
 * **Topic 2 Leader:** `Kilian	Rissone / @BigbyWere`
 * **Topic 3 Leader:** `Davide Scapellato / @FullMonkey`
