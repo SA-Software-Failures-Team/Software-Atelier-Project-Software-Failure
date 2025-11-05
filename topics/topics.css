@@ -188,35 +188,60 @@ transition: background-image 1s ease-in-out; /* Smooth fade */
     padding:0;
     margin:0;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
    
 }
-
-.mainbugvul>.bug{
+.mmain{
+    display:flex;
+}
+.mmain>.bug{
     background-color: greenyellow;
     color: green;
 }
 
-.mainbugvul>.vul{
+.mmain>.vul{
     background-color: rgb(255, 82, 82);
     color: rgb(108, 0, 0);
 }
 
-.mainbugvul> .bug, .mainbugvul> .vul{
-    width:50%;
-    height:100%;
+img{
+    width:30% 
+}
+
+.mmain> .bug, .mmain> .vul{
+    width:fit-content;
+  
     filter: brightness(30%);
     font:bold 40pt sans-serif;
     border:none;
     transition: filter 0.5s;
+    
 
 }
-.mainbugvul> .bug:hover, .mainbugvul> .vul:hover{
+.mmain> .bug:hover, .mmain> .vul:hover{
 
     filter: brightness(100%);
     cursor: pointer;
+
+}
+
+.buttt{
+
+    align-items: center;
+    width: 20vw !important;
+
+
+    ]
+
+}
+
+.titletopbv{
+
+    padding:30px;
+    border-radius: 40px;
+    background: rgb(255, 255, 255,0.5);
+    backdrop-filter: blur(80px); 
 
 }
 
