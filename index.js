@@ -1,22 +1,48 @@
 
 
 const images = [
-    'url("index_img/bgindex.jpg")',
-    'url("index_img/bgindex2.jpg")',
-    'url("index_img/bgindex3.jpg")',
-    'url("index_img/bgindex4.jpg")'
+  'index_img/bgindex.jpg',
+  'index_img/bgindex2.jpg',
+  'index_img/bgindex3.jpg',
+  'index_img/bgindex4.jpg'
 ];
 
 let index = 0;
-let body = document.getElementById('super');
+let showingFirst = true;
+
+const bg1 = document.getElementById('background1');
+const bg2 = document.getElementById('background2');
+
+// Preload all images to prevent white flash
+images.forEach(src => {
+  const img = new Image();
+  img.src = src;
+});
+
+// Initialize first background
+bg1.style.backgroundImage = `url(${images[0]})`;
+bg1.style.opacity = 1;
 
 function changeBackground() {
-    body.style.backgroundImage = images[index];
-    index = (index + 1) % images.length; // Loop back
+  index = (index + 1) % images.length;
+  const nextImage = images[index];
+
+  if (showingFirst) {
+    bg2.style.backgroundImage = `url(${nextImage})`;
+    bg2.style.opacity = 1;
+    bg1.style.opacity = 0;
+  } else {
+    bg1.style.backgroundImage = `url(${nextImage})`;
+    bg1.style.opacity = 1;
+    bg2.style.opacity = 0;
+  }
+
+  showingFirst = !showingFirst;
 }
 
-setInterval(changeBackground, 5000); // Change every 5 seconds
-changeBackground();
+// Change every 5 seconds
+setInterval(changeBackground, 5000);
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
