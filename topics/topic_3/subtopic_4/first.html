@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+     <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>What Happened</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_4/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">Simulation of the Error</a></li>
+                    <li class="nav-li"><a href="third.html">The Impact</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <main>
+        <!-- 
+        Markup of the text content:
+        Every paragraph is separate
+        and have an unique id refered
+        for the link in the summary 
+        -->
+        <div class="content-text">
+            <h1>What Happened</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                   In 1983, the Vancouver Stock Exchange (VSE) in Canada implemented a computerized market index designed to measure and report the overall performance of all stocks traded on the exchange. 
+                   The index was initialized at 1000.000 points and was automatically recalculated following each transaction, a process that occurred thousands of times per day. 
+                   This system aimed to provide a precise, real-time reflection of market movements and enhance transparency for investors.
+                </p>
+                <div class="inside">
+                <p id="second">
+                    When the VSE introduced its automated index in 1983, the goal was to have a continuously updated number that reflected every trade on the exchange. <br>
+                    Each time a stock was bought or sold, the index was recalculated based on the prices and weights of all the listed companies.
+                    However, instead of rounding the result of each recalculation to a reasonable level of precision or keeping the full number internally, the software truncated it after three decimal places.<br>
+                    At first, this loss of 0.000456 points seems insignificant, less than a thousandth of a point. But because the system recalculated the index hundreds or even thousands of times per day, each small error carried over to the next computation. Over time, those tiny truncations accumulated, producing a measurable downward drift in the index value.
+                </p>
+                    <img src="img/error-example.png" width="220px">
+                </div>
+                <p id="third">
+                    To correct the problem, the developers first eliminated the truncation process that occurred after each calculation, allowing the system to maintain full numerical precision throughout all computational operations. Secondly, the program was modified to implement proper mathematical rounding instead of direct truncation, ensuring that values were approximated to the nearest number rather than consistently reduced. This change effectively removed the downward bias that had caused the index to drift and allowed minor rounding errors to balance out over time.<br>
+                    Another important improvement involved increasing the internal precision of the system, enabling it to store and process a greater number of decimal places, typically six or more. As a result, rounding was performed only during the display phase, not during the intermediate calculations, thereby preserving the accuracy of the index throughout the trading day. Once the software had been corrected, the index was recalibrated to reflect its true market value, which was approximately 1098 points, as opposed to the 520 points previously reported. This recalibration was essential to realign the system with actual market conditions and restore investor confidence.
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="img/Market-chart.jpeg">
+
+        </div>
+        <!-- 
+        Markup of the content summary 
+        Use the id reference in the href to 
+        point the correct paragraph
+        -->
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">Stock Exchange</a></li>
+                <div id="one" class="sum-on-click" style="display: none;"><p>A stock exchange, securities exchange, or bourse is an exchange where stockbrokers and traders can buy and sell securities, such as shares of stock, bonds and other financial instruments.</p></div>
+                <li class="li-sum"><a id="n2"  href="#second" class="a-sum ">Vancouver Stock Exchange</a></li>
+                <div  id="two"  class="sum-on-click"  style="display: none;"><p>The Vancouver Stock Exchange (VSE) was a stock exchange based in Vancouver, British Columbia. It was incorporated 1906. On November 29, 1999, the VSE was merged into the Canadian Venture Exchange (CDNX).</p></div>
+            </ul>
+        </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script><!--Remove this one once you copy paste the template-->
+
+
+</body>
+</html>
