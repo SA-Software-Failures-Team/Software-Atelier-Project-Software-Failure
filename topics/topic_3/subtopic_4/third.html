@@ -1,0 +1,78 @@
+<!-- 
+ This is an example of a subtopic 1 page
+ Here it's defined all the class needed for create the subtopic page
+ USE ONLY FOR REFERENCE DON'T MODIFY 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simone Bianchi">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Impact of the Vancouver Stock Exchange Software Error </title>
+</head>
+<body>
+    <!--
+    Nav bar:
+    only adjust the name of the subtopic
+    -->
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_4/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">Simulation of the Error</a></li>
+                    <li class="nav-li"><a href="third.html">The Impact</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="img/Market-chart.jpeg" alt="background" class="header">
+    <main>
+        <div class="lateral-image">
+            <img src="img/Stock-Market-Bars.jpg" alt="">
+        </div>
+        <div class="content-text center">
+            <h1>Impact of the Vancouver Stock Exchange Software Error </h1>
+            <br>
+            <p id="first">
+                The software error that affected the Vancouver Stock Exchange (VSE) between 1983 and 1985 had significant financial, operational, and reputational consequences, and it continues to serve as an important case study in both software engineering and financial system design. 
+                The issue, which stemmed from repeated truncation of numerical values in the calculation of the exchange’s composite index, did not merely represent a minor technical flaw; rather, it demonstrated how small computational inaccuracies can lead to large-scale systemic distortions when propagated over time.
+            </p>
+            <br><br>
+            <p id="second">
+                From a financial perspective, the error caused the published value of the exchange’s market index to become entirely unreliable. Over a period of approximately twenty-two months, the index—which had been initialized at 1000.000 points—gradually declined to about 520 points.
+                This apparent collapse did not reflect actual market conditions: in reality, the correct value of the index should have been around 1098 points. The truncation error created a consistent downward bias that falsely indicated a severe market decline, even though the underlying stocks were performing normally. 
+                Although no direct monetary loss was recorded as a result of this discrepancy, the misleading data undermined investor confidence, affected market perception, and likely influenced trading behavior during the period in question.
+            </p>
+            <br><br>
+            <p id="third">
+                From a technical standpoint, the incident exposed critical weaknesses in the exchange’s computational design and software validation procedures. 
+                The system truncated numerical results after every recalculation to three decimal places, rather than performing proper rounding or retaining higher precision internally. This design flaw introduced a small systematic loss at every iteration, which compounded over thousands of recalculations per day. The problem went undetected during initial testing, largely because the error was microscopic in the short term and because no long-term simulations were performed. 
+                The event underscored the importance of rigorous numerical analysis, precision management, and long-duration testing in software systems where continuous iterative calculations are required.
+            </p>
+            <br><br>
+            <p id="fourth">
+                The operational and reputational impact of the failure was also considerable. Once the problem was identified, the Vancouver Stock Exchange was compelled to publicly acknowledge the inaccuracy of its index and to recalibrate it to its correct value. 
+                This correction not only exposed the limitations of the exchange’s technical infrastructure but also raised broader concerns regarding the reliability of computerized financial systems, which were still in relatively early stages of adoption during the 1980s. 
+                The incident temporarily damaged the credibility of the VSE and highlighted the risks associated with insufficient oversight in software-based financial operations.            </p>
+            </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+
+</body>
+</html>
