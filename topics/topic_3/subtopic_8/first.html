@@ -1,0 +1,75 @@
+<!-- 
+ This is an example of a subtopic 1 page
+ Here it's defined all the class needed for create the subtopic page
+ USE ONLY FOR REFERENCE DON'T MODIFY 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simone Bianchi">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>What Happened</title>
+</head>
+<body>
+    <!--
+    Nav bar:
+    only adjust the name of the subtopic
+    -->
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_8/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">The LockBit 3.0 Ransomware</a></li>
+                    <li class="nav-li"><a href="third.html">Root Cause and Technical Analysis</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned and Broader Implications</a></li>
+                    <li class="nav-li"><a href="Ex-Page5.html">Ex page 5</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="img/nhs-hero.jpg" alt="background" class="header">
+    <main>
+        <div class="lateral-image">
+            <img src="img/screen.jpeg" alt="">
+        </div>
+        <div class="content-text center">
+            <h1>What Happened</h1>
+            <br>
+            <p id="first">
+                In August 2022, the United Kingdom’s National Health Service (NHS) was hit by a major ransomware incident that disrupted healthcare services across the country. 
+                The attack did not directly target the NHS itself but rather a key software supplier called Advanced Computer Software Group, which provides essential digital systems to NHS trusts, including patient records, referrals, and emergency care platforms.
+            </p>
+            <br><br>
+            <p id="second">
+                Hackers gained access through a customer account on Advanced’s systems that lacked multifactor authentication (MFA), allowing them to infiltrate the network and deploy LockBit 3.0 ransomware. 
+                This sophisticated malware both encrypted files and stole data, leading to widespread system outages. 
+                Hospitals and clinics using Advanced’s products, particularly mental health and community care services, suddenly lost access to vital patient information. 
+                Many NHS organisations were forced to revert to manual, paper-based processes to continue treating patients.
+            </p>
+            <br><br>
+            <p id="third">
+                The impact was significant: patient referrals were delayed, ambulance dispatch systems were affected, and electronic health records became temporarily unavailable. 
+                Investigations later revealed that the personal data of over 80,000 individuals was at risk due to inadequate cybersecurity measures at Advanced.
+            </p>
+            
+            </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+
+</body>
+</html>

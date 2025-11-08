@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+      <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Root Cause and Technical Analysis</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_8/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">The LockBit 3.0 Ransomware</a></li>
+                    <li class="nav-li"><a href="third.html">Root Cause and Technical Analysis</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned and Broader Implications</a></li>
+                    <li class="nav-li"><a href="Ex-Page5.html">Ex page 5</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Root Cause and Technical Analysis</h1>
+            <p>
+                The ransomware attack that affected the United Kingdom’s National Health Service (NHS) in August 2022 was traced to a cyber incident involving one of its key suppliers, Advanced Computer Software Group Ltd. The event disrupted critical healthcare operations across multiple NHS trusts, including urgent care, mental health, and ambulance services. 
+                A detailed investigation later determined that the root cause of the breach was a combination of inadequate technical safeguards, insufficient organisational controls, and the absence of fundamental cybersecurity practices within the supplier’s systems.
+            </p>
+            <br>
+            <p>
+               The initial compromise occurred through a customer account that did not have multifactor authentication (MFA) enabled. This oversight allowed the attackers to obtain unauthorised access to Advanced’s network using stolen or weak credentials. 
+               According to the Information Commissioner’s Office (ICO), this failure constituted a critical vulnerability, as it permitted intruders to bypass basic access controls and establish a foothold in the organisation’s infrastructure. 
+               Further examination revealed that Advanced had not implemented adequate vulnerability management or patching procedures, leaving several systems exposed to exploitation. The company’s cybersecurity posture did not reflect the sensitivity of the data it processed, particularly in relation to health and social care information, which is considered “special category data” under UK data protection law.
+            </p>
+            <br>
+            <p>
+                Once inside the network, the attackers deployed ransomware believed to be associated with the LockBit 3.0 strain. This variant is known for its high level of automation and its “triple extortion” model, in which data is both encrypted and exfiltrated, with additional threats of public disclosure. 
+                The attackers were able to move laterally across the vendor’s infrastructure, compromising systems used by NHS clients such as Adastra (for NHS 111 and urgent care), Carenotes (for mental health records), and other critical platforms. 
+                As a result, a significant number of NHS organisations were forced to revert to manual processes, leading to delays in patient referrals, emergency prescriptions, and overall care delivery.
+            </p>
+            <p>
+                Technical forensics indicated that personal information belonging to approximately 80,000 individuals had been accessed and potentially exfiltrated. The compromised data included contact details, healthcare information, and other sensitive identifiers. 
+                The encryption of operational systems further disrupted NHS services for several weeks, demonstrating the cascading effect of a single supplier breach across the wider healthcare ecosystem. 
+                The ICO later concluded that Advanced had failed to implement “appropriate technical and organisational measures” to ensure data security, highlighting weaknesses such as limited MFA coverage, insufficient network segmentation, and a lack of rigorous monitoring mechanisms to detect anomalous behaviour.
+            </p>
+            
+            <br>
+            <p>
+                From a technical standpoint, the attack followed a classic ransomware lifecycle: initial access via compromised credentials, privilege escalation, lateral movement, data exfiltration, and final encryption. 
+                The absence of multifactor authentication, combined with unpatched vulnerabilities and weak segmentation, allowed the attackers to progress through each phase with minimal resistance. 
+                Moreover, the interconnectivity between Advanced’s systems and multiple NHS organisations amplified the operational impact, transforming what began as a supplier-side intrusion into a widespread disruption of critical public services.
+            </p>
+            
+            <br>
+            <p>
+                In conclusion, the 2022 NHS ransomware attack underscores the importance of robust cybersecurity practices within third-party suppliers, particularly those entrusted with sensitive healthcare data. 
+                The root causes were not found in sophisticated zero-day exploits but rather in preventable security lapses, chiefly the absence of multifactor authentication, insufficient patch management, and inadequate network segregation. 
+                Technically, the event exemplifies how weaknesses in basic cyber hygiene and supply-chain oversight can escalate into a national crisis, compromising not only data integrity but also patient safety and public trust in essential healthcare systems.
+            </p>
+            
+            <br>
+        </div>
+            <div class="lateral-image">
+                <img src="img/screen.jpeg" alt="">
+            </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+
+</body>
+</html>
