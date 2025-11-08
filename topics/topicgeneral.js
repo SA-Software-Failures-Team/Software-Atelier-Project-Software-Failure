@@ -1,18 +1,23 @@
-divs=document.getElementsByClassName("exit")
-for(let i=0; i<divs.length; i++){
-     divs[i].onclick=function(){
+divs = document.getElementsByClassName("exit");
+for (let i = 0; i < divs.length; i++) {
+    divs[i].onclick = function() {
 
-        if(sessionStorage.getItem("category")=="bug"){
+        // get current path and remove the last file
+        let parts = window.location.pathname.split("/");
+        parts.pop(); // remove current page (e.g. generalsubtopic.html)
+        parts.pop(); // remove current page (e.g. generalsubtopic.html)
+        let base = parts.join("/");
 
-            temp=window.location.href.slice(0,-31)+"topicgeneral_b.html"
-            window.location.href=temp
+        if (sessionStorage.getItem("category") == "bug") {
+            temp = base + "/topicgeneral_b.html";
+            window.location.href = temp;
+        } else {
+            temp = base + "/topicgeneral_v.html";
+            window.location.href = temp;
         }
-        else{
-             temp=window.location.href.slice(0,-31)+"topicgeneral_v.html"
-            window.location.href=temp
-        }
-    }
+    };
 }
+
 
 
 divs=document.getElementsByClassName("one")
