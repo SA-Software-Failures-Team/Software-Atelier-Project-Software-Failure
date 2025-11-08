@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Root Cause & Technical Analysis – Baxter Colleague Infusion Pump Recall (2010)</title>
+    <style>
+  .i {
+    width: 300px;               /* larghezza fissa */
+  }
+  .w{
+    height: 400px;
+  }
+</style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Updated Navbar -->
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_5/generalsubtopic.html">Introduction</a></li>
+                    <li class="nav-li"><a href="../subtopic_5/first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="../subtopic_5/second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="../subtopic_5/third.html">Impact & Scope</a></li>
+                    <li class="nav-li"><a href="../subtopic_5/fourth.html">Lessons Learned & Broader Implications</a></li>
+                    <li class="nav-li"><a href="../subtopic_5/fifth.html">Mitigation for the Future</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-text">
+            <h1>Root Cause & Technical Analysis – Baxter Colleague Infusion Pump Recall (2010)</h1>
+            <br>
+            <div id="main">
+
+                <p id="first">
+                    Technical investigations revealed that the primary cause of the Baxter Colleague infusion pump malfunctions was a **firmware timing error**. 
+                    This flaw disrupted synchronization between the pump’s motor control and user interface, occasionally preventing the device from recognizing the “stop” command issued by clinicians. 
+                    Display lag further misled operators by showing the pump as stopped while it continued infusing medication.
+                </p>
+
+                <div class="inside">
+                    <p id="second">
+                        The pump’s outdated hardware and limited memory exacerbated these problems, making incremental software fixes prone to introducing new errors. 
+                        Additionally, the system lacked adequate **real-time monitoring and fail-safe mechanisms**, which could have prevented over-infusion in the event of command or timing errors. 
+                        These combined deficiencies demonstrated the critical importance of rigorous firmware testing and validation in life-critical medical devices.
+                    </p>
+                    <img src="img/baxter_firmware.jpg" class="i">
+                </div>
+
+                <p id="third">
+                    Overall, the root causes were a combination of design limitations, firmware bugs, and insufficient safety redundancies. 
+                    The technical analysis highlighted that even small timing and synchronization errors in embedded medical device software can have serious consequences for patient safety, reinforcing the need for strict quality control, robust fail-safes, and post-market monitoring.
+                </p>
+            </div>
+
+            <br>
+            <img class="lowerimage w" src="img/baxter_pump3.jpg" alt="Technical analysis visualization of infusion pump">
+        </div>
+
+        <!-- Summary section -->
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">Firmware Timing Error</a></li>
+                <div id="one" class="sum-on-click" style="display: none;">
+                    <p>The pump’s firmware failed to synchronize motor control and UI commands, preventing timely “stop” execution.</p>
+                </div>
+
+                <li class="li-sum"><a id="n2" href="#second" class="a-sum">Hardware Limitations & Fail-Safes</a></li>
+                <div id="two" class="sum-on-click" style="display: none;">
+                    <p>Outdated hardware and lack of real-time monitoring increased the risk of over-infusion and software errors.</p>
+                </div>
+
+                <li class="li-sum"><a id="n3" href="#third" class="a-sum">Design & Safety Analysis</a></li>
+                <div id="three" class="sum-on-click" style="display: none;">
+                    <p>Combined design flaws and software bugs highlighted the need for robust testing and redundancy in medical devices.</p>
+                </div>
+            </ul>
+        </div>
+    </main>
+
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
