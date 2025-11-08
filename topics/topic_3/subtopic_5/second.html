@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+     <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Root Cause</title>
+</head>
+<style>
+    .ul-sum div{
+        text-align: center;
+    }
+</style>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_5/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened?</a></li>
+                    <li class="nav-li"><a href="second.html">Main & Technical cause</a></li>
+                    <li class="nav-li"><a href="third.html">Global Impact</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <main>
+        <!-- 
+        Markup of the text content:
+        Every paragraph is separate
+        and have an unique id refered
+        for the link in the summary 
+        -->
+        <div class="content-text">
+            <h1>Lorem</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    The catastrophic $440 million loss incurred by Knight Capital Group was not the result of a single, 
+                    isolated malfunction but rather a "perfect storm" of latent technical vulnerabilities and compounding procedural failures. 
+                    The event's primary technical catalyst was the flawed execution of a software deployment, 
+                    which inadvertently resurrected a dormant and dangerous piece of "dead code" on one of its live production servers. 
+                    Knight was updating its core trading platform, the <strong>Smart Market Access Routing System (SMARS)</strong>, 
+                    to accommodate the <strong>NYSE's</strong> new <strong>Retail Liquidity Program (RLP)</strong>. This deployment was a manual process, 
+                    and during the rollout, a technician failed to copy the new software to one of the eight servers in the production cluster. 
+                    This critical oversight created a hazardous divergence: seven servers were running the intended RLP code, 
+                    while a single, overlooked server remained active with its outdated, pre-RLP codebase. 
+                    The fatal mechanism was centered on a repurposed software flag. In the new RLP software, this flag was intended to activate the new retail trading logic. 
+                    However, in the old codebase lingering on the failed server, this exact same flag was still mapped to a long-obsolete test algorithm from 2003 known as <strong>"Power Peg"</strong>.
+                </p>
+                <div class="inside">
+                <p id="second">
+                    This dangerous piece of code, which had never been removed despite being unused for nearly a decade, was effectively a "time bomb" waiting for a trigger. 
+                    As the market opened, RLP-designated orders began to arrive, setting the repurposed flag to "true." 
+                    This correctly activated the RLP functionality on the seven updated servers, but on the one non-updated server, it reanimated the "Power Peg" algorithm, 
+                    directing a stream of live parent orders to this defunct and destructive test function. The situation became catastrophic due to a separate, latent bug. 
+                    A software refactor years earlier had disconnected the "Power Peg" algorithm from its "cumulative quantity" tracker—the very function designed to tell 
+                    the algorithm when a parent order was complete and to stop sending new child orders. 
+                    Because this critical "stop" mechanism was broken, the newly awakened algorithm entered an endless, unthrottled loop. 
+                    For each parent order it received, it continuously fired thousands of child orders into the market, as it no longer had a way to recognize that the order had been filled. 
+                    This chain reaction, initiated by a flawed manual deployment and compounded by poor code hygiene and the risky repurposing of a control flag, allowed a broken, 
+                    decade-old test algorithm to run unchecked on a live system, executing millions of errant trades in just 45 minutes.
+                </p>
+                    <img src="../subtopic_5/img/background-main-sub.jpeg">
+                </div>
+            </div>
+            <br>
+            <img class="lowerimage" src="../subtopic_5/img/page2.jpg">
+
+        </div>
+        <!-- 
+        Markup of the content summary 
+        Use the id reference in the href to 
+        point the correct paragraph
+        -->
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">SMARS </a></li>
+                <div id="one" class="sum-on-click" style="display: none;"><p>SMARS was Knight Capital's automated system for intelligently breaking large stock orders into many smaller pieces, which it then sent to different exchanges to get the best price.</p></div>
+                <li class="li-sum"><a id="n2"  href="#second" class="a-sum ">RLP</a></li>
+                <div  id="two"  class="sum-on-click"  style="display: none;"><p>The RLP is a separate NYSE pool offering retail investors slightly better, non-public prices, hidden from high-speed traders.</p></div>
+                <li class="li-sum"><a  id="n3" href="#third" class="a-sum ">NYSE</a></li>
+                <div  id="three" class="sum-on-click" style="display: none;"><p>The NYSE (New York Stock Exchange) is a major public marketplace in New York City where company stocks are bought and sold.</p></div>
+                <li class="li-sum"><a  id="n4" href="#fourth" class="a-sum ">Power Peg</a></li>
+                <div id="four"  class="sum-on-click " style="display: none;"><p>"Power Peg" was an obsolete test algorithm left in Knight's live system, designed to intentionally "buy high and sell low" for testing purposes.</p></div>
+                <li class="li-sum" style="display: none;"><a id="n5"  href="#fifth" class="a-sum">Display</a></li>
+                <div id="five"  class="sum-on-click " style="display: none;"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, tempora iure quis consequuntur odit suscipit sequi corporis at numquam ex est non possimus sint tempore quidem molestiae ipsam repellendus aperiam!</p></div>
+            </ul>
+        </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+      <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css"> <!--Remove this one once you copy paste the template-->
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_5/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened?</a></li>
+                    <li class="nav-li"><a href="second.html">Main & Technical cause</a></li>
+                    <li class="nav-li"><a href="third.html">Global Impact</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Lorem Ipsum</h1>
+            <p>The Knight Capital disaster served as a brutal and definitive case study, exposing a deep chasm between the financial industry's high-speed technological ambitions and its dangerously inadequate safety protocols. 
+                The lessons learned were not subtle, forcing a fundamental reckoning with the operational and technical risks of automated trading.
+                Technically, the event was a textbook example of failed software lifecycle management. 
+                The initial, error-prone manual deployment, which left one server in a divergent state, highlighted the absolute necessity of automated and verifiable deployment processes. 
+                More critically, the incident exposed the extreme danger of "dead code." The "Power Peg" algorithm wasn't just harmless, obsolete code; it was a latent vulnerability. 
+                Its catastrophic reanimation by a repurposed software flag demonstrated a complete breakdown in change management and a failure to regression-test how new code would interact with the old, even a deprecated path.
+                Operationally, the disaster revealed a shocking absence of fundamental guardrails. Knight's system was, in effect, a high-powered engine with no brakes or steering wheel. 
+                It lacked basic "kill switches" for manual intervention, but more importantly, it had no automated, high-level financial controls or pre-trade limits to recognize that its actions were irrational and financially suicidal. 
+                The speed of the trading algorithm had fatally outpaced the firm's ability to monitor or contain it, proving that risk management systems had to be as sophisticated as the trading systems themselves.
+                The broadest implication was the stark proof that a single firm's internal technical failure could pose a genuine systemic threat to the entire market. 
+                This vulnerability catalyzed a new regulatory era. The SEC's enforcement of its Market Access Rule, stemming from this event, formally shifted accountability to firms for their algorithmic errors. 
+                This forced a cultural pivot across the industry, compelling a mandatory and expensive investment in automated testing, real-time risk dashboards, and robust containment procedures as a non-negotiable cost of doing business.</p>     
+            <br>
+        </div>
+            <div class="lateral-image">
+                <img src="../subtopic_5/img/background-main-sub.jpeg" alt="">
+            </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script><!--Remove this one once you copy paste the template-->
+
+</body>
+</html>
