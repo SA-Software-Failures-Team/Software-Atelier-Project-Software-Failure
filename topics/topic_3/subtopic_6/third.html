@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vittoria D'Arrigo">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Service Impact & Data Loss</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_6/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What happened</a></li>
+                    <li class="nav-li"><a href="second.html">Technical & Safety Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Service Impact & Data Loss</a></li>
+                    <li class="nav-li"><a href="fourth.html">Future Prevention Strategies</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main >
+        <img class="lateral-image l1" src="img/photo8.jpg" alt="">
+        <div class="columnarticle">
+            <h2>Service Impact & Data Loss</h2>
+            <p>The fire in OVHcloud created one of the worst incidents of data loss ever to happen in the European cloud: Although the outage itself affected thousands of services hosted in Strasbourg, the most serious consequence was the permanent destruction of customer data stored on servers inside SBG2 and parts of SBG1. As actually stated in the official incident report, OVHcloud confirmed that “some data stored exclusively in the destroyed rooms could not be recovered”, which means any customer relying on a single local copy of their workload lost it irreversibly.
+            </p>
+            <br>
+            <p>The scale of the impact extended beyond service interruption: more than 65,000 customers were affected, including private companies, public organizations, and developers who hosted production systems, backups, storage archives, or virtual machines at the site. Many clients only found out after the fire that their backups were stored in the same data center, or even on the same rack, making disaster recovery impossible. Unlike fully redundant cloud platforms, OVHcloud does not automatically replicate customer data to other regions — geographic redundancy is optional and requires additional configuration and cost.
+            </p>
+            <br>
+            <p>Consequently, the fire did not just take services offline; it forced businesses to rebuild applications, redeploy infrastructure, or accept irreversible data loss. While some customers were able to restore operations from external backups, others lost whole datasets: customer records, analytics logs, application source code, and years of hosted content. The incident triggered several legal claims and led to renewed debate about the difference between cloud hosting and cloud resilience. OVHcloud would later acknowledge that the event had exposed a lack of awareness among clients about their responsibility to back up and committed to clearer communication and better disaster-recovery options.
+            </p>
+            <br>
+        </div>
+        <img class="lateral-image l1"  src="img/photo9.jpg" alt="">
+ 
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+
+</body>
+</html>
