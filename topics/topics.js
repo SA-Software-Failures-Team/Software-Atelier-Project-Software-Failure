@@ -1,4 +1,6 @@
-    let divs=document.getElementsByClassName("windows")
+/* Author: Davide Scapellato */
+
+let divs=document.getElementsByClassName("windows")
             for(let i=0; i<divs.length; i++){
                 divs[i].addEventListener("mouseover", ()=>(
                     document.getElementById("mtitl").style.display="none"
