@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonnardo Germann">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>The Root Cause of the FAA Outage</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">The FAA NOTAM Failure</a></li>
+                    <li class="nav-li"><a href="first.html">What is the NOTAM System?</a></li>
+                    <li class="nav-li"><a href="second.html">Timeline of the Ground Stop</a></li>
+                    <li class="nav-li"><a href="third.html">The Root Cause: A Brittle System</a></li>
+                    <li class="nav-li"><a href="fourth.html">Aftermath & The Push for Modernization</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>The Root Cause: A Deleted File in a 1990s System</h1>
+            <p>
+                The investigation into the January 2023 outage quickly ruled out a cyberattack, revealing a much simpler and, in some ways, more alarming cause: human error. 
+                The FAA determined that the entire nationwide ground stop was triggered when a contractor, during routine database maintenance, "unintentionally deleted files." This single, mistaken action was all it took to corrupt the primary NOTAM database. 
+                It wasn't a malicious act but a simple mistake, yet the system was so fragile that this one error could bring it to its knees. The incident exposed that the operational integrity of the entire national airspace was vulnerable to a basic mistake that a modern, resilient system would have easily prevented or contained.
+            </p>
+            <br>
+            <p>
+                The true problem, however, wasn't just the deleted file; it was the antiquated, brittle technology the file was deleted from. The NOTAM system was over 30 years old, running on outdated hardware and software that was complex, unwieldy, and lacked the redundancies and fail-safes common in modern IT. 
+                The system was never designed for the volume or complexity of modern air travel. Its age meant it was difficult to update, hard to secure, and required specialized knowledge to maintain. 
+                This technical debt, built up over decades of underfunding and deferred upgrades, created a ticking time bomb, where a single point of failure could—and did—lead to a catastrophic, system-wide collapse.
+            </p>
+            <br>
+            <p>
+                The most shocking discovery from the investigation was the system's critical "single point of failure" in its backup design. The backup database, which should have saved the day, was instead designed to mirror the primary database in real time. 
+                This meant the moment the contractor's error corrupted the main file, the system immediately and automatically copied that same corruption to the backup. The backup, therefore, became instantly useless, offering no protection whatsoever. 
+                There was no time delay, no "undo" button, and no isolated copy to revert to. This flawed design meant that when the primary system failed, it took the backup down with it, leaving the FAA with no way to function.
+            </p>
+            <br>
+        </div>
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src='../subtopic_8/img/faa5.jpg' alt="" width="400" height="300">
+                <br>
+                <p class="four-image-caption">Old Technology</p>
+            </div>
+            <div class="img2">
+                <img src='../subtopic_8/img/faa6.png' alt="" width="400" height="300">
+                <br>
+                <p class="four-image-caption">Single Point of Failure</p>
+            </div>
+            <div class="img3">
+                <img src='../subtopic_8/img/faa7.jpg' alt="" width="400" height="300">
+                <br>
+                <p class="four-image-caption">Deleted Files</p>
+            </div>
+            <div class="img4">
+                <img src='../subtopic_8/img/faa8.jpg' alt="" width="400" height="300">
+                <br>
+                <p class="four-image-caption">"Brittle System"</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

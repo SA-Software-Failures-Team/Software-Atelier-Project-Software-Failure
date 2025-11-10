@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vittoria D'Arrigo">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>What Happened</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_7/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What happened</a></li>
+                    <li class="nav-li"><a href="second.html">Technical & Security Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact on Services & Data Exposure</a></li>
+                    <li class="nav-li"><a href="fourth.html">Long-Term Mitigation & Prevention</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="img/photo w.jpeg" alt="background" class="header">
+    <main>
+        <div class="lateral-image">
+            <img src="img/photo u.png" alt="">
+        </div>
+        <div class="content-text center">
+            <h1>What Happened</h1>
+            <br>
+            <p id="first">
+                On April 7, 2014, a serious security vulnerability in the OpenSSL cryptographic library was disclosed. The vulnerability now known as Heartbleed was a bug in the implementation of the TLS (Transport Layer Security) Heartbeat extension in versions of OpenSSL, the most common component used to encrypt online communications. Because OpenSSL was embedded in web servers, email systems, VPNs, and countless networked devices, the bug had silently exposed a large portion of the internet to potential data leaks for more than two years before being discovered.
+            </p>
+            <br><br>
+            <p id="second">
+                It allowed anyone on the internet to craft a heartbeat request and get up to 64 KB of memory from a vulnerable server or client with no authentication. The memory disclosed via the leak could contain extremely sensitive information, such as private encryption keys, login credentials, session cookies, or anything else that happened to be in memory. With the attack leaving no trace in the logs, there is no reliable way to tell whether a given system had already been compromised, which caused uncertainty and urgency throughout the industry.
+            <br><br>
+            <p id="third">
+                Major companies, hosting providers, and software vendors, in a race against time, have been patching affected systems, revoking and reissuing TLS certificates, and forcing password resets on millions of users since the bug became public. Emergency reviews of security have also been initiated by governments, banks, and operators of critical infrastructure. The incident showed how a single flaw in a widely relied upon open-source library could compromise global internet security and brought concerns about the lack of funding and oversight for critical security software used at massive scale.
+            </p>
+            
+            </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+
+</body>
+</html>

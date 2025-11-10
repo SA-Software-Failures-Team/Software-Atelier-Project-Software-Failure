@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonnardo Germann">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Timeline of the Ground Stop</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">The FAA NOTAM Failure</a></li>
+                    <li class="nav-li"><a href="first.html">What is the NOTAM System?</a></li>
+                    <li class="nav-li"><a href="second.html">Timeline of the Ground Stop</a></li>
+                    <li class="nav-li"><a href="third.html">The Root Cause: A Brittle System</a></li>
+                    <li class="nav-li"><a href="fourth.html">Aftermath & The Push for Modernization</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src='../subtopic_8/img/faa4.png' alt="background" class="header">
+    <main>
+        <div class="lateral-image">
+            <img src='../subtopic_8/img/faa3.jpg' alt="">
+        </div>
+        <div class="content-text center">
+            <h1>How It Unfolded: Timeline of the Ground Stop</h1>
+            <br>
+            <p id="first">
+                The failure began not with a bang, but with a routine procedure. During scheduled maintenance on the evening of January 10, 2023, a contractor for the FAA was working to synchronize the main NOTAM database with its backup. 
+                During this process, the contractor "unintentionally deleted files" that were critical to the system's operation. 
+                This action triggered a catastrophic fault, corrupting the primary database. Compounding the error, the system was designed to mirror all changes to the backup in real-time, which meant the same corruption was instantly and automatically passed to the backup database, effectively disabling both the main system and its only safeguard.
+            </p>
+            <br><br>
+            <p id="second">
+                As airlines and flight operators prepared for the early morning rush on January 11, the system's failure became apparent. The FAA's system, which had been processing 30,000 to 50,000 NOTAMs per day, was now unable to process or send any new safety notices. 
+                Recognizing the immense risk, the FAA initially tried to manage the situation by delaying flights at major hubs. However, as the scale of the problem became clear, the agency made the historic and drastic decision to issue a full, nationwide ground stop at around 7:20 AM Eastern Time. 
+                This order prohibited all domestic departures, bringing the national aviation system to a standstill for the first time since the 9/11 attacks.
+            </p>
+            <br><br>
+            <p id="third">
+                For the next 90 minutes, chaos rippled across every airport in the country as passengers were stranded and schedules collapsed. Behind the scenes, FAA technicians scrambled to find a solution. 
+                Having determined that both the primary and backup databases were unusable, they were forced to restore the system from a different, unaffected backup file that had been created earlier. 
+                At approximately 9:00 AM Eastern Time, the FAA successfully restored the system's functionality and lifted the ground stop. However, the damage was done. 
+                The 90-minute halt created a massive backlog, and the ripple effect cascaded throughout the day, ultimately causing over 10,000 flight delays and more than 1,300 cancellations.
+            </p>
+            
+            </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

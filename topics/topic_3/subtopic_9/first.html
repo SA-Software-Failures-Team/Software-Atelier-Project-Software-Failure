@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antonello Calvello">
+     <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>What happened?</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">Facebook Global Outage</a></li>
+                    <li class="nav-li"><a href="First.html">What happened?</a></li>
+                    <li class="nav-li"><a href="Second.html">Cascading Super Outage</a></li>
+                    <li class="nav-li"><a href="Third.html">Traffic Volume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Facebook Global Outage</h1>
+            <br>
+            <h2>What happened during the Facebook global outage of 2021?</h2>
+            <br>
+            <div id="main">
+                <p id="first">
+                On October 4, 2021, Facebook and its platforms 
+                Instagram, WhatsApp, Messenger, Twitter, Discord and Signal experienced a global outage lasting approximately about six hours. 
+                In this time, users were unable to access services or even log in using Login with Facebook.                 
+                </p>
+                <br>
+                <br>
+                <h2>What caused the Facebook global outage of 2021?</h2>
+                    <div class="inside">
+                    <p id="second">
+                    The outage was caused by a configuration change to Facebook's 
+                    backbone routers, which are part of the network infrastructure 
+                    that manages traffic between Facebook's data centers. 
+                    The day after, Facebook's engineering team posted a blog post explaining the cause of the outage. 
+                    It was mainly caused by an incorrectly executed command during routine maintenance.
+                    This command unintentionally disconnected Facebook's data centers from the rest of the Internet by withdrawing the <a href="https://en.wikipedia.org/wiki/Border_Gateway_Protocol">BGP (Border Gateway Protocol)</a> routes.
+                    BGP is in fact the system that allows the Internet to reach specific servers.
+                    The <a href="https://it.wikipedia.org/wiki/Domain_Name_System">DNS (Domain Name System)</a> requests for Facebook's domains also stopped working. 
+                    The <a href="https://it.wikipedia.org/wiki/Domain_Name_System">DNS</a> is a system that changes website names into numbers so computers can find and connect to them on the Internet.
+                    </p>
+                    </div>
+                <br>
+                <img class="lowerimage" src="img/crash.jpeg">
+                <br>
+                <br>
+                <br>
+                <h2>How did this affect users and businesses?</h2>
+                <p id="third">
+                The outage cut off Facebook's internal communications, 
+                preventing employees from sending or receiving external emails, accessing the corporate directory,
+                and authenticating to some Google Docs and Zoom services.
+                During this period, Facebook profiles appeared to be non-existent.
+                The Google Public DNS service also slowed down as a result of the outage, while users of Gmail, TikTok, and Snapchat also experienced slowdowns.
+                CNBC reported that the outage was the worst experienced by Facebook since 2008! 
+                During the day of the outage, shares in the company dropped by nearly 5% and Facebook CEO Mark Zuckerberg's wealth fell by more than $6 billion...
+                According also to a report produced by Fortune and Snopes, Facebook lost at least $60 million in advertising revenue.
+                </p>
+            </div>
+                <br>
+                <img class="lowerimage" src="img/img1.webp">
+        </div>
+      
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">BGP</a></li>
+                <div id="one" class="sum-on-click" style="display: none;"><p>Border Gateway Protocol is the Internet's main routing protocol that exchanges routing information between autonomous systems.</p></div>
+                <li class="li-sum"><a id="n2"  href="#second" class="a-sum ">DNS</a></li>
+                <div  id="two"  class="sum-on-click"  style="display: none;"><p>Domain Name System translates human-readable domain names into IP addresses that computers use to identify each other on a network.</p></div>
+                <li class="li-sum"><a  id="n3" href="#third" class="a-sum ">Global outage</a></li>
+                <div  id="three" class="sum-on-click" style="display: none;"><p>A global outage is a worldwide disruption or failure of an online service, network, or system affecting users across multiple regions simultaneously.</p></div>
+                <li class="li-sum"><a  id="n4" href="#fourth" class="a-sum ">CNBC</a> </li>
+                <div id="four"  class="sum-on-click " style="display: none;"><p>The american business news television channel that focuses on financial markets and economic news.</p></div>
+            </ul>
+        </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+
+</body>
+</html>
