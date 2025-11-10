@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-    // ============================================================
-    // 1. INIEZIONE SIDEBAR HTML
-    // ============================================================
-    // NOTA: Assicurati che gli 'href' siano percorsi ASSOLUTI (iniziano con /)
-    // altrimenti si romperanno quando sarai in sottocartelle diverse.
+    //inject the sidebar into the templates. href needs to be adjusted
     const sidebarHTML = `
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
@@ -132,28 +127,24 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
     `;
 
-    // Inserisce la sidebar all'inizio del body
+
+    //injecting it inside the body
     document.body.insertAdjacentHTML('afterbegin', sidebarHTML);
 
 
-    // ============================================================
-    // 2. EVIDENZIAZIONE AUTOMATICA PAGINA CORRENTE
-    // ============================================================
-    // Trova il link che corrisponde alla pagina attuale e aggiungi la classe
+    //adding current-page-link class. Still need to adjust it
     const currentPath = window.location.pathname;
-    // Seleziona tutti i link nella sidebar appena iniettata
+
     document.querySelectorAll('.sidebar a').forEach(link => {
-        // Confronta il pathname del link con quello della finestra
-        // Usa un confronto flessibile per gestire eventuali index.html impliciti o differenze di slash
+        
+
         if (link.pathname === currentPath) {
             link.classList.add('current-page-link');
         }
     });
 
+   
 
-    // ============================================================
-    // 3. IL TUO CODICE ORIGINALE (che ora trova gli elementi iniettati)
-    // ============================================================
     const localHamburger = document.querySelector('.hamburger-icon');
     const navLocal = document.querySelector('.nav');
     const mainContent = document.querySelector('main');
@@ -162,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const sidebarOverlay = document.getElementById('sidebarOverlay');
     const closeGlobalBtn = document.getElementById('closeSidebar');
 
-    // --- Funzioni Sidebar ---
+    //sidebar functions
     function openLocalSidebar() {
         if(navLocal) navLocal.classList.add('menu-open-full');
         if(mainContent) mainContent.classList.add('main-pushed');
@@ -186,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if(globalSidebar) globalSidebar.classList.add('active');
         if(sidebarOverlay) sidebarOverlay.classList.add('active');
 
-        // Auto-espansione (Aggiornato per usare la classe unificata 'current-page-link')
+
         const activeLink = globalSidebar ? globalSidebar.querySelector('.current-page-link') : null;
         if (activeLink) {
             let parent = activeLink.parentElement;
@@ -196,7 +187,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     const toggleBtn = globalSidebar.querySelector(`[data-toggle="${parent.id}"]`);
                     if (toggleBtn) toggleBtn.classList.add('expanded');
 
-                    // Ruota la freccia se presente (se usi il trucco della freccia separata)
                     const arrow = toggleBtn ? toggleBtn.querySelector('.arrow-icon') : null;
                     if (arrow) arrow.style.transform = 'rotate(90deg)';
                 }
@@ -209,18 +199,16 @@ document.addEventListener('DOMContentLoaded', function () {
         if(sidebarOverlay) sidebarOverlay.classList.remove('active');
     }
 
-    // --- Event Listeners Base ---
     if (localHamburger) localHamburger.onclick = toggleLocalSidebar;
     if (openFullMenuBtn) openFullMenuBtn.addEventListener('click', openGlobalSidebar);
     if (closeGlobalBtn) closeGlobalBtn.addEventListener('click', closeGlobalSidebar);
     if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeGlobalSidebar);
 
-    // === NUOVA GESTIONE ACCORDION (Click Area) ===
+    //function to make the clicks links or expansions
     document.querySelectorAll('[data-toggle]').forEach(item => {
         item.addEventListener('click', function (e) {
             const rect = this.getBoundingClientRect();
             const clickX = e.clientX - rect.left;
-            // Aumentato a 70px per sicurezza
             const isArrowArea = clickX > (rect.width - 70);
 
             if (this.tagName === 'A' && !isArrowArea) {
@@ -236,8 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // --- Ponte per tornare alla sidebar locale ---
-    // Usa la classe generica che abbiamo assegnato automaticamente
+    //general sidebar to subtopic sidebar
     const currentPageLink = globalSidebar ? globalSidebar.querySelector('.current-page-link') : null;
     if (currentPageLink) {
         currentPageLink.addEventListener('click', function (e) {
