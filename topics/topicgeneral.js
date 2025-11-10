@@ -1,11 +1,14 @@
+/* Author: Davide Scapellato */
+
+
 divs = document.getElementsByClassName("exit");
 for (let i = 0; i < divs.length; i++) {
     divs[i].onclick = function() {
 
-        // get current path and remove the last file
+      
         let parts = window.location.pathname.split("/");
-        parts.pop(); // remove current page (e.g. generalsubtopic.html)
-        parts.pop(); // remove current page (e.g. generalsubtopic.html)
+        parts.pop();
+        parts.pop();
         let base = parts.join("/");
 
         if (sessionStorage.getItem("category") == "bug") {
