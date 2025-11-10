@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+      <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css"> <!--Remove this one once you copy paste the template-->
+    <title>Ariane 5: Outlook & Mitigation for the Future</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">Ariane 5 General Overview</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact & Scope of the Outage</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned & Broader Implications</a></li>
+                    <li class="nav-li"><a href="fifth.html">Outlook & Mitigation for the Future</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Outlook and Mitigation for the Future</h1>
+            <p>
+                Following the rigorous investigation into the Ariane 5 failure, the aerospace industry immediately implemented significant, tangible procedural changes. The most direct and critical technical fix was the mandatory deactivation of unneeded code. Specifically, the problematic alignment function within the Inertial Reference System (IRS), which contained the fatal conversion bug, was physically turned off after lift-off. Since this function was no longer required for guidance once the rocket left the pad, disabling it entirely eliminated the single point of failure that had caused the catastrophe.
+            </p>
+            <br>
+            <p>
+                To ensure the software could withstand unforeseen operational conditions, the industry adopted a policy of software hardening. All critical data conversions within flight control systems now include robust exception handling mechanisms, often referred to as "guards." These guards are designed to actively detect, catch, and safely manage arithmetic errors, such as the overflow that occurred in the IRS, thereby preventing a complete processor shutdown. This move reinforced the principle that mission-critical software must be built to fail gracefully, never catastrophically, when faced with an unexpected value.
+            </p>
+            <br>
+            <p>
+                Furthermore, there was a dramatic shift in how validation was performed, leading to enhanced testing and validation protocols. New mandates required the systematic critical reappraisal of all embedded software, moving beyond simple nominal testing. Validation testing environments were overhauled to be fully representative of the actual flight envelope of the new launcher, including simulating conditions that push parameters well beyond expected limits. This comprehensive approach ensured that the software could reliably handle all anticipated and likely error conditions before the rocket ever reached the launchpad.
+            </p>
+            <p>
+                The Ariane 5 incident ultimately drove the adoption of new industry standards for software safety across aerospace and other critical sectors, such as medical devices and nuclear power. The crisis propelled the use of more formal methods and sophisticated tools for Verification and Validation (V&V). The overall outlook centered on the principle that software reliability is paramount; the failure served as a powerful and enduring case study, solidifying the industry-wide commitment to engineering rigor and transparency to ensure mission success and public safety.
+            </p>
+            
+            <br>
+        </div>
+            <div class="lateral-image">
+                <img src="../template/image/img2.jpeg" alt="">
+            </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script><!--Remove this one once you copy paste the template-->
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>
