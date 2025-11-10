@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Albonico">
+      <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>US Medical Imaging - Impact & Scope of the Outage</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">US Medical Imaging Servers Exposed (2019)</a></li>
+                    <li class="nav-li"><a href="first.html">Introduction</a></li>
+                    <li class="nav-li"><a href="second.html">Root Cause and Technical Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact and Global Scope</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned & Broader Implications</a></li>   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Impact & Scope of the Exposure</h1>
+            <p>
+                The 2019 PACS exposure had widespread implications across the U.S. healthcare system. Approximately <strong>13 million medical images</strong> from over 5 million patients were freely accessible online, including X-rays, MRIs, and CT scans. In some cases, even personal details such as patient names, birth dates, and procedure descriptions were visible without restriction.
+            </p>
+            <br>
+            <p>
+                This was not a single breach but rather a systemic problem: <strong>187 vulnerable servers</strong> were found across hospitals, imaging centers, and diagnostic service providers. Because PACS networks were often integrated with broader hospital systems, the exposure increased the risk of identity theft, medical fraud, and insurance exploitation.
+            </p>
+            <br>
+            <p>
+                While no confirmed cases of malicious misuse were publicly reported, the event eroded patient trust and raised serious concerns about digital safety in healthcare. It also caught the attention of regulators and privacy watchdogs, emphasizing the lack of consistent cybersecurity governance in medical environments.
+            </p>
+            <p>
+                The scope of this incident extended beyond the U.S., as similar vulnerabilities were later identified in other countries, revealing a global issue of poor PACS configuration and weak oversight in the management of sensitive medical data.
+            </p>
+            <br>
+        </div>
+            <div class="lateral-image">
+                <img src="img/skull.avif" alt="Medical imaging illustration">
+            </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>
