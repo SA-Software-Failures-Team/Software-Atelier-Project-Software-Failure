@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
     `;
 
+
     //injecting it inside the body
     document.body.insertAdjacentHTML('afterbegin', sidebarHTML);
 
@@ -136,13 +137,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('.sidebar a').forEach(link => {
         
+
         if (link.pathname === currentPath) {
             link.classList.add('current-page-link');
         }
     });
 
+   
 
-    
     const localHamburger = document.querySelector('.hamburger-icon');
     const navLocal = document.querySelector('.nav');
     const mainContent = document.querySelector('main');
