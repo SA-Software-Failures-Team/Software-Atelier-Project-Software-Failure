@@ -1,6 +1,15 @@
-divs=document.getElementsByClassName("exit")
-for(let i=0; i<divs.length; i++){
-     divs[i].onclick=function(){
+/* Author: Davide Scapellato */
+
+
+divs = document.getElementsByClassName("exit");
+for (let i = 0; i < divs.length; i++) {
+    divs[i].onclick = function() {
+
+      
+        let parts = window.location.pathname.split("/");
+        parts.pop();
+        parts.pop();
+        let base = parts.join("/");
 
         if (sessionStorage.getItem("category") == "bug") {
             temp = base + "/topicgeneral_b.html";

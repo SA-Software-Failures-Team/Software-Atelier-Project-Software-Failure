@@ -1,5 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
     //inject the sidebar into the templates. href needs to be adjusted
+
+    let tmpdiv=document.getElementsByClassName("nav-ul");
+    var tmpstring;
+    for(let i=0; i<tmpdiv.length; i++){
+
+        tmpstring=tmpdiv[i].innerHTML;
+        tmpdiv[i].innerHTML=tmpstring+' <li class="nav-li" style="margin-top: 20px; border-top: 1px solid #333;"> <a href="#" id="openFullMenuBtn" style="color: #fff; font-weight: bold;"> Full Menu </a>'
+
+    }
+
+    tmpdiv=document.createElement("link");
+    tmpdiv.rel="stylesheet";
+    tmpdiv.href="../../../index.css";
+    
+    document.head.appendChild(tmpdiv);
+
+
+
+
     const sidebarHTML = `
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
