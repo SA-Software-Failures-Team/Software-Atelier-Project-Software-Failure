@@ -136,7 +136,7 @@ transition: background-image 1s ease-in-out; /* Smooth fade */
 .footer{
     display: flex;
     height: 20%;
-    background-color:gray;
+    background-color:#808080;
     width:100%;
     color: white;
     align-items: center;

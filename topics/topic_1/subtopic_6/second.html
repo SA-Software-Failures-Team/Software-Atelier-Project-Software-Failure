@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sanjay Skaria">
+      <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Boeing 737 MAX: Root Cause & Technical Analysis</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">Boeing 737 MAX: General Overview</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact & Scope of the Outage</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned & Broader Implications</a></li>
+                    <li class="nav-li"><a href="fifth.html">Outlook & Mitigation for the Future</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Root Cause: Design, Business, and Regulatory Flaws</h1>
+            <p>
+                Design Flaw in MCAS: The MCAS was introduced to make the 737 MAX, with its larger, re-positioned engines, handle similarly to previous 737 models. Crucially, the final MCAS design used input from only one of the aircraft's two AoA sensors. This created a single point of failure: a malfunction in just one sensor could lead to the system's erroneous activation with no cross-check from the second sensor. Furthermore, the system was given excessive authority to move the stabilizer and could repeat its inputs.
+            <br>
+            <p>
+                Business Pressure and Non-Disclosure: Boeing's decision to update the 737 platform, rather than build an all-new jet, was driven by the need to compete with the Airbus A320neo and allow airlines to transition pilots with minimal extra training (avoiding costly simulator training and a full aircraft recertification). To achieve this, Boeing initially failed to disclose the existence of the MCAS to pilots in flight manuals, judging its operation to be transparent and background-only.
+            </p>
+            <br>
+            <p>
+                Regulatory Oversight Shortcomings: The U.S. Federal Aviation Administration (FAA) delegated a significant portion of the certification work for the 737 MAX to Boeing employees, a process known as Organization Designation Authorization (ODA). This lack of rigorous, independent scrutiny over the new, critical flight control system design was a key enabler of the flawed design being approved.
+            </p>
+            
+            <br>
+        </div>
+            <div class="lateral-image">
+                <img src="img/boeing3.jpg" alt="">
+            </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

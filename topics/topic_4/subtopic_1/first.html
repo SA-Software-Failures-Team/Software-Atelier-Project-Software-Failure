@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Spanò">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Therac-25 Radiation Overdose — Incident Overview</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">Therac-25 Radiation Overdose</a></li>
+                    <li class="nav-li"><a href="first.html">Incident Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Underlying Causes & System Failures</a></li>
+                    <li class="nav-li"><a href="third.html">Consequences & Extent of the Accident</a></li>
+                    <li class="nav-li"><a href="fourth.html">Key Takeaways & Ethical Reflections</a></li>
+                    <li class="nav-li"><a href="fifth.html">Future Outlook & Preventive Measures</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <img class="lateral-image l1" src="img/lin_acc.jpg" alt="Therac-25 linear accelerator">
+        <div class="columnarticle">
+            <h2>What Happened — The Therac-25 Radiation Overdose</h2>
+            <p>
+                Between <strong>1985 and 1987</strong>, six patients in the United States and Canada suffered massive radiation overdoses 
+                from a computer-controlled therapy machine known as the <strong>Therac-25</strong>, manufactured by <em>Atomic Energy of Canada Limited (AECL)</em>. 
+                The device, designed to deliver high-energy electron and X-ray beams for cancer treatment, was considered a technological 
+                breakthrough at the time — the first fully software-controlled linear accelerator.
+            </p>
+
+            <p>
+                The accidents began subtly. Patients complained of unexpected burning sensations during treatment sessions. 
+                Over subsequent days, severe radiation injuries emerged: tissue destruction, nerve damage, and fatal overdoses 
+                equivalent to tens of thousands of rads. Operators, trusting the software’s display that indicated “no dose delivered,” 
+                were initially unaware that catastrophic overdoses had occurred.
+            </p>
+
+            <p>
+                At least <strong>six known incidents</strong> took place in hospitals across <strong>Texas, Georgia, and Ontario</strong>. 
+                In each case, the machine’s safety interlocks failed silently due to software race conditions. 
+                Investigations revealed that patients had received radiation levels hundreds of times higher than prescribed.
+            </p>
+
+            <p>
+                Despite early warnings from hospitals, the manufacturer initially treated each event as isolated operator error. 
+                Only after the final incidents in 1987 did the full scope of the design flaws become evident, 
+                marking the Therac-25 as one of the most infamous examples of software-induced medical accidents.
+            </p>
+        </div>
+        <img class="lateral-image l1" src="img/Therac25_Interface.png" alt="Therac-25 interface used by operators">
+    </main>
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>

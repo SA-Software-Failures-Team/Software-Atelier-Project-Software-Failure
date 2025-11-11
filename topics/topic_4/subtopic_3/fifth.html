@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexander Lazarevic">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css">
+    <title>Lessons Learned</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_3/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">The Incident Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Technical Failure</a></li>
+                    <li class="nav-li"><a href="fifth.html">Lessons Learned</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>Critical Lessons from the Excel Data Loss</h1>
+            <p>
+                The main lessons from the UK Excel data loss are fundamental and must be etched into the practice of any organization handling critical data. First is the principle: use the right tool for the job. Mission critical and high volume data aggregation and processing must be handled by purposely built database systems, not desktop analysis tools.
+            </p>
+            <br>
+            <p>
+                Second, automated data validation is non-negotiable. Systems must have built-in checks to monitor data flow, validate record counts, and flag anomalies in real time removing the possible occurrence of human error. Third, design for scalability and failure. Systems must be stress tested in anticipation for these specific situations for expected peak loads and must be designed to "fail loudly," meaning errors must be explicit and impossible for operators to miss, rather than failing silently as Excel did.
+            </p>
+            <br>
+            <p>
+                Finally, this incident highlights the danger of "shadow IT" and legacy processes persisting in critical infrastructure. Just because a process works on a small scale does not mean it is suitable for a national, life-critical operation. In the end, the UK's pandemic response was not just fighting a virus; it was fighting the consequences of a poor software decision, a battle that serves as a permanent warning of the very real-world harm that can flow from a seemingly mundane technical choice.
+            </p>
+        </div>
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src="../template/image/right_tool.jpg" alt="Right tool for the job">
+                <br>
+                <p class="four-image-caption">Use Right Tools</p>
+            </div>
+            <div class="img2">
+                <img src="../template/image/validation.jpg" alt="Data validation">
+                <br>
+                <p class="four-image-caption">Automate Validation</p>
+            </div>
+            <div class="img3">
+                <img src="../template/image/scalability.jpg" alt="Scalability design">
+                <br>
+                <p class="four-image-caption">Design for Scale</p>
+            </div>
+            <div class="img4">
+                <img src="../template/image/legacy_systems.jpg" alt="Legacy systems">
+                <br>
+                <p class="four-image-caption">Modernize Legacy Systems</p>
+            </div>
+        </div>
+    </main>
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>

@@ -30,7 +30,10 @@
 
 }
 
-
+.sidebar .current-page-link-subtopic, .sidebar .current-page-link {
+            color: #ffeb3b !important;
+            font-weight: bold;
+}
 
 /* header styles */
 header {
