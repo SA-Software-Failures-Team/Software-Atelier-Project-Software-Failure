@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maks brinjevec">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>MPL: Legacy  &amp; Lessons for NASA</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">MPL Overview</a></li>
+
+                    <li class="nav-li"><a href="first.html">The Mission  &amp; Loss of Signal</a></li>
+                    <li class="nav-li"><a href="second.html">The "False Touchdown" Bug</a></li>
+                    <li class="nav-li"><a href="third.html">Investigation</a></li>
+                    <li class="nav-li"><a href="fourth.html">Legacy  &amp; Lessons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main >
+        <img class="lateral-image l1" src="./img/bugs_img7.jpg" alt="NASA's Spirit and Opportunity rovers, successors to MPL">
+
+        <div class="columnarticle">
+                    <h2>Legacy & Lessons for NASA</h2>
+                    <p>
+                        The failure of the Mars Polar Lander, along with the loss of the Mars Climate Orbiter just months earlier, was a humiliating and painful wake-up call for NASA. The combined loss of two separate Mars missions in 1999 was a devastating blow to the agency's prestige and a public rejection of its "faster, better, cheaper" philosophy.
+                    </p>
+
+                    <h3>The End of "Faster, Better, Cheaper"</h3>
+                    <p>
+                        This philosophy had been implemented to reduce mission costs, but it did so by accepting higher risks and, critically, by slashing budgets for thorough, end-to-end testing. The MPL investigation proved this was a recipe for disaster. The investigation board found that the project's budget and schedule were "inadequate" and that the system had not been "sufficiently tested." The failure demonstrated that for complex, one-of-a-kind missions, there is no substitute for rigorous verification.
+                    </p>
+
+                    <h3>The Core Lesson: "Test As You Fly"</h3>
+                    <p>
+                        The most profound technical lesson was the absolute necessity of **"testing as you fly."** The fatal bug occurred because the team that built the landing legs and the team that wrote the software never tested their components *together* in a realistic, full-scale simulation. The "false touchdown" signal was a real-world hardware event that the software was never programmed to handle. "Testing as you fly" meant NASA had to move away from simulating individual parts and instead build high-fidelity test-beds that rigorously tested the *complete system*—hardware and software—in the same way it would operate during the actual mission.
+                    </p>
+
+                    <h3>A Legacy of Success</h3>
+                    <p>
+                        This costly but vital lesson directly shaped the development of all future Mars missions. The resounding success of the Mars Exploration Rovers, **Spirit and Opportunity**, just a few years later, was built on the foundation of the MPL's failure. Those missions were funded with a renewed focus on mission assurance and subjected to the robust, integrated testing that had been tragically absent in 1999. Every successful landing since—from the Phoenix lander (which was a rebuilt version of the MPL design, but with the bug fixed) to the Curiosity and Perseverance rovers—is a testament to this hard-won lesson.
+                    </p>
+                </div>
+
+        <img class="lateral-image l1"  src="./img/bugs_img8.jpg" alt="Engineers performing rigorous integrated testing on a spacecraft">
+
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

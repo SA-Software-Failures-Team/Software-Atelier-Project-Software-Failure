@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexander Lazarevic">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css">
+    <title>Technical Failure Analysis</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_3/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">The Incident Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Technical Failure</a></li>
+                    <li class="nav-li"><a href="fifth.html">Lessons Learned</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>The Technical Failure: Excel's Silent Data Loss</h1>
+            <p>
+                Many labs submitted their data via a legacy process that funneled results into a single .XLSX file. While the modern XLSX format can hold over a million individual rows, PHE's specific template, for reasons related to its legacy data structure, had an effective limit of only 65,536 rows per sheet - a limit inherited from the older and previously used .XLS format.
+            </p>
+            <br>
+            <p>
+                When this file reached the maximum capacity, the system did not crash or sound a loud alarm; instead, it failed silently. Any data rows beyond the 65,536th were simply removed and permanently lost, vanishing from the official dashboard and, most critically, from the queue for the contact tracing team that used this information to contain the spread of the virus.
+            </p>
+            <br>
+            <p>
+                For days, these 15,841 infected individuals were unaware of their status, and the system, designed to isolate the infected and trace their closest contacts, was operating on incomplete and missing information. The silent failure meant that operators had no indication that data was being lost, allowing the problem to persist undetected.
+            </p>
+            <p>
+                This core technical failure was compounded by the usage of Microsoft Excel as a database. Excel is well known as a powerful tool for analysis and visualization, but it is not designed to be a robust, transactional database management system (DBMS) designed for this type of large scale, automated data recording. Any proper DBMS would have rejected additional data once a table was full, triggering an immediate error alarming the user about the issue.
+            </p>
+        </div>
+        <div class="lateral-image">
+            <img src="../template/image/excel_limit.jpg" alt="Excel row limit visualization">
+        </div>
+    </main>
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
