@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+     <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+
+    <title>Document</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">Introduction</a></li>
+                    <li class="nav-li"><a href="second.html">What happened</a></li>
+                    <li class="nav-li"><a href="third.html">How they solved the problem</a></li>
+                    <li class="nav-li"><a href="fourth.html">Financial Losses and Social Impact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <main>
+        <!-- 
+        Markup of the text content:
+        Every paragraph is separate
+        and have an unique id refered
+        for the link in the summary 
+        -->
+        <div class="content-text">
+            <h1>How They Solved the Problem</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    Once the extent of the disruption was clear, TSB and its owner Sabadell recognised the need for an intensive remediation effort. The bank initiated
+                    multiple actions in parallel:
+Immediate stabilisation: TSB activated its incident response teams. Efforts were made to restore critical functions (online banking, payments, branch access) as quickly as possible. While the initial migration had completed, stabilisation required extensive remediation of service interfaces, data reconciliation, and reinstatement of authentication flows.
+Root-cause investigation: The independent review of the migration, commissioned by TSB’s Board and conducted by law firm Slaughter and May, identified multiple points of failure: unrealistic deadlines, a big-bang release strategy, insufficient data test-volume, unclear ownership of data testing, and heavy reliance on third-party suppliers.
+Corrective governance and oversight: Following the incident, TSB revised its governance of major IT changes. The Board publicly committed to greater transparency and to changing the way the bank controlled its own IT operations.
+As part of the review:
+“We have already made major changes … including moving to take direct control of our IT operations.”
+Customer redress and compensation: TSB set up enhanced support for affected customers. Although the migration itself succeeded in moving the data, the service disruption caused detriment — the bank paid redress of approximately £32.7 million to customers.
+Outsourcing and third-party far-reaching changes: Because the incident highlighted weaknesses in outsourcing oversight and supplier management, TSB changed strategies. It later moved more of the control in-house and strengthened its vendor governance, supplier assurance and operational-resilience frameworks.
+Long-term technical and organisational improvements: The bank introduced phased migration approaches (rather than a single large cut-over), improved data migration testing (including full-volume, realistic data loads), enhanced monitoring and change-control, and strengthened resilience frameworks for critical functions.
+By late 2018, TSB declared that operations had returned to stable service levels. Although some effects lingered and trust was damaged, the bank used the incident as a learning point: improving its capability to manage major IT transformation and emphasising operational resilience as a critical corporate discipline.
+                </p>
+                <div class="inside">
+                <p id="second">
+
+
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="./img/TSB.jpg">
+
+        </div>
+        <!-- 
+        Markup of the content summary 
+        Use the id reference in the href to 
+        point the correct paragraph
+        -->
+
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script><!--Remove this one once you copy paste the template-->
+    <script src="../../INJECTSidebar.js"></script>
+
+
+</body>
+</html>
