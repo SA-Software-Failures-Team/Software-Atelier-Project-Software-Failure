@@ -4,11 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ricetti Leonardo">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="about_us_styles.css">
     <link rel="stylesheet" href="../topics/topics.css">
+    
     <title>About Us</title>
 </head>
 <body>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h5 class="mb-0 light-mode text-white">Catastrophic Software Failures</h5>
+            <button class="sidebar-close" id="closeSidebar">&times;</button>
+        </div>
+        <div class="sidebar-content">
+            <!-- Home -->
+            <a href="../index.html" class="menu-item">Home</a>
+            <!--the links should be changed after the html of the subtopic pages are done -->
+            <!-- Topic 1 -->
+            <a href="../topics/topic_1/choose.html" class="menu-item has-submenu" data-toggle="topic1">
+                    <span>Transportation</span>
+                </a>
+            <div class="submenu" id="topic1">
+                <a href="../topics/topic_1/topicgeneral_b.html" class="submenu-item has-submenu" data-toggle="topic1-bugs">
+                    <span>Bugs</span>
+                </a>
+                <div class="subsubmenu" id="topic1-bugs">
+                    <a href="../topics/topic_1/subtopic_1/generalsubtopic.html" class="subsubmenu-item">Subtopic 1</a>
+                    <a href="../topics/topic_1/subtopic_2/generalsubtopic.html" class="subsubmenu-item">Subtopic 2</a>
+                    <a href="../topics/topic_1/subtopic_3/generalsubtopic.html" class="subsubmenu-item">Subtopic 3</a>
+                    <a href="../topics/topic_1/subtopic_4/generalsubtopic.html" class="subsubmenu-item">Subtopic 4</a>
+                    <a href="../topics/topic_1/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
+                </div>
+                
+                <a href="../topics/topic_1/topicgeneral_v.html" class="submenu-item has-submenu" data-toggle="topic1-vuln">
+                    <span>Vulnerabilities</span>
+                </a>
+                <div class="subsubmenu" id="topic1-vuln">
+                    <a href="../topics/topic_1/subtopic_6/generalsubtopic.html" class="subsubmenu-item">Subtopic 6</a>
+                    <a href="../topics/topic_1/subtopic_7/generalsubtopic.html" class="subsubmenu-item">Subtopic 7</a>
+                    <a href="../topics/topic_1/subtopic_8/generalsubtopic.html" class="subsubmenu-item">Subtopic 8</a>
+                    <a href="../topics/topic_1/subtopic_9/generalsubtopic.html" class="subsubmenu-item">Subtopic 9</a>
+                    <a href="../topics/topic_1/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
+                </div>
+            </div>
+
+            <!-- Topic 2 -->
+            <a href="../topics/topic_2/choose.html" class="menu-item has-submenu" data-toggle="topic2">
+                    <span>Energy/Infrastructure</span>
+                </a>
+            <div class="submenu" id="topic2">
+                <a href="../topics/topic_2/topicgeneral_b.html" class="submenu-item has-submenu" data-toggle="topic2-bugs">
+                    <span>Bugs</span>
+                </a>
+                <div class="subsubmenu" id="topic2-bugs">
+                    <a href="../topics/topic_2/subtopic_1/generalsubtopic.html" class="subsubmenu-item">Subtopic 1</a>
+                    <a href="../topics/topic_2/subtopic_2/generalsubtopic.html" class="subsubmenu-item">Subtopic 2</a>
+                    <a href="../topics/topic_2/subtopic_3/generalsubtopic.html" class="subsubmenu-item">Subtopic 3</a>
+                    <a href="../topics/topic_2/subtopic_4/generalsubtopic.html" class="subsubmenu-item">Subtopic 4</a>
+                    <a href="../topics/topic_2/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
+                </div>
+                
+                <a href="../topics/topic_2/topicgeneral_v.html" class="submenu-item has-submenu" data-toggle="topic2-vuln">
+                    <span>Vulnerabilities</span>
+                </a>
+                <div class="subsubmenu" id="topic2-vuln">
+                    <a href="../topics/topic_2/subtopic_6/generalsubtopic.html" class="subsubmenu-item">Subtopic 6</a>
+                    <a href="../topics/topic_2/subtopic_7/generalsubtopic.html" class="subsubmenu-item">Subtopic 7</a>
+                    <a href="../topics/topic_2/subtopic_8/generalsubtopic.html" class="subsubmenu-item">Subtopic 8</a>
+                    <a href="../topics/topic_2/subtopic_9/generalsubtopic.html" class="subsubmenu-item">Subtopic 9</a>
+                    <a href="../topics/topic_2/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
+                </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <a href="../topics/topic_3/choose.html" class="menu-item has-submenu" data-toggle="topic3">
+                    <span>Business-Critical Systems</span>
+            </a>
+            <div class="submenu" id="topic3">
+                 <a href="../topics/topic_3/topicgeneral_b.html" class="submenu-item has-submenu" data-toggle="topic3-bugs">
+                    <span>Bugs</span>
+                </a>
+                <div class="subsubmenu" id="topic3-bugs">
+                    <a href="../topics/topic_3/subtopic_1/generalsubtopic.html" class="subsubmenu-item">Subtopic 1</a>
+                    <a href="../topics/topic_3/subtopic_2/generalsubtopic.html" class="subsubmenu-item">Subtopic 2</a>
+                    <a href="../topics/topic_3/subtopic_3/generalsubtopic.html" class="subsubmenu-item">Subtopic 3</a>
+                    <a href="../topics/topic_3/subtopic_4/generalsubtopic.html" class="subsubmenu-item">Subtopic 4</a>
+                    <a href="../topics/topic_3/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
+                </div>
+                
+                <a href="../topics/topic_3/topicgeneral_v.html" class="submenu-item has-submenu" data-toggle="topic3-vuln">
+                    <span>Vulnerabilities</span>
+                </a>
+                <div class="subsubmenu" id="topic3-vuln">
+                    <a href="../topics/topic_3/subtopic_6/generalsubtopic.html" class="subsubmenu-item">Subtopic 6</a>
+                    <a href="../topics/topic_3/subtopic_7/generalsubtopic.html" class="subsubmenu-item">Subtopic 7</a>
+                    <a href="../topics/topic_3/subtopic_8/generalsubtopic.html" class="subsubmenu-item">Subtopic 8</a>
+                    <a href="../topics/topic_3/subtopic_9/generalsubtopic.html" class="subsubmenu-item">Subtopic 9</a>
+                    <a href="../topics/topic_3/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
+                </div>
+            </div>
+
+            <!-- Topic 4 -->
+            <a href="../topics/topic_4/choose.html" class="menu-item has-submenu" data-toggle="topic4">
+                    <span>Healthcare</span>
+            </a>
+            <div class="submenu" id="topic4">
+                <a href="../topics/topic_4/topicgeneral_b.html" class="submenu-item has-submenu" data-toggle="topic4-bugs">
+                    <span>Bugs</span>
+                </a>
+                <div class="subsubmenu" id="topic4-bugs">
+                    <a href="../topics/topic_4/subtopic_1/generalsubtopic.html" class="subsubmenu-item">Subtopic 1</a>
+                    <a href="../topics/topic_4/subtopic_2/generalsubtopic.html" class="subsubmenu-item">Subtopic 2</a>
+                    <a href="../topics/topic_4/subtopic_3/generalsubtopic.html" class="subsubmenu-item">Subtopic 3</a>
+                    <a href="../topics/topic_4/subtopic_4/generalsubtopic.html" class="subsubmenu-item">Subtopic 4</a>
+                    <a href="../topics/topic_4/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
+                </div>
+                
+                <a href="../topics/topic_4/topicgeneral_v.html" class="submenu-item has-submenu" data-toggle="topic4-vuln">
+                    <span>Vulnerabilities</span>
+                </a>
+                <div class="subsubmenu" id="topic4-vuln">
+                    <a href="../topics/topic_4/subtopic_6/generalsubtopic.html" class="subsubmenu-item">Subtopic 6</a>
+                    <a href="../topics/topic_4/subtopic_7/generalsubtopic.html" class="subsubmenu-item">Subtopic 7</a>
+                    <a href="../topics/topic_4/subtopic_8/generalsubtopic.html" class="subsubmenu-item">Subtopic 8</a>
+                    <a href="../topics/topic_4/subtopic_9/generalsubtopic.html" class="subsubmenu-item">Subtopic 9</a>
+                    <a href="../topics/topic_4/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="p-3">
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <button class="menu-btn" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="../index.html" class="nav-link px-2">Home</a></li>
+                    <li><a href="./about_us/about_us.html" style="pointer-events: none;" class="nav-link px-2 text-secondary">About us</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
     <div>
     <main>
         <div class="content-text">
@@ -19,9 +165,9 @@
                 <h2>Leadership</h2>
                 <p>
                     <strong>Team Leaders:</strong> Bolcau, Çitaku<br>
-                    <strong>Git Leader:</strong> Piotr Wilinski<br>
-                    <strong>Git Co-Leaders:</strong> Chatterjee, Brinjevec<br>
-                    <strong>CSS Leaders:</strong> Bolcau, Çitaku
+                    <strong>Git Leader:</strong> Wilinski<br>
+                    <strong>Git Co-Leader:</strong> Bertolini<br>
+                    <strong>CSS Leaders:</strong> Scapellato, Bertolini
                 </p>
             </div>
 
