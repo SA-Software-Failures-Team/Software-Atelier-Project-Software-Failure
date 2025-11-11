@@ -79,11 +79,13 @@ Analyzing the root cause of the AWS Lambda incident on June 13, 2023, requires a
 AWS Lambda Cellular Architecture
 AWS Lambda is designed for reliability and scalability using a cellular architecture. This means that Lambda's infrastructure is divided into many autonomous and isolated operating units, called cells.
 Each cell is responsible for managing a subset of customer functions and accounts and is made up of several key subsystems that work together to run the code:
-• Lambda Frontend: This component is the gateway. It is responsible for receiving and routing all incoming customer function invocations (synchronous and asynchronous) to the appropriate computing capacity.
-• Lambda Invocation Manager: This manager is the heart of serverless logic. It is responsible for managing the underlying computing capacity, ensuring that there are always sufficient Lambda Execution Environments (Lambda Execution Environments) ready or available to execute customer code based on load.
+Lambda Frontend
+This component is the gateway. It is responsible for receiving and routing all incoming customer function invocations (synchronous and asynchronous) to the appropriate computing capacity.
+Lambda Invocation Manager
+This manager is the heart of serverless logic. It is responsible for managing the underlying computing capacity, ensuring that there are always sufficient Lambda Execution Environments (Lambda Execution Environments) ready or available to execute customer code based on load.
 
                 </p>
-    <img src="./img/time.jpg"" alt="background" class="header">
+                <img class="lowerimage" alt="background" src="./img/grs.jpg">
                 </div>
                 <p id="third">
                   The Latent Software Defect and Scaling
@@ -103,7 +105,7 @@ The inability to allocate capacity had two distinct effects:
                 </p>
             </div>
             <br>
-            <img class="lowerimage" src="./img/time.jpg">
+            <img class="lowerimage" alt="background" src="./img/grt.jpg">
 
         </div>
         <!--
