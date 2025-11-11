@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricetti Leonardo">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Root Cause & Technical Analysis - Philips IntelliBridge EC40/80 Gateways (2022)</title>
+    <style>
+        .i {
+            width: 300px;               
+        }
+        .w {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_9/generalsubtopic.html">Introduction</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/third.html">Impact & Scope</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/fourth.html">Lessons Learned & Broader Implications</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/fifth.html">Mitigation for the Future</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-text">
+            <h1>Root Cause & Technical Analysis - Philips IntelliBridge EC40/80 Gateways (2022)</h1>
+            <br>
+            <div id="main">
+
+                <p id="first">
+                    The vulnerabilities found in Philips IntelliBridge EC40 and EC80 gateways were primarily due to <strong>hard-coded credentials</strong> and <strong>weak access control mechanisms</strong> within the device firmware. 
+                    Researchers discovered that these credentials were embedded directly into the system software and were identical across all deployed devices, meaning any attacker who uncovered them could gain privileged access to any IntelliBridge system.
+                </p>
+
+                <div class="inside">
+                    <p id="second">
+                        Once authenticated, attackers could access the device's internal file system and configuration interfaces. 
+                        Because the gateways were designed to interface between patient monitors and hospital EMR systems, compromising one provided a direct line into sensitive patient data transmissions. 
+                        The devices also lacked proper <strong>role-based access control (RBAC)</strong>, meaning administrative privileges were not properly restricted. 
+                        Additionally, poor network segmentation in many hospital environments made it easier for a compromised gateway to serve as an entry point into larger medical networks.
+                    </p>
+                    <img src="img/2_1.jpg" alt="Medical Network Diagram" class="i">
+                </div>
+
+                <p id="third">
+                    From a technical perspective, the firmware design failed to adhere to modern secure development standards such as eliminating hard-coded secrets, enforcing password rotation, and logging administrative actions. 
+                    The affected devices operated on an embedded Linux platform, where several system services were running with elevated privileges. 
+                    This made it possible for attackers to exploit the hard-coded credentials to extract files, modify configuration settings, or even inject malicious code to alter patient data flow.
+                    <br><br>
+                    CISA classified these issues under <strong>CVE-2022-30277</strong> and related advisories, assigning a <strong>CVSS v3 score of 7.6</strong> (high severity). 
+                    The vulnerabilities could be exploited remotely if the device was exposed to the hospital network or connected to the internet without proper segmentation or firewalls in place.
+                </p>
+            </div>
+
+            <br>
+            <img class="lowerimage w" src="img/2_2.webp" alt="Firmware Analysis Process">
+        </div>
+
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">Hard-Coded Credentials</a></li>
+                <div id="one" class="sum-on-click" style="display: none;">
+                    <p>The firmware contained hard-coded administrator credentials, allowing unauthorized remote access to all devices.</p>
+                </div>
+
+                <li class="li-sum"><a id="n2" href="#second" class="a-sum">Access Control & Network Weakness</a></li>
+                <div id="two" class="sum-on-click" style="display: none;">
+                    <p>Lack of RBAC and poor network segmentation exposed the devices to lateral movement and unauthorized configuration changes.</p>
+                </div>
+
+                <li class="li-sum"><a id="n3" href="#third" class="a-sum">Technical Vulnerability Details</a></li>
+                <div id="three" class="sum-on-click" style="display: none;">
+                    <p>The devices ran elevated system services and failed to follow secure coding practices, allowing remote exploitation via CVE-2022-30277.</p>
+                </div>
+            </ul>
+        </div>
+    </main>
+
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
