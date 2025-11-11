@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Albonico">
+     <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>US Medical Imaging - Root Cause & Technical Analysis</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+               <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">US Medical Imaging Servers Exposed (2019)</a></li>
+                    <li class="nav-li"><a href="first.html">Introduction</a></li>
+                    <li class="nav-li"><a href="second.html">Root Cause and Technical Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact and Global Scope</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned & Broader Implications</a></li>   
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <main>
+        <!-- 
+        Markup of the text content:
+        Every paragraph is separate
+        and have an unique id refered
+        for the link in the summary 
+        -->
+        <div class="content-text">
+            <h1>Root Cause & Technical Analysis</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    The primary cause of the exposure was <strong>misconfiguration of PACS servers</strong>. Many systems were left reachable from the public internet without any authentication enforced. The DICOM protocol — widely used to transfer and store medical images — was accessible in cleartext and allowed direct retrieval of image files and associated metadata.
+                </p>
+                <div class="inside">
+                <p id="second">
+                    In addition to open network access, many installations lacked basic protections such as TLS encryption, firewall rules, and strong access controls. Some servers used default credentials or outdated software that had never been patched, further increasing risk.
+                </p>
+                    <img src="img/server.jpeg" alt="PACS architecture diagram">
+                </div>
+                <p id="third">
+                    In short, this was not primarily a software bug but an operational failure: a combination of poor configuration, insufficient network hygiene, and weak governance over medical IT systems left sensitive data exposed.
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="img/radio2.png" alt="Technical illustration">
+        </div>
+        <!-- 
+        Markup of the content summary 
+        Use the id reference in the href to 
+        point the correct paragraph
+        -->
+        
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+
+</body>
+</html>
