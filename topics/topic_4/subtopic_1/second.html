@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Spanò">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Underlying Causes & System Failures – Therac-25 Radiation Overdose</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">Therac-25 Radiation Overdose</a></li>
+                    <li class="nav-li"><a href="first.html">Incident Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Underlying Causes & System Failures</a></li>
+                    <li class="nav-li"><a href="third.html">Consequences & Extent of the Accident</a></li>
+                    <li class="nav-li"><a href="fourth.html">Key Takeaways & Ethical Reflections</a></li>
+                    <li class="nav-li"><a href="fifth.html">Future Outlook & Preventive Measures</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <img src="img/Therac_25_Malfunction_54_8_sec.gif" style="object-fit: scale-down; background-color: black;" alt="Therac-25 error" class="header">
+
+    <main>
+        <div class="lateral-image">
+            <img src="img/nci-vol-2206-72.jpg" style="object-fit: cover" alt="Therac-25 machine">
+        </div>
+
+        <div class="content-text center">
+            <h1>Underlying Causes & System Failures</h1>
+            <br>
+
+            <p id="first">
+                The Therac-25’s failures stemmed primarily from <strong>software race conditions</strong> in its control program. 
+                AECL engineers had reused code from earlier machines (Therac-6 and Therac-20) that relied heavily on hardware safety interlocks. 
+                The Therac-25, however, removed many of these physical safeguards, assuming the software alone could prevent unsafe operation.
+            </p>
+
+            <br><br>
+
+            <p id="second">
+                The software’s multitasking system allowed simultaneous updates from the operator console and treatment control unit. 
+                If an operator made rapid corrections — such as editing parameters mid-setup — the program could skip key safety checks. 
+                This resulted in the beam being activated at full power with the mechanical target arm in the wrong position, 
+                exposing patients to catastrophic electron doses instead of therapeutic X-rays.
+            </p>
+
+            <br><br>
+
+            <p id="third">
+                Compounding the problem, <strong>the system provided misleading feedback</strong>: the screen displayed “Malfunction 54” or “No dose delivered,” 
+                implying harmless errors. There were no hardware dose monitors, no redundant interlocks, and no comprehensive testing 
+                of fault conditions. Each overdose occurred under slightly different operator conditions, 
+                obscuring the common root cause until forensic code reviews were performed in 1987.
+            </p>
+        </div>
+    </main>
+
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
