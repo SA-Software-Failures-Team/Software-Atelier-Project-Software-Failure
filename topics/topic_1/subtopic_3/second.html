@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maks Brinjevec">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>MPL: The "False Touchdown" Bug</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">MPL Overview</a></li>
+
+                    <li class="nav-li"><a href="first.html">The Mission  &amp; Loss of Signal</a></li>
+                    <li class="nav-li"><a href="second.html">The "False Touchdown" Bug</a></li>
+                    <li class="nav-li"><a href="third.html">Investigation</a></li>
+                    <li class="nav-li"><a href="fourth.html">Legacy  &amp; Lessons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>The "False Touchdown" Software Bug</h1>
+            <p>
+                The most probable cause of the crash was a catastrophic software logic error tied to a hardware event. The lander's software was programmed with a simple, critical instruction: when the touchdown (TD) sensors on the landing legs detect contact with the ground, immediately shut down the descent engines to prevent the lander from tipping over.
+            </p>
+            <br>
+            <p>
+                The fatal flaw was in *when* this logic could be triggered. As the lander was still descending (but before the parachute was even released), it unfolded its three landing legs. This deployment action, a normal part of the sequence, caused a physical "jiggle" or vibration to travel down the legs.
+            </p>
+            <br>
+            <p>
+                This vibration was forceful enough to prematurely trigger the delicate touchdown sensors. The sensors sent a "true" signal to the flight computer, falsely indicating that the lander had touched the surface. The software, which was not programmed to ignore this signal during the descent phase, dutifully followed its primary instruction.
+            </p>
+            <p>
+                As a result, the flight computer shut down the lander's descent engines while the spacecraft was still approximately 40 meters (130 feet) above the Martian surface. With no engines to slow its fall, the Mars Polar Lander free-fell the remaining distance, smashing into the ground at over 50 mph (80 km/h) and was completely destroyed on impact.
+            </p>
+
+            <br>
+        </div>
+            <div class="lateral-image">
+                <img src="./img/bugs_img4.jpg" alt="Diagram of Mars Polar Lander showing landing leg sensors">
+            </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+
+</body>
+</html>

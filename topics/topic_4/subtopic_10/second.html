@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Samuele Bertolini">
+     <meta name="author" content="Ricetti Leonardo">
     <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
-    <title>Root Cause & Technical Analysis – Change Healthcare Breach</title>
+    <title>Root Cause & Technical Analysis - Change Healthcare Breach</title>
     <style>
   .i {
-    width: 300px;               /* larghezza fissa */
+    width: 300px;               
   }
   .w{
     height: 400px;
@@ -24,7 +24,6 @@
                 <span></span>
             </button>
         </div>
-        <!-- Updated Navbar -->
         <div id="nav-links">
             <div class="nav-bar">
                 <ul class="nav-ul">
@@ -41,28 +40,28 @@
 
     <main>
         <div class="content-text">
-            <h1>Root Cause & Technical Analysis – Change Healthcare Ransomware Breach (Feb 2024)</h1>
+            <h1>Root Cause & Technical Analysis - Change Healthcare Ransomware Breach (Feb 2024)</h1>
             <br>
             <div id="main">
 
                 <p id="first">
-                    The Change Healthcare ransomware attack originated from compromised credentials that granted unauthorized access to the company’s internal systems. 
+                    The Change Healthcare ransomware attack originated from compromised credentials that granted unauthorized access to the company's internal systems. 
                     Investigations suggest that the attackers obtained valid login information, possibly from phishing campaigns or data sold on dark web markets. 
                     Once authenticated, the attackers gained entry to a remote access system that lacked sufficient multi-factor authentication (MFA) and intrusion monitoring, enabling them to move further into the network undetected.
                 </p>
 
                 <div class="inside">
                     <p id="second">
-                        A key factor contributing to the breach’s severity was the lack of strong network segmentation within Change Healthcare’s infrastructure. 
+                        A key factor contributing to the breach's severity was the lack of strong network segmentation within Change Healthcare's infrastructure. 
                         Once inside, the attackers could traverse multiple internal systems without significant barriers, accessing sensitive databases and operational servers. 
                         This lateral movement allowed them to deploy ransomware widely, encrypting files and disrupting payment and claims systems. 
                         Moreover, outdated or misconfigured security controls failed to detect or contain the early stages of the attack, prolonging the intrusion period.
                     </p>
-                    <img src="img/network_segmentation_diagram.jpg" alt="Network segmentation diagram showing lateral movement of attackers" class="i">
+                    <img src="img/network_segmentation_diagram.jpg" alt="" class="i">
                 </div>
 
                 <p id="third">
-                    Cyber forensic analysis also revealed that the attackers exploited gaps in Change Healthcare’s endpoint monitoring and response mechanisms. 
+                    Cyber forensic analysis also revealed that the attackers exploited gaps in Change Healthcare's endpoint monitoring and response mechanisms. 
                     Logging systems did not immediately flag suspicious behavior, delaying the detection of abnormal network traffic. 
                     The ALPHV/BlackCat ransomware variant used in this attack employed advanced encryption techniques and targeted both on-premise and cloud environments, maximizing disruption. 
                     Ultimately, the combination of compromised credentials, weak internal segmentation, and delayed detection enabled the attackers to compromise critical healthcare infrastructure at a national scale.
@@ -70,10 +69,10 @@
             </div>
 
             <br>
-            <img class="lowerimage w" src="img/ransomware_attack_visual.jpg" alt="Visualization of ransomware attack flow">
+            <img class="lowerimage w" src="img/ransomware_attack_visual.jpg" alt="">
         </div>
 
-        <!-- Summary section -->
+        
         <div class="content-sum">
             <ul class="ul-sum">
                 <li class="li-sum"><a id="n1" href="#first" class="a-sum">Initial Breach Vector</a></li>

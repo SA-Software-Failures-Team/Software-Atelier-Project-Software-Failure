@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maks Brinjevec"> <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Jeep Hack: What Happened</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">Jeep Hack Overview</a></li>
+
+                    <li class="nav-li"><a href="first.html">The Hack: What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">Technical Breakdown</a></li>
+                    <li class="nav-li"><a href="third.html">Impact &amp; Recall</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <img src="./img/transportation_img2.jpg" alt="Jeep Cherokee dashboard on highway" class="header">
+
+    <main>
+        <div class="lateral-image">
+            <img src="./img/transportation_img3.jpg" alt="Security researchers Charlie Miller and Chris Valasek">
+        </div>
+        <div class="content-text center">
+            <h1>The Hack: What Happened</h1>
+            <br>
+            <p id="first">
+                The vulnerability was famously demonstrated in 2015 by security researchers Charlie Miller and Chris Valasek for a *Wired* magazine article. They didn't need physical access to the car. Instead, they conducted their attack entirely over the internet, targeting a 2014 Jeep Cherokee driven by journalist Andy Greenberg. Their goal was to prove that modern, connected cars were susceptible to remote, life-threatening attacks.
+            </p>
+            <br><br>
+            <p id="second">
+                The attack began subtly. From their laptops 10 miles away, Miller and Valasek activated the Jeep's functions, treating the car like a toy. They remotely turned on the air conditioning at full blast, switched the radio station, and activated the windshield wipers and washer fluid, blinding the driver. These actions, while alarming, were just a warning of what was to come. They were exploiting a vulnerability in the Uconnect infotainment system, which was connected to the cellular network.
+            </p>
+            <br><br>
+            <p id="third">
+                The demonstration took a catastrophic turn when the researchers accessed the car's internal network (CAN bus). This allowed them to send commands to critical driving systems. As Greenberg drove on a busy highway, they remotely disabled the accelerator, killing the engine. Later, they demonstrated their most terrifying capability: disabling the brakes and even taking control of the steering. The hack proved that a software flaw could be used to remotely hijack a 2-ton vehicle, turning it into a potential weapon.
+            </p>
+
+            </div>
+    </main>
+    <br>
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>
