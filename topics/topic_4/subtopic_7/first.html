@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Albonico">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>US Medical Imaging - Introduction</title>
+</head>
+<body>
+    <!--
+    Nav bar:
+    only adjust the name of the subtopic
+    -->
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">US Medical Imaging Servers Exposed (2019)</a></li>
+                    <li class="nav-li"><a href="first.html">Introduction</a></li>
+                    <li class="nav-li"><a href="second.html">Root Cause and Technical Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact and Global Scope</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned & Broader Implications</a></li>   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="img/radio.avif" alt="background" class="header">
+    <main>
+        <div class="lateral-image">
+            <img src="img/lock.jpg" alt="">
+        </div>
+        <div class="content-text center">
+            <h1>Introduction</h1>
+            <br>
+            <p id="first">
+                In 2019, security researchers discovered that roughly <strong>187 Picture Archiving and Communication System (PACS)</strong> servers in the United States were publicly accessible on the internet. These systems store medical imaging files (DICOM) which often include highly sensitive information such as patient names, dates of birth, and scan metadata.
+            </p>
+            <br><br>
+            <p id="second">
+                The exposure resulted from misconfigured servers that lacked authentication and encryption. Rather than being protected behind internal networks and firewalls, many PACS instances were reachable directly over the web — meaning anyone could connect and download images using standard DICOM tools or even a browser.
+            </p>
+            <br><br>
+            <p id="third">
+                Although this incident was not an active malware attack, its consequences were serious: millions of medical images (approximately 13 million) were accessible, creating a major privacy and compliance concern for the affected providers and patients.
+            </p>
+            
+            </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>
