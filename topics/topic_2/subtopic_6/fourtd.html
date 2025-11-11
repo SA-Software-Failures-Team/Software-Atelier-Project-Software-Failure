@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saeid Shirkani">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Stuxnet – Impact & Lessons Learned</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Infection Vectors</a></li>
+                    <li class="nav-li"><a href="third.html">PLC Payload</a></li>
+                    <li class="nav-li"><a href="fourth.html" aria-current="page">Impact & Lessons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>Infection Statistics</h1>
+            <p id="first">
+            Symantec recorded over 100,000 infected hosts in more than 150 countries, with the majority located in Iran.
+            Other affected regions included Indonesia and India.
+            </p>
+            <br>
+            <p id="second">
+            <strong>Why Stuxnet Was Unique</strong>
+            First malware known to physically alter industrial processes.
+            Used four zero-day vulnerabilities and legitimate digital signatures.
+            Highly targeted design focused on a single industrial process.
+            </p>
+            <br>
+            <p id="third">
+            <strong>Key Lessons for Cybersecurity</strong>
+            Segment and monitor industrial control networks.
+            Implement strict USB and removable media policies.
+            Patch vulnerabilities promptly and limit admin privileges.
+            Monitor PLC logic integrity through regular offline audits.
+            </p>
+            <p id="fourth">
+            <strong>Long-term Influence</strong>
+            Stuxnet marked the beginning of the cyber-physical warfare era, inspiring new research and stronger defenses
+            in critical infrastructure protection.
+            </p>
+            <br>
+        </div>
+        
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>
