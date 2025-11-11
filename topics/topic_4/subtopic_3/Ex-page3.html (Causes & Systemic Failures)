@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css">
+    <title>Causes & Systemic Failures</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="Ex-Page1.html">The Incident Overview</a></li>
+                    <li class="nav-li"><a href="Ex-Page2.html">Technical Failure</a></li>
+                    <li class="nav-li"><a href="Ex-page3.html">Causes & Systemic Failures</a></li>
+                    <li class="nav-li"><a href="Ex-page4.html">Impact & Consequences</a></li>
+                    <li class="nav-li"><a href="Ex-Page5.html">Lessons Learned</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Root Causes and Systemic Failures</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    The causes of this disaster were multi-layered, representing a perfect storm of both technical and procedural failures. The most immediate and central cause was the usage of Microsoft Excel as a database. This core failure with tool usage was compounded by a complete absence of automated data integrity checks in the system.
+                </p>
+                <div class="inside">
+                <p id="second">
+                    There was no system in place to flag a sudden, massive drop off in registered incoming case numbers from specific labs, which should have been an immediate red flag. Furthermore, the process itself was particularly fragile, relying on manual file transfers and manipulations rather than on an automated one, that were vulnerable to human error even before the capacity limit was hit.
+                </p>
+                    <img src="image/system_diagram.jpg" alt="System failure diagram">
+                </div>
+                <p id="third">
+                    This case was not a single bug in a line of code, but a systemic failure of design, where the entire data pipeline was built on a foundation that could not handle the vast scale and criticality of its mission. The incident highlights the danger of "shadow IT" and legacy processes persisting in critical infrastructure. Just because a process works on a small scale does not mean it is suitable for a national, life-critical operation.
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="image/fragile_system.jpg" alt="Fragile system architecture">
+        </div>
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">Tool Misuse</a></li>
+                <div id="one" class="sum-on-click" style="display: none;"><p>Using Excel as a database for critical national health data</p></div>
+                <li class="li-sum"><a id="n2"  href="#second" class="a-sum ">Lack of Monitoring</a></li>
+                <div  id="two"  class="sum-on-click"  style="display: none;"><p>No automated checks for data anomalies or drop-offs</p></div>
+                <li class="li-sum"><a  id="n3" href="#third" class="a-sum ">Fragile Processes</a></li>
+                <div  id="three" class="sum-on-click" style="display: none;"><p>Manual file transfers and legacy systems in critical infrastructure</p></div>
+                <li class="li-sum"><a  id="n4" href="#fourth" class="a-sum ">Systemic Design Failure</a> </li>
+                <div id="four"  class="sum-on-click " style="display: none;"><p>Entire pipeline built on inadequate foundations for the mission scale</p></div>
+            </ul>
+        </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
