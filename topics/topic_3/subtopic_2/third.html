@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+     <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css"> <!--Remove this one once you copy paste the template-->
+
+    <title>Document</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">Timeline</a></li>
+                    <li class="nav-li"><a href="third.html">Root Cause - Architecutre and Latent Bug</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <main>
+        <!--
+        Markup of the text content:
+        Every paragraph is separate
+        and have an unique id refered
+        for the link in the summary
+        -->
+        <div class="content-text">
+            <h1>Root Cause – Architecture and Latent Bug</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+
+The AWS Lambda outage on June 13, 2023, was caused by a latent software flaw triggered by a specific capacity scaling event.
+
+Cellular Architecture and Key Components
+
+AWS Lambda uses a cellular architecture, dividing the infrastructure into autonomous units (cells) for scalability and isolation. Each cell manages a subset of customers and is based on two main subsystems:
+
+Lambda Frontend: Receives and routes function invocations (synchronous/asynchronous).
+
+Lambda Invocation Manager: Manages the underlying computing power, providing Lambda Execution Environments (Lambda Execution Environments) to execute customer code.
+
+The Bug and the Blocking Effect
+
+The problem arose when the Lambda Frontend fleet began normal horizontal scaling in response to increased traffic (10:01 PDT).
+
+At 11:49 PDT, capacity addition exceeded a size threshold never reached within a single cell. This triggered a software flaw:
+
+Execution Environments were successfully assigned for requests.
+
+However, the Frontend could not fully utilize them.
+
+The system quickly ran out of actual capacity (assigned but unusable resources), preventing Lambda from providing new Execution Environments. This led to increased error rates and latencies.
+
+Impact on Events
+
+The failure to allocate capacity had two immediate effects:
+
+Synchronous Invocations: They experienced an immediate increase in error rates (visible as interruptions).
+
+Asynchronous/Streaming Invocations: Incoming events were not processed, causing a rapid and massive event backlog (queue) that took hours to dispose of.
+                </p>
+                <div class="inside">
+                <p id="second">
+
+Analyzing the root cause of the AWS Lambda incident on June 13, 2023, requires an understanding of the service's fundamental architecture, particularly how it handles capacity scaling. The outage was the result of a latent software defect triggered by a specific scaling event.
+AWS Lambda Cellular Architecture
+AWS Lambda is designed for reliability and scalability using a cellular architecture. This means that Lambda's infrastructure is divided into many autonomous and isolated operating units, called cells.
+Each cell is responsible for managing a subset of customer functions and accounts and is made up of several key subsystems that work together to run the code:
+Lambda Frontend
+This component is the gateway. It is responsible for receiving and routing all incoming customer function invocations (synchronous and asynchronous) to the appropriate computing capacity.
+Lambda Invocation Manager
+This manager is the heart of serverless logic. It is responsible for managing the underlying computing capacity, ensuring that there are always sufficient Lambda Execution Environments (Lambda Execution Environments) ready or available to execute customer code based on load.
+
+                </p>
+                <img class="lowerimage" alt="background" src="./img/grs.jpg">
+                </div>
+                <p id="third">
+                  The Latent Software Defect and Scaling
+The problem arose during a normal Lambda Frontend horizontal scaling process in a single cell.
+1.Traffic Increase: At 10:01 a.m. PDT, service traffic in US-EAST-1 began its normal daily increase. In response, the Lambda Frontend fleet began actively adding capacity (scaling out).
+2.Exceeding the Critical Threshold: At 11:49 a.m. PDT, the Frontend fleet, adding additional capacity, exceeded a size threshold or scale point that had never been reached before within that specific cell.
+3.The Bug Trigger: Exceeding this threshold triggered a latent software flaw within the capacity management system.
+4.The Blocking Effect: Due to the bug, the system mishandled resource allocation:
+o Lambda Execution Environments were successfully assigned for incoming requests.
+o However, the Lambda Frontend could not fully utilize them or connect the request to that assigned environment.
+As a result, the system consumed the available Execution Environments without actually serving the requests, quickly depleting the actual cell capacity. Because Lambda was unable to provide or reuse new Execution Environments, incoming requests began to experience increased error rates and latencies.
+Impact on Event Processing
+The inability to allocate capacity had two distinct effects:
+• Synchronous Invocations: They immediately experienced an increase in error rates (visible to users as interruptions).
+• Asynchronous/Streaming Invocations: Incoming events could not be processed, causing a rapid increase in the event backlog (queue) that took hours to dispose of even after the capacity issue was resolved.
+
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" alt="background" src="./img/grt.jpg">
+
+        </div>
+        <!--
+        Markup of the content summary
+        Use the id reference in the href to
+        point the correct paragraph
+        -->
+        <div class="content-sum">
+
+        </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+
+</body>
+</html>
