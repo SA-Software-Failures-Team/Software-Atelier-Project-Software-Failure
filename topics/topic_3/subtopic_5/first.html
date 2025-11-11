@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>What happened</title>
+    <style>
+        img{
+            width: 100%;
+            height: 100%;
+            min-width: 300px;
+            max-width: 300px;
+    }
+</style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_5/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened?</a></li>
+                    <li class="nav-li"><a href="second.html">Main & Technical cause</a></li>
+                    <li class="nav-li"><a href="third.html">Global Impact</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>What Happened?</h1>
+            <p>
+                On the morning of <strong>August 1, 2012, Knight Capital Group,</strong> a leading automated market maker, suffered a catastrophic systems failure minutes after the U.S. stock market opened.
+                The disaster began during the deployment of new trading software. A technician made a critical mistake by failing to put a new code on one of the company's trading servers.
+                Because of this partial deployment, the single non-updated server misinterpreted a new instruction flag, which caused it to accidentally activate an old defective algorithm, called <strong>"Power Peg"</strong>, that was created around 2003 for test purpose.
+                This runaway algorithm was designed for testing trading automatization and contained a crucial bug: it was unable to recognize that its own orders had been filled. This created an endless trading loop. The server began flooding the market with millions of unwanted buy and sell orders across 154 different stocks.
+                In just 45 minutes, the company executed approximately 4 million unintentional trades, causing massive market disruptions and acquiring huge, volatile positions it did not want.
+                By the time engineers identified the specific server and shut down the system, but a huge damage was done. Knight Capital was forced to rapidly sell off the stocks acquired by "Power Peg", realizing a loss of $440 million.
+            </p>
+            <p>
+                Prior to the opening of the <strong>New York Stock Exchange (NYSE)</strong>, where the company operated, 
+                an internal control system monitoring the network detected the misconfiguration and alerted Knight company employees. However, the employees failed to grasp the gravity of the situation and took no measures to resolve the issue.
+                As soon as the NYSE opened, orders already entered by Knight Capital triggered the <strong>Power Peg algorithm</strong> on the non-updated server. 
+                The algorithm failed to recognize when orders had been filled, and continued to execute a massive volume of trades, having a huge impact on the NYSE.
+                It took the company a full <strong>45 minutes</strong> to realize that the problem was internal to their own systems and was infecting the market.                     Technicians then attempted a rollback at 10:00 AM, but failed, inadvertently implementing the defective algorithm on all active trading servers. 
+                They finally managed to stop the algorithm manually at 10:15 AM using a kill switch.  
+            </p>
+            <br>
+            <br>
+        </div>
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src="../subtopic_5/img/logo.png" alt="Knight logo">
+                <br>
+                <p class="four-image-caption">Logo Knight Capital Group</p>
+            </div>
+            <div class="img2">
+                <img src="../subtopic_5/img/graph1.jpg" alt="graph">
+                <br>
+                <p class="four-image-caption">Impact on the company</p>
+            </div>
+            <div class="img3">
+                <img src="../subtopic_5/img/knight.jpeg" alt="knight employer">
+                <br>
+                <p class="four-image-caption">Ignored warning</p>
+            </div>
+            <div class="img4">
+                <img src="../subtopic_5/img/big-failure.jpg" alt="">
+                <br>
+                <p class="four-image-caption">Lose 440$ million in 45 minutes</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

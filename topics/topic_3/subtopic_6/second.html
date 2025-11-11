@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vittoria D'Arrigo">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Technical & Safety Analysis</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_6/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What happened</a></li>
+                    <li class="nav-li"><a href="second.html">Technical & Safety Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Service Impact & Data Loss</a></li>
+                    <li class="nav-li"><a href="fourth.html">Future Prevention Strategies</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <main>
+
+        <div class="content-text">
+            <h1>Technical & Safety Analysis</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    The fire at the OVHcloud Strasbourg campus was traced back to an electrical malfunction inside the SBG2 data center, likely originating from an uninterruptible power supply (UPS) system that had undergone maintenance earlier the same day. Initial reports indicated that one of the UPS units had been restarted shortly before the incident, and investigators later confirmed that the fire spread rapidly through the building due to the presence of combustible materials and the absence of an automatic fire suppression system. Unlike many modern data centers, SBG2 did not rely on inert gas extinguishing technology or sprinklers, meaning the fire was able to escalate before firefighters arrived on site.
+                </p>
+                <div class="inside">
+                <p id="second">
+                    Technical investigations also showed several structural and design vulnerabilities that increased the extent of the damage. The building's construction was of a modular "container-style" with tightly packed server racks and little compartmentalization that allowed the fire to spread quickly from room to room. Secondly, OVHcloud's strategy of hosting numerous data centers within the same campus without complete logical or power isolation led to the inevitable, forced shutdown of even SBG3 and SBG4, which were not directly damaged. This safety-driven shutdown caused a secondary outage, showing how physical and logical dependencies can amplify the impact of a single point of failure.
+                 </p>
+                </div>
+                <p id="third">
+                    Once the fire was contained, OVHcloud engineers began assessing the remaining infrastructure and performing staged reboots of the unaffected systems. However, since SBG2 was completely destroyed, recovery was limited to customers with off-site backups or multi-region configurations. Later, OVHcloud acknowledged that the site had not met the modern standards for fire resilience and pledged to reassess how it designed any future facilities for better compartmentalization, automatic suppression, and more stringent disaster recovery policies. The incident highlighted the often-overlooked fact that cloud failures are not always caused by cyberattacks or software faults — physical infrastructure and safety engineering remain equally critical.
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="img/photo1.png">
+
+        </div>
+
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">OVHcloud</a></li>
+                <div id="one" class="sum-on-click" style="display: none;"><p>OVHcloud is a French cloud provider founded in 1999. It hosts millions of websites and offers services such as dedicated servers, virtual machines, and cloud storage. Known for building its own data centers and hardware, OVHcloud is one of the largest cloud companies in Europe.
+                </p></div>
+                <li class="li-sum"><a id="n2"  href="#second" class="a-sum ">Strasbourg Campus (SBG)</a></li>
+                <div  id="two"  class="sum-on-click"  style="display: none;"><p>The Strasbourg site consisted of four data centers named SBG1, SBG2, SBG3, and SBG4. SBG stands for “Strasbourg”, and the number identifies each building on the campus. SBG2 was completely destroyed in the 2021 fire, SBG1 was partially damaged, and SBG3-SBG4 were shut down for safety, resulting in a full outage of the site.
+                </p></div>
+                 </ul>
+        </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+
+</body>
+</html>

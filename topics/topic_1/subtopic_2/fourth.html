@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonnardo Germann">
+      <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Lessons Learned & The Aftermath</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">Mars Climate Orbiter</a></li>
+                    <li class="nav-li"><a href="first.html">The Mission</a></li>
+                    <li class="nav-li"><a href="second.html">Timeline of the Failure</a></li>
+                    <li class="nav-li"><a href="third.html">The Root Cause: A Metric Mix-Up</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned & The Aftermath</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>After the Burn: Lessons from the MCO</h1>
+            <p>
+                The formal investigation, led by the Mars Climate Orbiter Mishap Investigation Board, concluded that the metric-to-imperial unit error was only the immediate cause of the failure. 
+                The deeper, systemic root cause was a failure in systems engineering. There was inadequate communication between the two main teams—NASA's Jet Propulsion Laboratory (JPL) and the contractor, Lockheed Martin. 
+                Critically, no one ever performed a complete, end-to-end test of the ground-based software to ensure the different parts, built by different teams, would work together correctly. 
+                Concerns raised by navigation staff during the mission about anomalies in the data were not elevated to a high enough level, as they were not seen as "mission-critical" at the time.
+            </p>
+            <p>
+                This failure occurred during NASA's "Faster, Better, Cheaper" era. This philosophy, implemented in the 1990s, aimed to reduce mission costs and increase the frequency of launches. 
+                While it had some successes, on this mission, it led to a culture of cutting corners on vital oversight and verification. Teams were understaffed, overworked, and under-resourced, forcing them to accept risks that would have been unacceptable in previous decades. 
+                The MCO mission simply did not have the budget for the kind of rigorous, independent testing that would have easily caught the unit-conversion error. 
+                The focus on cost-saving meant that the project's managers, engineers, and navigators lacked the resources to properly check each other's work.
+            </p>
+            <p>
+                The loss of the $125 million orbiter, followed just months later by the loss of its $165 million sister mission (the Mars Polar Lander), was a public and devastating wake-up call for NASA. 
+                It forced a complete cultural shift away from the "Faster, Better, Cheaper" mindset. The agency immediately implemented sweeping reforms, including the mandatory use of the metric system for all future missions. 
+                More importantly, it established a renewed, iron-clad focus on systems engineering, rigorous end-to-end testing, and creating clear lines of communication. 
+                This painful but valuable lesson led directly to the more robust, redundant, and highly successful rover missions that followed, such as Spirit, Opportunity, and Curiosity.
+            </p>
+            
+            <br>
+        </div>
+            <div class="lateral-image">
+                <img src='../subtopic_2/img/mars6.jpg' alt="">
+            </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

@@ -1,3 +1,5 @@
+/* Author: Davide Scapellato */
+
 let divs=document.getElementsByClassName("bug")
 let temp;
 for(let i=0; i<divs.length; i++){
