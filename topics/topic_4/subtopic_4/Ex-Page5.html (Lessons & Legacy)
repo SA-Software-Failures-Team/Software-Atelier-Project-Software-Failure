@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css">
+    <title>Lessons & Legacy</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="Ex-Page1.html">The Catastrophic Launch</a></li>
+                    <li class="nav-li"><a href="Ex-Page2.html">Project Context</a></li>
+                    <li class="nav-li"><a href="Ex-page3.html">Root Causes</a></li>
+                    <li class="nav-li"><a href="Ex-page4.html">Consequences</a></li>
+                    <li class="nav-li"><a href="Ex-Page5.html">Lessons & Legacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>Lasting Lessons and Institutional Legacy</h1>
+            <p>
+                The importance of the Healthcare.gov failure as a case study in software engineering and public administration cannot be overstated. It serves as an important and permanent high profile cautionary tale with several critical lessons. First of all it underscored the fatal risks of the big anticipated launch and championed the adoption of the Agile development and DevOps practices, which emphasize a continuous integration, testing, and iterative releases.
+            </p>
+            <br>
+            <p>
+                Second, it highlighted the non negotiable necessity of rigorous load and performance testing under real-world conditions before the lunch. Third, it proved the need for a clear, centralized leadership and accountability in these type of and complex and costly software projects. The fragmented contractor approach without unified leadership was identified as a primary cause of the failure.
+            </p>
+            <br>
+            <p>
+                Most profoundly, its recovery and eventual success led to a shift within the U.S. government, leading to the creation of the U.S. Digital Service (USDS) and 18F. These organizations institutionalize the lessons learned, bringing a culture of user centric designs, modern technical practices, and product management to the federal IT.
+            </p>
+            <p>
+                In the end, Healthcare.gov's catastrophic start and remarkable recovery taught the world that in the digital age, successful policy implementation is inextricably linked with excellence in software engineering. The case study continues to influence how governments worldwide approach large-scale digital transformation projects.
+            </p>
+        </div>
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src="../template/image/agile_devops.jpg" alt="Agile and DevOps">
+                <br>
+                <p class="four-image-caption">Agile & DevOps</p>
+            </div>
+            <div class="img2">
+                <img src="../template/image/load_testing.jpg" alt="Load testing">
+                <br>
+                <p class="four-image-caption">Rigorous Testing</p>
+            </div>
+            <div class="img3">
+                <img src="../template/image/leadership.jpg" alt="Clear leadership">
+                <br>
+                <p class="four-image-caption">Clear Leadership</p>
+            </div>
+            <div class="img4">
+                <img src="../template/image/usds_logo.jpg" alt="US Digital Service">
+                <br>
+                <p class="four-image-caption">USDS Creation</p>
+            </div>
+        </div>
+    </main>
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
