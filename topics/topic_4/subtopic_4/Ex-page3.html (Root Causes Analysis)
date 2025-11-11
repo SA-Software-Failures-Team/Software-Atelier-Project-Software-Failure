@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css">
+    <title>Root Causes Analysis</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="Ex-Page1.html">The Catastrophic Launch</a></li>
+                    <li class="nav-li"><a href="Ex-Page2.html">Project Context</a></li>
+                    <li class="nav-li"><a href="Ex-page3.html">Root Causes</a></li>
+                    <li class="nav-li"><a href="Ex-page4.html">Consequences</a></li>
+                    <li class="nav-li"><a href="Ex-Page5.html">Lessons & Legacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Managerial and Technical Root Causes</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    The causes of the failure were not singular but layered, stemming from a perfect storm of managerial incompetence and technical shortcomings. From a project management perspective, the development process was fatally fragmented. The responsibility was getting divided among numbers of paid contractors with no single, empowered leader or project manager to enforce the needed coordination and maintain a single unified vision.
+                </p>
+                <div class="inside">
+                <p id="second">
+                    This led into critical miscommunication, for instance, one team could have been unaware that another team code changes would break a core pre designed function. This kind of approach was compounded by an almost total absence of end to end testing and communication amongst teams. While individual components and features might have been tested in isolation by their creators, the fully integrated system as a whole was never subjected to a realistic load test simulating millions of users it was expected to handle on day one.
+                </p>
+                    <img src="image/waterfall_methodology.jpg" alt="Waterfall methodology diagram">
+                </div>
+                <p id="third">
+                    The project management was rooted in an outdated "waterfall" methodology, where the entire system was built and then tested as a monolith at the end, leaving no room for iterative adjustment. Technically, the system's architecture was riddled with critical flaws that guaranteed its collapse under load. A primary issue was the decision to force users to create an account and complete a complex eligibility application before they could even browse insurance plans. This created an immediate and unnecessary bottleneck.
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="image/technical_architecture.jpg" alt="Technical architecture flaws">
+        </div>
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">Fragmented Management</a></li>
+                <div id="one" class="sum-on-click" style="display: none;"><p>No single empowered leader, divided responsibility among contractors</p></div>
+                <li class="li-sum"><a id="n2"  href="#second" class="a-sum ">Testing Failures</a></li>
+                <div  id="two"  class="sum-on-click"  style="display: none;"><p>No end-to-end testing, no realistic load testing before launch</p></div>
+                <li class="li-sum"><a  id="n3" href="#third" class="a-sum ">Architectural Flaws</a></li>
+                <div  id="three" class="sum-on-click" style="display: none;"><p>Poor technical decisions and outdated waterfall methodology</p></div>
+                <li class="li-sum"><a  id="n4" href="#fourth" class="a-sum ">Technical Bottlenecks</a> </li>
+                <div id="four"  class="sum-on-click " style="display: none;"><p>Forced account creation before browsing created immediate bottlenecks</p></div>
+            </ul>
+        </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
