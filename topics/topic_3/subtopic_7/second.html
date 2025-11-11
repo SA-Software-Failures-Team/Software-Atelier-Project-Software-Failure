@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vittoria D'Arrigo">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Technical & Security Analysis</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_7/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What happened</a></li>
+                    <li class="nav-li"><a href="second.html">Technical & Security Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact on Services & Data Exposure</a></li>
+                    <li class="nav-li"><a href="fourth.html">Long-Term Mitigation & Prevention</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <main>
+
+        <div class="content-text">
+            <h1>Technical & Security Analysis</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    The Heartbleed bug was a coding error in OpenSSL's TLS Heartbeat extension, which was introduced in 2011. Because of missing bounds-checking, an attacker could send a malformed request and force a vulnerable system to return up to 64 KB of its memory, thus leaking sensitive data without leaving any trace in logs. Since the leaked data came directly from the process handling encrypted communications, it could include credentials, session data, or even private encryption keys.
+                </p>
+                <div class="inside">
+                <p id="second">
+                    The impact was global: both servers and clients running the OpenSSL versions 1.0.1 to 1.0.1f were vulnerable. The biggest risk was the compromise of private TLS keys. Once obtained, an attacker could decrypt intercepted traffic or impersonate the legitimate service. Unlike common exploits, Heartbleed didn't execute code nor crashed systems - it silently undermined the core trust model of internet encryption.
+                </div>
+                <p id="third">
+                    The incident exposed deeper problems: OpenSSL, a critical component securing much of the internet, was maintained by a small underfunded team with limited code review. A single unchecked line of code went unnoticed for over two years, putting millions of systems at risk. Following Heartbleed, there was a push by the industry for better funding of open-source security projects, required code auditing, and safer development practices that could help prevent such large-scale vulnerabilities in the future.
+            </div>
+            <br>
+            <img class="lowerimage" src="img/photo g.jpeg">
+
+        </div>
+
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">OpenSSL</a></li>
+                <div id="one" class="sum-on-click" style="display: none;"><p>OpenSSL is an open-source library used to encrypt internet traffic. It powers HTTPS, email security, VPNs, and many online services. Yet, despite its widespread use, it's maintained by a small team-an arrangement that has contributed to the bug going undetected for years.
+                </p></div>
+                <li class="li-sum"><a id="n2"  href="#second" class="a-sum ">TLS (Transport Layer Security)</a></li>
+                <div  id="two"  class="sum-on-click"  style="display: none;"><p>TLS is the secure protocol for sending data over the Internet, such as logging in or making a payment. It's what makes https:// connections safe. Heartbleed affected the TLS Heartbeat feature inside OpenSSL, exposing encrypted communication to data leaks.
+                </p></div>
+                 </ul>
+        </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+
+</body>
+</html>

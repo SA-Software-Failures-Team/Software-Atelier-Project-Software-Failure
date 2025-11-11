@@ -1,10 +1,15 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
 
-        <link rel="stylesheet" href="../topics.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricetti Leonardo">
+    <link rel="stylesheet" href="../topics.css">
+    <title>Document</title>
+</head>
 
-    </head>
-    <body>
+<body>
         
         <div class="maingeneraltopic">
             <div class="first">
@@ -12,31 +17,29 @@
                     <div class="Title">
                         Healthcare
                     </div>
-                    <div class="tagcat vul" >
-                        VULNERABILITY
-                    </div>
-                    <div class="bta backbta"> Back  </div>
+                <div class="tagcat"> <img src="../topics_img/security.png" style="width: 60px; height: 60px;  background-color: rgb(0,0,0,0.2); border-radius: 15px; padding: 7px;" ></div>
+
                 </div>
                 <div class="desc">
-                    In this topic, we will examine the critical role of software in healthcare, where reliability can mean the difference between life and death. We will explore cases where software bugs or vulnerabilities in medical devices, diagnostic tools, and life-support systems have directly threatened patient safety. By analyzing the causes, consequences, and lessons learned from these incidents, we aim to highlight the importance of rigorous software engineering practices to ensure safe and effective healthcare technology.
+                    In this topic, we investigate cybersecurity vulnerabilities that have exposed healthcare systems to attacks and data breaches. With hospitals and medical devices increasingly connected to the internet, weaknesses in their software can jeopardize patient safety and privacy. By examining notable incidents, we will analyze how these vulnerabilities were exploited, their impact on healthcare operations, and the security strategies needed to build resilience in digital health infrastructure.
                 </div>
             </div>
             <div class="third">
-                <div class="divslide one" style="background-image: url(topic_3_img/MAOutage.jpg);">
-                    <div class="inside">Microsoft Azure / Office 365 Outage (2023)</div>
+                <div class="divslide one" style="background-image: url(topic_4_img/wannacry.jpg);">
+                    <div class="inside">WannaCry Ransomware - NHS (May 2017)</div>
                 </div>
-                <div class="divslide two" style="background-image: url(topic_3_img/Facebook.png);">
-                    <div  class="inside">Facebook Global Outage (2021) </div>                   
+                <div class="divslide two" style="background-image: url(topic_4_img/radio.avif);">
+                    <div  class="inside">U.S. Medical Imaging Servers Exposed (2019)</div>                   
                 </div>
-                <div class="divslide three" style="background-image: url(topic_3_img/Heartbleedbug.jpg);">
-                    <div class="inside">Heartbleed (OpenSSL, 2014) </div>     
+                <div class="divslide three" style="background-image: url(topic_4_img/medtronic_hq.jpg);">
+                    <div class="inside">Medtronic MiniMed Insulin Pump Recall (2019)</div>     
               
                 </div>
-                <div class="divslide four" style="background-image: url(topic_3_img/NHS\ Ransomware.jpg);">
-                    <div  class="inside">NHS Ransomware Attack (UK, 2022)</div>
+                <div class="divslide four" style="background-image: url(topic_4_img/intellibridge.png);">
+                    <div  class="inside">Philips IntelliBridge EC40/80 Gateways (2022)</div>
                 </div>
-                <div class="divslide five" style="background-image: url(topic_3_img/Vancouver.jpg);">
-                    <div class="inside">Vancouver Stock Exchange (1983) </div>     
+                <div class="divslide five" style="background-image: url(topic_4_img/ChangeHealthcareBreach.jpg);">
+                    <div class="inside">Change Healthcare Ransomware Breach (Feb 2024)</div>     
 
                 </div>
             </div>
@@ -44,6 +47,7 @@
 
         <script src="..\topics.js"></script>
         <script src="..\generaltopic.js"></script>
+        <script src="../injectSidebarTopicGeneral.js"></script>
 
 
     </body>

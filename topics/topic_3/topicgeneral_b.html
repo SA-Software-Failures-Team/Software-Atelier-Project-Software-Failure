@@ -1,10 +1,14 @@
-<html>
-    <head>
+<!-- Author: Davide Scapellato-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../topics.css">
+    <title>Document</title>
+</head>
 
-        <link rel="stylesheet" href="../topics.css">
-
-    </head>
-    <body>
+<body>
         
         <div class="maingeneraltopic">
             <div class="first">
@@ -12,38 +16,35 @@
                     <div class="Title">
                         Business-Critical Systems
                     </div>
-                    <div class="tagcat bug" >
-                        BUG
-                    </div>
-                    <div class="bta backbta"> Back  </div>
+                <div class="tagcat"> <img src="../topics_img/bug.png" style="width: 60px; height: 60px;  background-color: rgb(0,0,0,0.2); border-radius: 15px; padding: 7px;" ></div>
+                    
                 </div>
                 <div class="desc">
-                    In this topic, we will explore various instances of catastrophic software failures that have had significant impacts on society. We will analyze the causes of these failures, their consequences, and the lessons learned to prevent similar occurrences in the future. Through case studies and discussions, we aim to understand the critical role software plays in our daily lives and the importance of robust software engineering practices.
-                </div>
+Bugs in business-critical systems can have severe consequences because these systems often manage essential operations like financial transactions, healthcare processes, or transportation control. Even a small error can lead to massive financial losses, service outages, or safety hazards. For example, a rounding bug in a banking system might miscalculate interest across millions of accounts, while a software glitch in an airline reservation system could disrupt global travel. These failures are costly not only in terms of money but also reputation and compliance, as many industries are heavily regulated. To mitigate risks, organizations rely on rigorous testing, formal verification for critical components, redundancy, and continuous monitoring. In short, reliability in these systems is paramount because the cost of failure is extremely high.                </div>
             </div>
             <div class="third">
                 <div class="divslide one" style="background-image: url(topic_3_img/MAOutage.jpg);">
                     <div class="inside">Microsoft Azure / Office 365 Outage (2023)</div>
                 </div>
-                <div class="divslide two" style="background-image: url(topic_3_img/Facebook.png);">
-                    <div  class="inside">Facebook Global Outage (2021) </div>                   
+                <div class="divslide two" style="background-image: url(subtopic_2/img/logo.png)">
+                    <div  class="inside">FAA System Outage (USA, 2023) </div>                   
                 </div>
-                <div class="divslide three" style="background-image: url(topic_3_img/Heartbleedbug.jpg);">
-                    <div class="inside">Heartbleed (OpenSSL, 2014) </div>     
+                <div class="divslide three" style="background-image: url(subtopic_3/img/TSB.jpg);">
+                    <div class="inside">TSB Bank (2018)</div>     
               
                 </div>
-                <div class="divslide four" style="background-image: url(topic_3_img/NHS\ Ransomware.jpg);">
-                    <div  class="inside">NHS Ransomware Attack (UK, 2022)</div>
+                <div class="divslide four" style="background-image: url(topic_3_img/Vancouver.jpg);">
+                    <div  class="inside">Vancouver Stock Exchange (1983) </div>
                 </div>
-                <div class="divslide five" style="background-image: url(topic_3_img/Vancouver.jpg);">
-                    <div class="inside">Vancouver Stock Exchange (1983) </div>     
-
+                <div class="divslide five" style="background-image: url(subtopic_5/img/background-main-sub.jpeg);">
+                    <div class="inside">Knight Capital Grup (USA, 2012)</div>     
                 </div>
             </div>
         </div>
 
         <script src="..\topics.js"></script>
         <script src="..\generaltopic.js"></script>
+        <script src="../injectSidebarTopicGeneral.js"></script>
 
 
     </body>

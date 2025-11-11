@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonnardo Germann">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>The Root Cause: Mars Climate Orbiter</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">Mars Climate Orbiter</a></li>
+                    <li class="nav-li"><a href="first.html">The Mission</a></li>
+                    <li class="nav-li"><a href="second.html">Timeline of the Failure</a></li>
+                    <li class="nav-li"><a href="third.html">The Root Cause: A Metric Mix-Up</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned & The Aftermath</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>The Fatal Calculation: A Metric Mix-Up</h1>
+            <p>
+                The root cause of the Mars Climate Orbiter's destruction was a simple, preventable, and catastrophic error in unit conversion. 
+                The two main teams working on the mission—the spacecraft builder, Lockheed Martin Astronautics, and the mission navigation team at NASA's Jet Propulsion Laboratory (JPL)—were using two different systems of measurement without realizing it. 
+                Lockheed Martin wrote a piece of ground software that calculated the forces from thruster firings using the English Imperial system, specifically "pound-force." The navigation team at JPL, however, used software that assumed those exact same numbers were being provided in the metric system, "newtons," which is the standard for NASA missions. 
+                This mismatch was never caught by any pre-launch review, quality assurance check, or end-to-end test.
+            </p>
+            <br>
+            <p>
+                This "metric mix-up" was not a one-time event but a critical flaw that corrupted the spacecraft's navigation data for its entire nine-month journey. One pound-force is equivalent to about 4.45 newtons. 
+                This means that every time the Lockheed software reported a thruster firing, the JPL navigation team's software read that value as being 4.45 times weaker than it actually was. 
+                Because the navigation team believed the thruster pushes were far smaller than they were in reality, their calculations of the spacecraft's trajectory were consistently wrong. 
+                They were making corrections for a spacecraft on one path, while the actual orbiter was on a completely different, lower trajectory that was drifting closer to Mars with every passing day.
+            </p>
+            <br>
+            <p>
+                The accumulated error over millions of miles was devastating. The navigation plan called for the orbiter to fire its main engine to enter a safe, elliptical orbit at an altitude of 140-150 kilometers (87-93 miles) above the Martian surface. 
+                However, due to the incorrect calculations, the spacecraft was on a fatal trajectory that was far too low. Instead of skimming safely above the atmosphere, the probe entered it at a perilously low altitude of just 57 kilometers (35 miles). At this height, the atmosphere is far too dense for a spacecraft not designed for entry. 
+                The orbiter would have been instantly overwhelmed by atmospheric friction and pressure, causing it to overheat, break apart, and disintegrate in a matter of seconds, effectively burning up like a meteor.
+            </p>
+            <br>
+        </div>
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src='../subtopic_2/img/mars5.jpg' alt="" width="330" height="300">
+                <br>
+                <p class="four-image-caption">Orbiter</p>
+            </div>
+            <div class="img2">
+                <img src='../subtopic_2/img/logo1.png' alt="" width="330" height="300">
+                <br>
+                <p class="four-image-caption">Lockheed Martin</p>
+            </div>
+            <div class="img3">
+                <img src='../subtopic_2/img/logo2.jpg' alt="" width="330" height="300">
+                <br>
+                <p class="four-image-caption">NASA</p>
+            </div>
+            <div class="img4">
+                <img src='../subtopic_2/img/cartoon.jpg' alt="" width="330" height="300">
+                <br>
+                <p class="four-image-caption">Cartoon</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

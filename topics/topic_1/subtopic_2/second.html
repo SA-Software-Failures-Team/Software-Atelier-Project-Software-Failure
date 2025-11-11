@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonnardo Germann">
+      <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Timeline of the Failure</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">Mars Climate Orbiter</a></li>
+                    <li class="nav-li"><a href="first.html">The Mission</a></li>
+                    <li class="nav-li"><a href="second.html">Timeline of the Failure</a></li>
+                    <li class="nav-li"><a href="third.html">The Root Cause: A Metric Mix-Up</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned & The Aftermath</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>The Final Approach: Timeline of a Disaster</h1>
+            <p>
+                The Mars Climate Orbiter (MCO) mission began flawlessly with a successful launch from Cape Canaveral on December 11, 1998. The probe embarked on a 416-million-mile, nine-month journey to Mars.
+                During this long cruise, the navigation team at NASA's Jet Propulsion Laboratory (JPL) periodically performed "trajectory correction maneuvers" (TCMs), which involved firing the spacecraft's small thrusters to make fine adjustments to its course. 
+                It was during these routine maneuvers that the fatal error was unknowingly introduced. 
+                The software on the ground, used by the navigation team, expected thruster data in the metric unit of newtons. However, the spacecraft's own software, built by contractor Lockheed Martin, was reporting this data in the English unit of pound-force. 
+                Because this mismatch was never caught, each TCM was calculated incorrectly, pushing the orbiter slightly but cumulatively off its intended path and steering it dangerously closer to the planet with each passing month.
+            </p>
+            <br>
+            <p>
+                On September 23, 1999, the MCO finally reached its destination. The day's most critical event was the "Mars Orbit Insertion" (MOI) maneuver, a 16.5-minute burn of the main engine designed to slow the probe just enough to be captured by the planet's gravity. 
+                The plan was for the orbiter to pass safely above Mars at an altitude of 140-150 kilometers. However, due to the accumulated navigation error, the orbiter was on a trajectory that was far too low. At 09:00 UTC, the MCO began its engine burn as scheduled. 
+                At 09:04 UTC, the spacecraft passed behind Mars, an event known as "occultation." This was an expected part of the plan, and radio contact was lost, just as mission control had anticipated. The team prepared to wait for the 21 minutes it would take for the probe to complete its burn and re-emerge from behind the planet.
+            </p>
+            <br>
+            <p>
+                In mission control, the atmosphere was tense. The orbiter was scheduled to re-establish radio contact with Earth's Deep Space Network at 09:25 UTC. But that time came and went in complete silence. 
+                As the minutes ticked by, 09:30, 09:40, the mood shifted from tension to a growing sense of dread. Engineers sent commands to the probe, hoping to get any kind of response, but the radio receivers on Earth picked up nothing but the background noise of space. 
+                Later investigations confirmed the team's worst fears: the orbiter had entered the Martian atmosphere at a perilously low altitude of just 57 kilometers, far below the 110-kilometer level it could have survived. 
+                At this altitude, the intense atmospheric friction and heat would have caused the spacecraft to disintegrate within seconds, ending the $125 million mission in a fiery, silent failure.
+            </p>
+            
+            <br>
+        </div>
+            <div class="lateral-image">
+                <img src='../subtopic_2/img/mars4.jpeg' alt="">
+            </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

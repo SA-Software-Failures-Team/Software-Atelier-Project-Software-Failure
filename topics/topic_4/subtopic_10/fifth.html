@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricetti Leonardo">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Mitigation for the Future - Change Healthcare Breach</title>
+    <style>
+  .i {
+    width: 300px;
+  }
+  .w{
+    height: 400px;
+  }
+</style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_10/generalsubtopic.html">Introduction</a></li>
+                    <li class="nav-li"><a href="../subtopic_10/first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="../subtopic_10/second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="../subtopic_10/third.html">Impact & Scope</a></li>
+                    <li class="nav-li"><a href="../subtopic_10/fourth.html">Lessons Learned & Broader Implications</a></li>
+                    <li class="nav-li"><a href="../subtopic_10/fifth.html">Mitigation for the Future</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-text">
+            <h1>Mitigation for the Future</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    The Change Healthcare ransomware incident underscored the urgent need for systemic change across the healthcare sector’s digital infrastructure. 
+                    To prevent similar breaches in the future, organizations must adopt a proactive, layered defense strategy focused on identity security, network segmentation, and rapid detection and response capabilities.
+                </p>
+                <div class="inside">
+                    <p id="second">
+                        Strengthening identity management is one of the most critical mitigation measures. 
+                        This includes enforcing multifactor authentication (MFA) across all remote access points, rotating administrative credentials regularly, and monitoring for unusual access behaviors through automated tools. 
+                        Implementing zero-trust architectures ensures that even if an attacker compromises one account, they cannot easily move laterally across the system.
+                    </p>
+                    <img src="img/mitigation.jpg" alt="" class="i">
+                </div>
+                <p id="third">
+                    Network segmentation and isolation of sensitive systems — such as billing databases and PHI repositories — are equally vital. 
+                    By creating clear separation between core operational networks and user-facing environments, healthcare organizations can limit the blast radius of any intrusion. 
+                    Regular penetration testing and incident response simulations should be mandated to validate the effectiveness of these defensive layers.
+                </p>
+                <p id="fourth">
+                    From an organizational perspective, resilience must become a top priority. 
+                    This includes maintaining offline, immutable backups of critical data, ensuring payment continuity through redundant systems, and having a well-defined cyber incident response plan shared with partners and insurers. 
+                    In addition, collaboration between public and private sectors — including federal cybersecurity agencies — is essential to share threat intelligence and coordinate national defense against healthcare-targeted ransomware groups.
+                </p>
+                <p id="fifth">
+                    Ultimately, the future of healthcare cybersecurity depends on recognizing that technology alone cannot guarantee safety. 
+                    Continuous employee training, board-level cybersecurity accountability, and real-time visibility into system health will be crucial to protect patient data and maintain the trust of the entire healthcare ecosystem. 
+                    The Change Healthcare breach should serve as a lasting catalyst for transformation, driving the industry toward a more secure, resilient, and transparent digital future.
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage w" src="img/security_future.jpg" alt="">
+        </div>
+    </main>
+
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
