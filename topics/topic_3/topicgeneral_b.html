@@ -1,13 +1,14 @@
 <!-- Author: Davide Scapellato-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../topics.css">
+    <title>Document</title>
+</head>
 
-
-<html>
-    <head>
-
-        <link rel="stylesheet" href="../topics.css">
-
-    </head>
-    <body>
+<body>
         
         <div class="maingeneraltopic">
             <div class="first">
@@ -15,10 +16,8 @@
                     <div class="Title">
                         Business-Critical Systems
                     </div>
-                    <div class="tagcat bug" >
-                        BUG
-                    </div>
-                    <div class="bta backbta"> Back  </div>
+                <div class="tagcat"> <img src="../topics_img/bug.png" style="width: 60px; height: 60px;  background-color: rgb(0,0,0,0.2); border-radius: 15px; padding: 7px;" ></div>
+                    
                 </div>
                 <div class="desc">
 Bugs in business-critical systems can have severe consequences because these systems often manage essential operations like financial transactions, healthcare processes, or transportation control. Even a small error can lead to massive financial losses, service outages, or safety hazards. For example, a rounding bug in a banking system might miscalculate interest across millions of accounts, while a software glitch in an airline reservation system could disrupt global travel. These failures are costly not only in terms of money but also reputation and compliance, as many industries are heavily regulated. To mitigate risks, organizations rely on rigorous testing, formal verification for critical components, redundancy, and continuous monitoring. In short, reliability in these systems is paramount because the cost of failure is extremely high.                </div>
@@ -45,6 +44,7 @@ Bugs in business-critical systems can have severe consequences because these sys
 
         <script src="..\topics.js"></script>
         <script src="..\generaltopic.js"></script>
+        <script src="../injectSidebarTopicGeneral.js"></script>
 
 
     </body>
