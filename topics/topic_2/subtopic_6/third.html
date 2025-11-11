@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saeid Shirkani">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Stuxnet – PLC Payload</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="page1.html">Overview</a></li>
+                    <li class="nav-li"><a href="page2.html">Infection Vectors</a></li>
+                    <li class="nav-li"><a href="page3.html" aria-current="page">PLC Payload</a></li>
+                    <li class="nav-li"><a href="page4.html">Impact & Lessons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>LTarget Environment</h1>
+            <p id="first">
+            Stuxnet specifically targeted Siemens Step7/WinCC engineering software and S7 PLCs used for controlling industrial centrifuges.
+            Only specific configurations triggered the payload.
+            </p>
+            <br>
+            <p id="second">
+                <strong>Injection and Manipulation</strong>
+            Intercepted legitimate Step7 communications between the engineering station and PLCs.
+            Injected rogue function blocks into PLC memory without detection.
+            Manipulated rotational speeds and timing while feeding normal data back to operators (rootkit-style concealment).
+          
+            </p>
+            <br>
+            <p id="third">
+            <strong>Operational Objective</strong>
+            The main goal was to cause subtle degradation of centrifuge performance without triggering alarms, reducing efficiency
+            and leading to long-term equipment failure.
+            </p>
+            <p id="fourth">
+            <strong>Variant “0.5”</strong>
+            An earlier Stuxnet variant (0.5) focused on manipulating valve operations to disrupt uranium enrichment flow,
+            representing a different but related strategy.
+            
+            </p>
+            <br>
+        </div>
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src="img/image3.png" style="width: 800px; height: 600px;" alt="">
+                
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

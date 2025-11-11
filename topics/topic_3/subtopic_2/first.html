@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sakithan Poopalan">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Example</title>
+</head>
+<body>
+    <!--
+    Nav bar:
+    only adjust the name of the subtopic
+    -->
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">Timeline</a></li>
+                    <li class="nav-li"><a href="third.html">Root Cause - Architecture and Latent Bug</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="lateral-image">
+            <img src="./img/bug.jpg" alt="">
+        </div>
+        <div class="content-text center">
+            <h1>AWS Lambda</h1>
+            <br>
+            <p id="first">
+               AWS Lambda is a serverless computing service that allows customers to run code without having to manage the underlying servers. Its customers are governments and businesses such as Netflix, Amazon.com, Disney+, that use it to build applications, process data, and run backend logic.
+            </p>
+            <br><br>
+            <p id="second">
+                On June 13, 2023, customers experienced a significant outage of AWS Lambda service in the Northern Virginia region (US-EAST-1), the largest and most critical area of Amazon Web Services. The event, which began at 11:49 PDT, caused a dramatic increase in error rates and latencies for invocations of Lambda functions. The outage highlighted critical interdependencies within the cloud infrastructure, leading to a cascading impact on numerous other AWS services, including Amazon STS, AWS Management Console, Amazon EKS, Amazon Connect, and Amazon EventBridge. The root cause was traced to a latent software flaw (bug) within a single cell of Lambda's architecture, triggered by a Lambda Frontend capacity scaling event that exceeded a previously unattained threshold.
+            </p>
+            <br><br>
+            <p id="third">
+                The flaw prevented the correct allocation and use of Lambda Execution Environments, effectively blocking computing capacity. Despite the severity, AWS' engineering teams were able to mitigate the impact by downsizing the Frontend fleet, and service was fully recovered by 3:37 pm PDT. The analysis of this event offers a crucial insight into the challenges and corrective measures taken to ensure the resilience of large-scale serverless systems.
+            </p>
+
+            </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>
