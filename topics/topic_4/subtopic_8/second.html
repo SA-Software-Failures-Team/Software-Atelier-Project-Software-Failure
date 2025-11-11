@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Piotr Wilinski">
+      <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Medtronic MiniMed Insulin Pump Recall - Root Cause & Technical Analysis</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_8/generalsubtopic.html">Medtronic MiniMed Insulin Pump Recall</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Lessons Learned & Broader Implication</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Medtronic MiniMed Insulin Pump Recall - Root Cause & Technical Analysis</h1>
+            <p>
+                The root cause of the recall was a fundamental weakness in the design of the wireless communication protocol used by the older MiniMed 508 and Paradigm pumps. These devices relied on a low-security, proprietary radio frequency 
+                (RF) to communicate with external components like remote controllers and glucose meters. Critically, this protocol lacked proper authentication and encryption. Essentially, the pump did not verify who was sending it a command, 
+                nor did it scramble the data to prevent interception.
+            </p>
+            <br>
+            <p>
+                Technical analysis revealed that an attacker, if within close proximity to the pump (generally less than 6 feet), could use inexpensive, readily available radio equipment to "eavesdrop" on the pump's communication. 
+                More dangerously, they could "spoof" or mimic the command signals sent by the official remote controller. Because the pump's software did not require a complex handshake or unique digital key to accept a command, 
+                it would process unauthorized signals as legitimate instructions for insulin delivery.
+            </p>
+            <br>
+            <p>
+                The lack of encryption meant that the command codes for actions like "deliver a bolus" or "stop infusion" were easily readable and replicable. An attacker could thus transmit a command to:
+                Over-deliver insulin: Sending a command for a large, rapid bolus, which could induce severe hypoglycemia. Stop insulin delivery: Sending a command to halt the infusion entirely, which could lead to severe hyperglycemia and diabetic ketoacidosis (DKA) over time. 
+                This vulnerability was not a software bug that could be patched, but a deep-seated design flaw in the hardware's communication layer, requiring device replacement.          
+            </p>
+            <p>
+                It is important to note that when these pump models were originally designed and released (before 2013), cybersecurity standards for medical devices were significantly less rigorous than they are today. 
+                The technology was considered "legacy," meaning it did not incorporate modern, robust security features like AES encryption and digital certificates, which are standard in newer pumps. This recall highlighted the necessity 
+                for the entire medical device industry to prioritize security throughout the product lifecycle, especially for connected, life-sustaining devices.
+            </p>
+            
+            <br>
+        </div>
+            <div class="lateral-image">
+                <img src="img/minimed-insulin-pump.jpg" alt="">
+            </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>
