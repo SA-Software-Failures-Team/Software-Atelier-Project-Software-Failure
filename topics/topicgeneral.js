@@ -1,18 +1,26 @@
-divs=document.getElementsByClassName("exit")
-for(let i=0; i<divs.length; i++){
-     divs[i].onclick=function(){
+/* Author: Davide Scapellato */
 
-        if(sessionStorage.getItem("category")=="bug"){
 
-            temp=window.location.href.slice(0,-31)+"topicgeneral_b.html"
-            window.location.href=temp
+divs = document.getElementsByClassName("exit");
+for (let i = 0; i < divs.length; i++) {
+    divs[i].onclick = function() {
+
+      
+        let parts = window.location.pathname.split("/");
+        parts.pop();
+        parts.pop();
+        let base = parts.join("/");
+
+        if (sessionStorage.getItem("category") == "bug") {
+            temp = base + "/topicgeneral_b.html";
+            window.location.href = temp;
+        } else {
+            temp = base + "/topicgeneral_v.html";
+            window.location.href = temp;
         }
-        else{
-             temp=window.location.href.slice(0,-31)+"topicgeneral_v.html"
-            window.location.href=temp
-        }
-    }
+    };
 }
+
 
 
 divs=document.getElementsByClassName("one")

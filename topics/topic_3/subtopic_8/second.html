@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simone Bianchi">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>The LockBit 3.0 Ransomware</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_8/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">The LockBit 3.0 Ransomware</a></li>
+                    <li class="nav-li"><a href="third.html">Root Cause and Technical Analysis</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned and Broader Implications</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>The LockBit 3.0 Ransomware</h1>
+            <p>
+                LockBit 3.0, also known as LockBit Black, is one of the most advanced and widespread forms of ransomware currently in circulation. It appeared in mid-2022 as the third major version of the LockBit family, which first emerged in 2019. 
+                Unlike traditional ransomware groups, LockBit operates under a “ransomware-as-a-service” (RaaS) model, in which the creators of the malware rent it out to other cybercriminals, called affiliates, who carry out attacks in exchange for a share of the profits.
+            </p>
+            <br>
+            <p>
+                Technically, LockBit 3.0 is designed to infect Windows, Linux, and macOS systems. It spreads mainly through phishing emails, compromised remote-desktop connections, or vulnerabilities in outdated software. 
+                Once it gains access, the malware quickly moves through the network, encrypting files and disabling backups to prevent recovery. It uses powerful AES and RSA encryption algorithms, making data restoration without the decryption key nearly impossible.           
+            </p>
+            <br>
+            <p>
+                 What distinguishes LockBit 3.0 is its “triple-extortion” strategy. The attackers first steal confidential data, then encrypt the victim’s systems, and finally threaten to publish the stolen information on the dark web if the ransom is not paid. 
+                 This approach puts additional pressure on victims, even those who might otherwise restore their data from backups.
+            </p>
+            <p>
+                LockBit 3.0 has been linked to numerous high-profile incidents worldwide. Among its victims are major companies, local governments, and healthcare providers. One of the most notable cases was the 2022 cyberattack on Advanced Computer Software Group, a key supplier to the UK’s National Health Service (NHS). 
+                This attack disrupted medical systems across several NHS trusts and exposed sensitive patient information.
+            </p>
+            <br>
+            <p>
+                The group behind LockBit is believed to have connections to Russia or Eastern Europe, although it operates globally through independent affiliates. Despite several international law-enforcement operations and server takedowns, LockBit continues to evolve and release new variants.
+            </p>
+            <br>
+        </div>
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src="img/NHS.jpg" alt="" width="200px">
+                <br>
+                <p class="four-image-caption">NHS</p>
+            </div>
+            <div class="img2">
+                <img src="img/continental.png" alt="" width="200px">
+                <br>
+                <p class="four-image-caption">Continental AG</p>
+            </div>
+            <div class="img3">
+                <img src="img/royal-mail.jpg" alt="" width="200px">
+                <br>
+                <p class="four-image-caption">Royal Mail Group</p>
+            </div>
+            <div class="img4">
+                <img src="img/ICBC.jpg" alt="" width="200px">
+                <br>
+                <p class="four-image-caption">ICBC of China</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

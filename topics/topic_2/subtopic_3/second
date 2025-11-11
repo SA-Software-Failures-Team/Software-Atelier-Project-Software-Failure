@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Davide Scapellato">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Microsoft Outage 2023 - Root Cause &amp; Technical Analysis</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_3/generalsubtopic.html">General overview</a></li>
+                    <li class="nav-li"><a href="Ex-Page1.html">What Happened</a></li>
+                    <li class="nav-li"><a href="Ex-Page2.html">Root Cause &amp; Technical Analysis</a></li>
+                    <li class="nav-li"><a href="Ex-page3.html">Impact &amp; Scope</a></li>
+                    <li class="nav-li"><a href="Ex-page4.html">Lessons &amp; Broader Implications</a></li>
+                    <li class="nav-li"><a href="Ex-Page5.html">Outlook &amp; Mitigation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-text">
+            <h1>Root Cause &amp; Technical Analysis</h1>
+
+            <p>
+                According to Microsoft’s post-incident review, the outage was triggered by a planned change to the
+                Microsoft Wide Area Network (WAN). During an update to the IP address of a core WAN router, an incorrect
+                command caused that router to send messages to all other routers in the WAN. This forced them to
+                recompute their adjacency and forwarding tables simultaneously. :contentReference[oaicite:0]{index=0}
+            </p>
+            <br>
+            <p>
+                While the routers were busy recomputing, they were temporarily unable to forward traffic correctly.
+                The result was packet loss and timeouts between users and Microsoft 365, between Azure regions, and
+                across ExpressRoute connections. Because this WAN underpins many services at once, the misconfiguration
+                did not stay local: it disrupted connectivity for Outlook, Teams, SharePoint, OneDrive, Power Platform
+                and Azure resources in parallel. :contentReference[oaicite:1]{index=1}
+            </p>
+            <br>
+            <p>
+                A key detail: the command used behaved differently on different network devices and had not been fully
+                vetted for the specific router where it was executed. In a software-defined, highly automated environment,
+                this shows how one unsafe network change in the control plane can destabilise a global cloud backbone.
+            </p>
+            <br>
+            <p>
+                Technically, this is a configuration and change-management failure, not a capacity problem: the hardware
+                was there, but the logic controlling it introduced a systemic fault. It underlines how critical robust
+                testing, staged rollouts and strict safeguards are for core infrastructure commands.
+            </p>
+        </div>
+
+        <div class="lateral-image">
+            <img src="../template/image/img2.jpeg" alt="Network routing visual">
+        </div>
+    </main>
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
