@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuele Bertolini">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css">
+    <title>Impact & Consequences</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="Ex-Page1.html">The Incident Overview</a></li>
+                    <li class="nav-li"><a href="Ex-Page2.html">Technical Failure</a></li>
+                    <li class="nav-li"><a href="Ex-page3.html">Causes & Systemic Failures</a></li>
+                    <li class="nav-li"><a href="Ex-page4.html">Impact & Consequences</a></li>
+                    <li class="nav-li"><a href="Ex-page5.html">Lessons Learned</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <img class="lateral-image l1" src="image/contact_tracing.jpg" alt="Contact tracing operation">
+        <div class="columnarticle">
+            <h2>Immediate Public Health Impact</h2>
+            <p>The impact of this specific software failure was immediate, severe, and measured in both public health and perceived trust. An estimated 50,000 contacts of the 15,841 infected individuals were not properly traced, allowing the virus to spread even more unchecked through communities for several critical days.</p>
+        </div>
+        <img class="lateral-image l1" src="image/public_trust.jpg" alt="Public trust impact">
+        <div class="columnarticle">
+            <h2>Loss of Public Trust</h2>
+            <p>Beyond the reported epidemiological numbers, the incident created a massive crisis of confidence between population and authorities. The public's trust in the government's ability to manage the pandemic was severely damaged, and the UK government faced intense criticism from the media, various political opponents, and an angry public.</p>
+        </div>
+        <img class="lateral-image l1" src="image/government_response.jpg" alt="Government response">
+        <div class="columnarticle">
+            <h2>Symbol of Incompetence</h2>
+            <p>This incident transformed a complex software failure into a simple, powerful symbol of governmental incompetence, where a multi-billion pound test and trace system was brought to its knees by a tool taught in elementary school computer classes. Epidemiologists later suggested that this data loss had significantly contributed to the virus spread during a period when cases were already drastically rising, potentially leading to increased hospitalizations and deaths.</p>
+        </div>
+    </main>
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
