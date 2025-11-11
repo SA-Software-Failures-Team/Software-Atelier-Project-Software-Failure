@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Spanò">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Key Takeaways & Ethical Reflections – Therac-25 Radiation Overdose</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                     <li class="nav-li"><a href="generalsubtopic.html">Therac-25 Radiation Overdose</a></li>
+                    <li class="nav-li"><a href="first.html">Incident Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Underlying Causes & System Failures</a></li>
+                    <li class="nav-li"><a href="third.html">Consequences & Extent of the Accident</a></li>
+                    <li class="nav-li"><a href="fourth.html">Key Takeaways & Ethical Reflections</a></li>
+                    <li class="nav-li"><a href="fifth.html">Future Outlook & Preventive Measures</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="three-template">
+        <div class="content-text">
+            <h1>Lessons Learned</h1>
+            <br>
+
+            <p>
+                The Therac-25 disaster fundamentally changed how engineers, regulators, and clinicians view 
+                the interaction between software and human safety. It demonstrated that software bugs can 
+                have lethal consequences and that assumptions about reliability must always be tested.
+            </p>
+
+            <br>
+
+            <h2>1. Safety Must Be Designed, Not Assumed</h2>
+            <p>
+                AECL relied on prior machine history and assumed software logic was sufficient to replace hardware interlocks. 
+                This case proved that <strong>removing physical safeguards without rigorous validation is unacceptable</strong>.
+            </p>
+
+            <br>
+
+            <h2>2. Verification and Testing Are Non-Negotiable</h2>
+            <p>
+                The system lacked formal unit testing, code review, or failure analysis. The lesson is clear: 
+                <strong>software controlling critical systems must undergo independent verification, simulation, and stress testing</strong> 
+                before deployment.
+            </p>
+
+            <br>
+
+            <h2>3. User Interface and Error Feedback Matter</h2>
+            <p>
+                The ambiguous “Malfunction” messages misled operators into continuing unsafe treatments. 
+                <strong>Human-computer interaction design</strong> must prioritize clarity, context, and safety feedback.
+            </p>
+
+            <br>
+
+            <h2>4. Organizational Transparency</h2>
+            <p>
+                AECL’s reluctance to share incident data delayed corrective action. 
+                The case reinforced the importance of <strong>open incident reporting and regulatory collaboration</strong> 
+                across institutions.
+            </p>
+
+            <br>
+
+            <h2>5. Ethics and Accountability in Engineering</h2>
+            <p>
+                Therac-25 is now a cornerstone of engineering ethics education, illustrating that developers and 
+                organizations bear a moral responsibility to anticipate failure modes and protect human life.
+            </p>
+        </div>
+
+        <div class="three-images">
+            <img src="img/Therac_25_Facility_cross_section.jpg" alt="Therac-25 section">
+            <img src="img/codereview.avif" style="width: 473px;" alt="Software engineers reviewing system code">
+            <img src="img/GettyImages-83211477_2400px.jpg.avif" style="width: 473px;" alt="Human-computer interface safety training session">
+        </div>
+    </main>
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>

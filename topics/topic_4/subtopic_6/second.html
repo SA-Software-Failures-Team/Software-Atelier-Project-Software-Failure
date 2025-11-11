@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Albonico">
+     <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>WannaCry - Root Cause & Technical Analysis</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">WannaCry: The Digital Pandemic</a></li>
+                    <li class="nav-li"><a href="first.html">Introduction</a></li>
+                    <li class="nav-li"><a href="second.html">Root Cause and Technical Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact and Global Scope</a></li>
+                    <li class="nav-li"><a href="fourth.html">Lessons Learned</a></li>
+                    <li class="nav-li"><a href="fifth.html">The Actors Behind the Attack</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Root Cause and Technical Analysis</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    WannaCry exploited a critical Windows vulnerability known as <strong>EternalBlue</strong>, which affected the SMBv1 protocol. Originally developed by the NSA and leaked online, this exploit allowed remote code execution on unpatched systems. Computers exposed to the internet or connected to the same network were automatically targeted.
+                </p>
+                <div class="inside">
+                <p id="second">
+                    The malware deployed a backdoor tool called <strong>DoublePulsar</strong>, enabling further network propagation and remote control of infected machines. Once installed, WannaCry encrypted users’ files using AES-128 and RSA encryption, appending a <code>.WNCRY</code> extension and displaying a ransom note demanding Bitcoin payment.
+                </p>
+                
+                </div>
+                <p id="third">
+                    A hidden “kill switch” domain within the malware was discovered by a security researcher, temporarily halting its spread. Despite this, the attack rapidly infected thousands of organizations worldwide due to unpatched systems and flat network architectures.
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="img/EternalBlue.jpg" alt="Etereal">
+        </div>
+       
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>

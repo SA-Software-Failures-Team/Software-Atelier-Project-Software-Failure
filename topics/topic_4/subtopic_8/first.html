@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Piotr Wilinski">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Medtronic MiniMed Insulin Pump Recall - What Happened</title>
+</head>
+<body>
+    <!--
+    Nav bar:
+    only adjust the name of the subtopic
+    -->
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_8/generalsubtopic.html">Medtronic MiniMed Insulin Pump Recall</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Lessons Learned & Broader Implication</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="img/medtronic_hq.jpg" alt="background" class="header">
+    <main>
+        <div class="lateral-image">
+            <img src="img/MiniMed_Paradigm.jpg" alt="">
+        </div>
+        <div class="content-text center">
+            <h1>Medtronic MiniMed Insulin Pump Recall - What Happened</h1>
+            <br>
+            <p id="first">
+                In June 2019, Medtronic issued a voluntary recall for specific models of its older insulin pumps, including the <b>MiniMed 508</b> and <b>MiniMed Paradigm</b> series, used in the U.S. and worldwide. Unlike the recall involving a physical flaw, 
+                this urgent action was necessary due to a serious vulnerability related to the pump's wireless communication capabilities. The U.S. Food and Drug Administration (FDA) classified this as a high-risk security warning.
+            </p>
+            <br><br>
+            <p id="second">
+                The issue stemmed from a lack of proper encryption and authentication in the pump's radio frequency (RF) communication. This vulnerability created a theoretical, though serious, risk that an unauthorized third party could 
+                wirelessly connect to the nearby pump using specialized equipment. Once connected, a potential attacker could change the pump's settings or even stop insulin delivery entirely. This remote control could lead to a dangerous over or underdosing of insulin.
+            </p>
+            <br><br>
+            <p id="third">
+                Because the pump could be commanded to deliver either too much insulin (potentially causing hypoglycemia) or stop delivery (potentially causing hyperglycemia and diabetic ketoacidosis), the FDA deemed the risk to be severe. 
+                Though Medtronic stated they were not aware of any actual attacks in a clinical setting, they could not fix the problem with a simple software patch. Consequently, the company advised patients using the affected models to 
+                immediately consult their healthcare providers about switching to a newer, more secure insulin pump model.
+            </p>
+            
+            </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+
+</body>
+</html>
