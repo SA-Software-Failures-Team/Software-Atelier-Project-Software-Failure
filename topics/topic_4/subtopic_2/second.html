@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Spanò">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Underlying Causes & System Errors – Panama City Radiotherapy Accident</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">Panama City Radiotherapy Accident</a></li>
+                    <li class="nav-li"><a href="first.html">Incident Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Underlying Causes & System Errors</a></li>
+                    <li class="nav-li"><a href="third.html">Consequences & Extent of Patient Harm</a></li>
+                    <li class="nav-li"><a href="fourth.html">Key Lessons & Ethical Insights</a></li>
+                    <li class="nav-li"><a href="fifth.html">Future Outlook & Preventive Actions</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <img src="img/Linac_Hero.jpg" alt="Linear accelerator room" class="header">
+
+    <main>
+        <div class="lateral-image">
+            <img src="img/dose.jpg" alt="Dose calibration">
+        </div>
+
+        <div class="content-text center">
+            <h1>Underlying Causes & System Errors</h1>
+            <br>
+
+            <p id="first">
+                The Panama City radiotherapy accident (2000–2001) stemmed from a critical programming error in the 
+                treatment planning system used at the National Oncology Institute (ION). After software upgrades, 
+                medical physicists had to manually define shielding blocks in the <strong>Multidata Model 2</strong> system. 
+                A new input method introduced ambiguity in how dose regions were calculated, allowing multiple 
+                field blocks to overlap improperly.
+            </p>
+
+            <br><br>
+
+            <p id="second">
+                The error occurred because the <strong>treatment planning software miscalculated dose distributions</strong> 
+                when more than four shielding blocks were inserted. The system’s algorithm failed to correctly 
+                normalize the dose, resulting in <strong>up to 100% higher delivered doses</strong> than prescribed in some 
+                cases. The interface provided no clear warning or validation message to indicate an abnormal 
+                dose level. This fault went unnoticed for months due to the absence of independent cross-checks 
+                or dose verification procedures.
+            </p>
+
+            <br><br>
+
+            <p id="third">
+                Contributing factors included poor communication between the hospital, the equipment manufacturer, 
+                and the national regulator. The lack of formal <strong>quality assurance (QA) protocols</strong>, independent 
+                verification of software upgrades, and insufficient staff training compounded the problem. 
+                Subsequent forensic testing confirmed that the software behaved correctly with up to four 
+                blocks but failed beyond that limit — a flaw that should have been detected during acceptance 
+                testing.
+            </p>
+        </div>
+    </main>
+
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>

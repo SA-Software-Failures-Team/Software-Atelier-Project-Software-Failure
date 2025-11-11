@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Samuele Bertolini">
+    <meta name="author" content="Ricetti Leonardo">
     <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
-    <title>Root Cause & Technical Analysis – Baxter Colleague Infusion Pump Recall (2010)</title>
+    <title>Root Cause & Technical Analysis - Baxter Colleague Infusion Pump Recall (2010)</title>
     <style>
   .i {
-    width: 300px;               /* larghezza fissa */
+    width: 300px;               
   }
   .w{
     height: 400px;
@@ -24,7 +24,6 @@
                 <span></span>
             </button>
         </div>
-        <!-- Updated Navbar -->
         <div id="nav-links">
             <div class="nav-bar">
                 <ul class="nav-ul">
@@ -41,23 +40,23 @@
 
     <main>
         <div class="content-text">
-            <h1>Root Cause & Technical Analysis – Baxter Colleague Infusion Pump Recall (2010)</h1>
+            <h1>Root Cause & Technical Analysis - Baxter Colleague Infusion Pump Recall (2010)</h1>
             <br>
             <div id="main">
 
                 <p id="first">
-                    Technical investigations revealed that the primary cause of the Baxter Colleague infusion pump malfunctions was a **firmware timing error**. 
-                    This flaw disrupted synchronization between the pump’s motor control and user interface, occasionally preventing the device from recognizing the “stop” command issued by clinicians. 
+                    Technical investigations revealed that the primary cause of the Baxter Colleague infusion pump malfunctions was a firmware timing error. 
+                    This flaw disrupted synchronization between the pump's motor control and user interface, occasionally preventing the device from recognizing the “stop” command issued by clinicians. 
                     Display lag further misled operators by showing the pump as stopped while it continued infusing medication.
                 </p>
 
                 <div class="inside">
                     <p id="second">
-                        The pump’s outdated hardware and limited memory exacerbated these problems, making incremental software fixes prone to introducing new errors. 
-                        Additionally, the system lacked adequate **real-time monitoring and fail-safe mechanisms**, which could have prevented over-infusion in the event of command or timing errors. 
+                        The pump's outdated hardware and limited memory exacerbated these problems, making incremental software fixes prone to introducing new errors. 
+                        Additionally, the system lacked adequate real-time monitoring and fail-safe mechanisms, which could have prevented over-infusion in the event of command or timing errors. 
                         These combined deficiencies demonstrated the critical importance of rigorous firmware testing and validation in life-critical medical devices.
                     </p>
-                    <img src="img/baxter_firmware.jpg" class="i">
+                    <img src="img/baxter_firmware.jpg" alt="Infusion pump" class="i">
                 </div>
 
                 <p id="third">
@@ -67,15 +66,13 @@
             </div>
 
             <br>
-            <img class="lowerimage w" src="img/baxter_pump3.jpg" alt="Technical analysis visualization of infusion pump">
+            <img class="lowerimage w" src="img/baxter_pump3.jpg" alt="Infusion pump">
         </div>
-
-        <!-- Summary section -->
         <div class="content-sum">
             <ul class="ul-sum">
                 <li class="li-sum"><a id="n1" href="#first" class="a-sum">Firmware Timing Error</a></li>
                 <div id="one" class="sum-on-click" style="display: none;">
-                    <p>The pump’s firmware failed to synchronize motor control and UI commands, preventing timely “stop” execution.</p>
+                    <p>The pump's firmware failed to synchronize motor control and UI commands, preventing timely “stop” execution.</p>
                 </div>
 
                 <li class="li-sum"><a id="n2" href="#second" class="a-sum">Hardware Limitations & Fail-Safes</a></li>
