@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Davide Scapellato">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Microsoft Outage 2023 - Impact &amp; Scope</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_3/generalsubtopic.html">General overview</a></li>
+                    <li class="nav-li"><a href="Ex-Page1.html">What Happened</a></li>
+                    <li class="nav-li"><a href="Ex-Page2.html">Root Cause &amp; Technical Analysis</a></li>
+                    <li class="nav-li"><a href="Ex-page3.html">Impact &amp; Scope</a></li>
+                    <li class="nav-li"><a href="Ex-page4.html">Lessons &amp; Broader Implications</a></li>
+                    <li class="nav-li"><a href="Ex-Page5.html">Outlook &amp; Mitigation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-text">
+            <h1>Impact &amp; Scope of the Outage</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    The outage had a global footprint. Users in Europe, Asia, and the Americas reported issues connecting
+                    to Teams meetings, sending mails via Outlook and Exchange Online, accessing SharePoint and OneDrive,
+                    and reaching applications hosted on Azure. For many organisations, collaboration and internal
+                    communication were partially or completely interrupted for part of the morning.
+                </p>
+
+                <div class="inside">
+                    <p id="second">
+                        Because the root problem sat in Microsoft’s WAN, the impact was horizontal: it affected multiple
+                        services at once instead of a single isolated product. This demonstrated how tightly integrated
+                        Microsoft’s cloud environment is — and how a fault in shared network infrastructure becomes a
+                        single point of failure for thousands of customers.
+                    </p>
+                    <img src="image/ex.jpeg" alt="Global outage illustration">
+                </div>
+
+                <p id="third">
+                    The outage also highlighted dependency chains. Governments, schools, hospitals, and companies relying
+                    on Microsoft for identity, messaging, file storage and cloud hosting suddenly discovered that a change
+                    they did not control could temporarily pause key operations. Even a 60–90 minute disruption at this
+                    scale has measurable economic and organisational effects.
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="image/ex.jpeg" alt="Digital infrastructure">
+        </div>
+
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">Global Reach</a></li>
+                <div id="one" class="sum-on-click" style="display: none;">
+                    <p>Users worldwide lost access to core Microsoft 365 services.</p>
+                </div>
+
+                <li class="li-sum"><a id="n2" href="#second" class="a-sum">Shared Backbone</a></li>
+                <div id="two" class="sum-on-click" style="display: none;">
+                    <p>A single WAN issue disrupted many services in parallel.</p>
+                </div>
+
+                <li class="li-sum"><a id="n3" href="#third" class="a-sum">Critical Dependence</a></li>
+                <div id="three" class="sum-on-click" style="display: none;">
+                    <p>Public and private sectors depend on few large cloud providers.</p>
+                </div>
+            </ul>
+        </div>
+    </main>
+
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
