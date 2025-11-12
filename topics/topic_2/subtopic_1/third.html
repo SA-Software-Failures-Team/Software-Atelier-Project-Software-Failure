@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Todor Delipetrev">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Denver Baggage System – Software &amp; Management Issues</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="./generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="./first.html">What was the system?</a></li>
+                    <li class="nav-li"><a href="./second.html">How & Why It Failed</a></li>
+                    <li class="nav-li"><a href="./third.html">Software, Design & Management Issues</a></li>
+                    <li class="nav-li"><a href="./fourth.html">Impact & Lessons for Infrastructure</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Software, Design &amp; Management Issues</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    <strong>Software Complexity</strong><br>
+                    The control software had to coordinate thousands of carts, switches and scanners in
+                    real time. The system was highly coupled: a small timing bug could break an entire
+                    route. Full-scale integration tests were limited, so many defects appeared only
+                    when the whole airport was connected. :contentReference[oaicite:1]{index=1}
+                </p>
+                <div class="inside">
+                    <p id="second">
+                        <strong>Changing Requirements</strong><br>
+                        Airlines and airport management requested changes even after design started:
+                        new destinations for bags, modified layouts, different operating rules.
+                        Instead of adjusting scope and schedule, changes were forced into an already
+                        fragile design, increasing risk.
+                    </p>
+                    <img src="img/15.jpg" alt="Dense structure of tracks, conveyors and supports">
+                </div>
+                <p id="third">
+                    <strong>Lack of Realistic Testing &amp; Governance</strong><br>
+                    The project ran on fixed deadlines and political pressure. There was little time
+                    for gradual rollout, simulation or proper fallback strategies. Responsibilities
+                    between city, contractors and airlines were blurred. This combination of technical
+                    debt and weak management turned a promising idea into a famous failure.
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="img/16.jpg" alt="View of baggage system under construction or partially disassembled">
+        </div>
+
+        <div class="content-sum">
+            <ul class="ul-sum">
+                <li class="li-sum"><a id="n1" href="#first" class="a-sum">Software Complexity</a></li>
+                <div id="one" class="sum-on-click" style="display: none;">
+                    <p>Unproven large-scale control software with tight timing and many dependencies.</p>
+                </div>
+
+                <li class="li-sum"><a id="n2" href="#second" class="a-sum">Scope Changes</a></li>
+                <div id="two" class="sum-on-click" style="display: none;">
+                    <p>Late requirement changes without adjusting time or architecture.</p>
+                </div>
+
+                <li class="li-sum"><a id="n3" href="#third" class="a-sum">Weak Governance</a></li>
+                <div id="three" class="sum-on-click" style="display: none;">
+                    <p>No phased rollout, limited testing, unclear ownership of risks.</p>
+                </div>
+            </ul>
+        </div>
+    </main>
+    <br>
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>

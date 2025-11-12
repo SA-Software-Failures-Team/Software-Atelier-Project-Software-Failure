@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Todor Delipetrev">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Deepwater Horizon – Software &amp; Control Systems</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="./generalsubtopic.html">General subtopic</a></li>
+                   <li class="nav-li"><a href="./first.html">What Happened</a></li>
+                   <li class="nav-li"><a href="./second.html">Software & Control Systems</a></li>
+                   <li class="nav-li"><a href="./third.html">Failures & Human Factors</a></li>
+                   <li class="nav-li"><a href="./fourth.html">Impact on Energy Infrastructure</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-text">
+            <h1>Software &amp; Control Systems on Deepwater Horizon</h1>
+            <p>
+                Deepwater Horizon was not just a floating structure; it was a cyber-physical system. Industrial control
+                systems, real-time monitoring software and safety logic all worked together to manage a high-pressure
+                deepwater well.
+            </p>
+            <br>
+            <p>
+                Dozens of sensors measured pressure, flow rate and mud returns. Their signals were processed and
+                displayed on screens in the control room. Software alarms were supposed to warn operators when values
+                moved into dangerous ranges.
+            </p>
+            <br>
+            <p>
+                The subsea blowout preventer (BOP) relied on electronic commands and programmed logic to activate
+                shear rams and seal the well in an emergency. This control chain made software configuration and data
+                visibility part of the core safety infrastructure.
+            </p>
+            <br>
+            <p>
+                When alarms are silenced, displays become confusing, or logic is not fully tested, the “digital shield”
+                that should protect the rig becomes weak. Deepwater Horizon shows that software in energy systems must
+                be treated as safety-critical, just like valves, steel and cement.
+            </p>
+        </div>
+
+        <div class="lateral-image">
+            <img src="img/4.jpg" alt="Control room screens monitoring offshore drilling data">
+        </div>
+    </main>
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
