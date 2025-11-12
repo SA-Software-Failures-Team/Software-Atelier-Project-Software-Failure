@@ -178,6 +178,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+
+    // ====== Save Category in Session Storage ======
+    document.querySelectorAll('a[href*="topicgeneral_b.html"]').forEach(link => {
+        link.addEventListener('click', () => {
+            sessionStorage.setItem('category', 'bug');
+        });
+    });
+
+    document.querySelectorAll('a[href*="topicgeneral_v.html"]').forEach(link => {
+        link.addEventListener('click', () => {
+            sessionStorage.setItem('category', 'vuln');
+        });
+    });
+
+
     // ====== "Go Back" Button ======
     const divs = document.getElementsByClassName("exit");
     for (let i = 0; i < divs.length; i++) {
@@ -193,6 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = target;
         };
     }
+
 
     // ====== Sidebar Functionality ======
     const menuBtn = document.getElementById('menuBtn');
