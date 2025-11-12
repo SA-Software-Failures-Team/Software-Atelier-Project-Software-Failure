@@ -157,15 +157,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     const currentPath = window.location.pathname;
-
     const pathParts = currentPath.split('/');
+
+    const topicFolder = pathParts.find(part => part.startsWith('topic_'));
     const subtopicFolder = pathParts.find(part => part.startsWith('subtopic_'));
 
-    if (subtopicFolder) {
+    if (topicFolder && subtopicFolder) {
+        
+        const uniquePathSegment = `${topicFolder}/${subtopicFolder}/`;
+
         document.querySelectorAll('.sidebar a').forEach(link => {
             const linkHref = link.getAttribute('href');
             
-            if (linkHref.includes(subtopicFolder + '/')) {
+            if (linkHref.includes(uniquePathSegment)) {
                 link.classList.add('current-page-link-subtopic');
             }
         });
