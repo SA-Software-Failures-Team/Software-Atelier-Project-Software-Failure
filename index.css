@@ -8,6 +8,10 @@
     --hover-bg: #f1f5f9;
     --card-bg: #1E1E1F;
 }*/
+
+/*============ Authors: Leonardo Bolcau & Davide Scapellato ============*/
+
+
 :root {
     --secondary-color: #3B4537;   
     --primary-color: #D4AF37;
@@ -30,7 +34,10 @@
 
 }
 
-
+.sidebar .current-page-link-subtopic, .sidebar .current-page-link {
+            color: #ffeb3b !important;
+            font-weight: bold;
+}
 
 /* header styles */
 header {
@@ -395,7 +402,6 @@ text-shadow:
     text-decoration: none;
     position:relative;
     top:20px;
-        border-radius: 40px;
 
 }
 .bta:hover{

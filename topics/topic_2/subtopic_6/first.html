@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saeid Shirkani">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css"> <!--Remove this one once you copy paste the template-->
+
+    <title>Stuxnet Project – Overview & Timeline</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_6/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html" aria-current="page">Overview</a></li>
+                   <li class="nav-li"><a href="second.html">Infection Vectors</a></li>
+                   <li class="nav-li"><a href="third.html">PLC Payload</a></li>
+                   <li class="nav-li"><a href="fourth.html">Impact & Lessons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>What is Stuxnet?</h1>
+            <p id="first">
+            Stuxnet is a highly sophisticated worm that specifically targeted Siemens Step7/WinCC industrial control systems.
+            Its objective was to modify PLC logic to cause subtle physical damage to centrifuge systems at Iran’s Natanz nuclear facility.
+          </p>
+            <br>
+            <p id="second">
+            <strong>High-Level Architecture</strong>
+            Propagation and persistence mechanisms
+            Command-and-control communication over HTTP
+            Industrial payload injected into PLC logic
+            </p>
+            <br>
+            <p>
+            <strong>Timeline (2009–2011)</strong>
+            <strong>2009:</strong> Earliest Stuxnet variants likely deployed.
+            <strong>June 2010:</strong> Malware discovered after unusual behavior on industrial systems
+            <strong>September 2010:</strong> Technical analysis released by Symantec.
+            <strong>2011:</strong> Full dossier published documenting its architecture and spread.
+            <p>
+                <strong>Characteristics</strong>
+                Highly targeted – designed for a single industrial environment.
+                First known malware to cause physical sabotage via PLCs.
+                Used multiple zero-day vulnerabilities and stolen digital certificates.
+            </p>
+            <br>
+        </div>
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src="img/image1.png" style="width: 800px; height: 600px;" alt="">
+                
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sakithan Poopalan">
+      <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css"> <!--Remove this one once you copy paste the template-->
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="second.html">Timeline</a></li>
+                    <li class="nav-li"><a href="third.html">Root Cause - Architecture and Latent Bug</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content-text">
+            <h1>Timeline</h1>
+
+            <table>
+  <tr>
+    <th>TIME </th>
+    <th>MAIN EVENT</th>
+    <th>DETAILS / IMPACT</th>
+  </tr>
+
+  <tr>
+    <td>10:01</td>
+    <td>Start of Frontend Scaling</td>
+    <td>The Lambda Frontend fleet begins scaling out in response to the normal increase in daily traffic.</td>
+  </tr>
+
+    <tr>
+    <td>11:48</td>
+    <td>Start Impact</td>
+    <td>The AWS Management Console (US-EAST-1) starts recording high error rates ("unavailable" or "504 Time-out").</td>
+  </tr>
+
+    <tr>
+    <td>11:49</td>
+    <td>Bug Triggering and Lambda Degradation</td>
+    <td>The Lambda Frontend exceeds a critical capacity threshold in a cell, triggering the latent software flaw.</td>
+  </tr>
+
+    <tr>
+    <td>11:49</td>
+    <td>Initial Impact on the Services</td>
+    <td>Customers see an immediate increase in errors and latencies for Lambda invocations. Amazon STS, EventBridge, and Amazon Connect are starting to experience degradation.</td>
+  </tr>
+
+    <tr>
+    <td>12:26</td>
+    <td>Identification of the Root Cause</td>
+    <td>Engineers identify the latent software flaw that compromises the provision of computing power (Execution Environments).</td>
+  </tr>
+
+    <tr>
+    <td>13:30</td>
+    <td>start of the recovery</td>
+    <td>Lambda Frontend fleet scaling to a secure level has begun. New Lambda function invocations start to see recovery.</td>
+  </tr>
+      <tr>
+    <td>13:45</td>
+    <td>Full Recovery (Synchronous Invocations)</td>
+    <td>Lambda is fully recovered for synchronous function invocations. Most affected AWS services begin the full recovery phase.</td>
+  </tr>
+      <tr>
+    <td>15:37</td>
+    <td>End of the Incident</td>
+    <td>The AWS Lambda service resumes normal operations. Lambda completes processing of the asynchronous event backlog. All dependent services are fully recovered.</td>
+  </tr>
+</table>
+            <br>
+            <br>
+        </div>
+            <div class="lateral-image">
+                <img src="./img/time.jpg" alt="">
+            </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script><!--Remove this one once you copy paste the template-->
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <span>Energy/Infrastructure</span>
             </a>
             <div class="submenu" id="topic2">
-                <a href="../../topic_2/topicgeneral_b.html" class="menu-item has-submenu" data-toggle="topic2">
+                <a href="../../topic_2/topicgeneral_b.html" class="submenu-item has-submenu" data-toggle="topic2-bugs">
                 <span>Bugs</span>
                 </a>
                 <div class="subsubmenu" id="topic2-bugs">
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <a href="../../topic_2/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
                 </div>
 
-                <a href="../../topic_2/topicgeneral_v.html" class="menu-item has-submenu" data-toggle="topic2">
+                <a href="../../topic_2/topicgeneral_v.html" class="submenu-item has-submenu" data-toggle="topic2-vuln">
                 <span>Vulnerabilities</span>
                 </a>
                 <div class="subsubmenu" id="topic2-vuln">
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <span>Business-Critical Systems</span>
             </a>
             <div class="submenu" id="topic3">
-                <a href="../../topic_3/topicgeneral_b.html" class="menu-item has-submenu" data-toggle="topic3">
+                <a href="../../topic_3/topicgeneral_b.html" class="submenu-item has-submenu" data-toggle="topic3-bugs">
                 <span>Bugs</span>
                 </a>
                 <div class="subsubmenu" id="topic3-bugs">
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <a href="../../topic_3/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
                 </div>
 
-                <a href="../../topic_3/topicgeneral_v.html" class="menu-item has-submenu" data-toggle="topic3">
+                <a href="../../topic_3/topicgeneral_v.html" class="submenu-item has-submenu" data-toggle="topic3-vuln">
                 <span>Vulnerabilities</span>
                 </a>
                 <div class="subsubmenu" id="topic3-vuln">
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <span>Healthcare</span>
             </a>
             <div class="submenu" id="topic4">
-                <a href="../../topic_4/topicgeneral_b.html" class="menu-item has-submenu" data-toggle="topic4">
+                <a href="../../topic_4/topicgeneral_b.html" class="submenu-item has-submenu" data-toggle="topic4-bugs">
                 <span>Bugs</span>
                 </a>
                 <div class="subsubmenu" id="topic4-bugs">
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <a href="../../topic_4/subtopic_5/generalsubtopic.html" class="subsubmenu-item">Subtopic 5</a>
                 </div>
 
-                <a href="../../topic_4/topicgeneral_v.html" class="menu-item has-submenu" data-toggle="topic4">
+                <a href="../../topic_4/topicgeneral_v.html" class="submenu-item has-submenu" data-toggle="topic4-vuln">
                 <span>Vulnerabilities</span>
                 </a>
                 <div class="subsubmenu" id="topic4-vuln">
@@ -147,6 +147,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     <a href="../../topic_4/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
                 </div>
             </div>
+            <a href="../../../about_us/about_us.html" class="menu-item">About us</a>
+
+            <a href="../../../table/members-contribution.html" class="menu-item">Members contribution</a>
         </div>
     </div>
     `;
@@ -156,16 +159,24 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.insertAdjacentHTML('afterbegin', sidebarHTML);
 
 
-    //adding current-page-link class. Still need to adjust it
     const currentPath = window.location.pathname;
+    const pathParts = currentPath.split('/');
 
-    document.querySelectorAll('.sidebar a').forEach(link => {
+    const topicFolder = pathParts.find(part => part.startsWith('topic_'));
+    const subtopicFolder = pathParts.find(part => part.startsWith('subtopic_'));
+
+    if (topicFolder && subtopicFolder) {
         
+        const uniquePathSegment = `${topicFolder}/${subtopicFolder}/`;
 
-        if (link.pathname === currentPath) {
-            link.classList.add('current-page-link');
-        }
-    });
+        document.querySelectorAll('.sidebar a').forEach(link => {
+            const linkHref = link.getAttribute('href');
+            
+            if (linkHref.includes(uniquePathSegment)) {
+                link.classList.add('current-page-link-subtopic');
+            }
+        });
+    }
 
    
 
@@ -202,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if(sidebarOverlay) sidebarOverlay.classList.add('active');
 
 
-        const activeLink = globalSidebar ? globalSidebar.querySelector('.current-page-link') : null;
+        const activeLink = globalSidebar ? globalSidebar.querySelector('.current-page-link-subtopic') : null;
         if (activeLink) {
             let parent = activeLink.parentElement;
             while (parent && !parent.classList.contains('sidebar-content')) {
@@ -249,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     //general sidebar to subtopic sidebar
-    const currentPageLink = globalSidebar ? globalSidebar.querySelector('.current-page-link') : null;
+    const currentPageLink = globalSidebar ? globalSidebar.querySelector('.current-page-link-subtopic') : null;
     if (currentPageLink) {
         currentPageLink.addEventListener('click', function (e) {
             e.preventDefault();
