@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricetti Leonardo">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Philips IntelliBridge EC40/80 Gateways (2022) - What Happened</title>
+    <style>
+        .i {
+            width: 250px;          
+            height: 250px;              
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_9/generalsubtopic.html">Introduction</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/third.html">Impact & Scope</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/fourth.html">Lessons Learned & Broader Implications</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/fifth.html">Mitigation for the Future</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>What Happened - Philips IntelliBridge EC40/80 Gateways (2022)</h1>
+            <p>
+                In 2022, cybersecurity researchers identified several critical vulnerabilities in Philips' IntelliBridge EC40 and EC80 data gateways — medical devices used globally to connect patient monitoring systems with hospital electronic medical records (EMR). 
+                These gateways play a central role in transmitting real-time patient vital data, making their reliability and security essential in clinical environments.
+            </p>
+            <br>
+            <p>
+                The most severe issue involved <strong>hard-coded credentials</strong> embedded within the firmware of the devices. 
+                These credentials were identical across all deployed systems, allowing anyone with knowledge of them to gain remote access. 
+                Once connected, an attacker could view or alter configuration settings, extract sensitive patient data, or disrupt how the gateway communicated with hospital networks.
+            </p>
+            <br>
+            <p>
+                Security testing revealed that the gateways also lacked strong access controls and failed to enforce proper network segmentation, leaving them exposed to unauthorized users on the same network segment. 
+                These weaknesses meant that a malicious actor could potentially interfere with patient data transmissions or modify the data integrity of connected systems.
+            </p>
+            <br>
+            <p>
+                Philips confirmed the vulnerabilities and worked with the U.S. Cybersecurity and Infrastructure Security Agency (CISA) to assess the risks. 
+                CISA issued an advisory highlighting the potential for remote exploitation, classifying the vulnerabilities as high-severity and assigning them identifiers under the CVE-2022-30277 grouping.
+            </p>
+            <br>
+            <p>
+                While there were no reports of active exploitation, the discovery prompted urgent advisories across the healthcare sector. 
+                Philips released software updates and mitigation guidelines to hospitals, emphasizing the importance of applying patches and securing medical networks. 
+                The incident underscored the ongoing cybersecurity challenges within connected medical devices and the potential consequences of weak authentication mechanisms.
+            </p>
+        </div>
+
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src="img/1.webp" alt="Philips IntelliBridge Gateway Device" class="i">
+                <br>
+                <p class="four-image-caption">Philips IntelliBridge EC40/80 <br> gateways connect patient monitors <br>to hospital networks.</p>
+            </div>
+            <div class="img2">
+                <img src="img/2.jpg" alt="Hospital Network Systems" class="i">
+                <br>
+                <p class="four-image-caption">Hospitals rely on secure data <br>gateways for continuous <br>patient monitoring.</p>
+            </div>
+            <div class="img3">
+                <img src="img/3.jpeg" alt="CISA Advisory Screenshot" class="i">
+                <br>
+                <p class="four-image-caption">CISA issued advisories <br>warning of remote access <br>risks in the affected devices.</p>
+            </div>
+            <div class="img4">
+                <img src="img/4.jpeg" alt="Cybersecurity Team Performing Audit" class="i">
+                <br>
+                <p class="four-image-caption">Cybersecurity teams conducted <br> audits and applied Philips' <br>recommended patches.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
