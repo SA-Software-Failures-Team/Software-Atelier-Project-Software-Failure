@@ -1,19 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    let tmpdiv=document.createElement("link");
-    tmpdiv.rel="stylesheet";
-    tmpdiv.href="../../index.css";
+    let tmpdiv = document.createElement("link");
+    tmpdiv.rel = "stylesheet";
+    tmpdiv.href = "../../index.css";
     document.head.appendChild(tmpdiv);
+
     let tmpdiv2 = document.createElement("link");
     tmpdiv2.rel = "stylesheet";
     tmpdiv2.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
     document.head.appendChild(tmpdiv2);
+
     let tmpdiv3 = document.createElement("link");
     tmpdiv3.rel = "stylesheet";
     tmpdiv3.href = "../subtopic_styles/general_subtopic_index.css";
     document.head.appendChild(tmpdiv3);
 
-const sidebarHTML = `
+
+    const sidebarHTML = `
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <div class="sidebar" id="sidebar">
@@ -24,7 +27,6 @@ const sidebarHTML = `
         <div class="sidebar-content">
             
             <a href="../../index.html" class="menu-item">Home</a>
-            <!--the links should be changed after the html of the subtopic pages are done -->
             
             <a href="../topic_1/choose.html" class="menu-item has-submenu" data-toggle="topic1">
                 <span>Transportation</span>
@@ -53,7 +55,6 @@ const sidebarHTML = `
                 </div>
             </div>
 
-            
             <a href="../topic_2/choose.html" class="menu-item has-submenu" data-toggle="topic2">
                 <span>Energy/Infrastructure</span>
             </a>
@@ -81,7 +82,6 @@ const sidebarHTML = `
                 </div>
             </div>
 
-             
             <a href="../topic_3/choose.html" class="menu-item has-submenu" data-toggle="topic3">
                 <span>Business-Critical Systems</span>
             </a>
@@ -109,7 +109,6 @@ const sidebarHTML = `
                 </div>
             </div>
 
-            
             <a href="../topic_4/choose.html" class="menu-item has-submenu" data-toggle="topic4">
                 <span>Healthcare</span>
             </a>
@@ -136,81 +135,83 @@ const sidebarHTML = `
                     <a href="../topic_4/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Change Healthcare Ransomware Breach</a>
                 </div>
             </div>
-            <a href="../../about_us/about_us.html" class="menu-item">About us</a>
 
+            <a href="../../about_us/about_us.html" class="menu-item">About us</a>
             <a href="../../table/members-contribution.html" class="menu-item">Members contribution</a>
         </div>
     </div>
-    <header class="p-3">
-    <div class="container-fluid">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            
-            <button class="menu-btn" id="menuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
 
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+    <header class="p-3">
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <button class="menu-btn" id="menuBtn"><span></span><span></span><span></span></button>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="../../index.html" class="nav-link" style="color: white;">Home</a></li>
-                    <li><a href="../../about_us/about_us.html" style="color: white;" class="nav-link text-white">About us</a></li>
-                    
+                    <li><a href="../../about_us/about_us.html" class="nav-link" style="color: white;">About us</a></li>
                 </ul>
-            
-            <div class="bta backbta" style="font-size: 15px;">
-                Go Back
+                <div class="bta backbta" style="font-size: 15px;">Go Back</div>
             </div>
-            
         </div>
-    </div>
-</header>
+    </header>
     `;
 
 
-    //injecting it inside the body
+    // Inject sidebar
     document.body.insertAdjacentHTML('afterbegin', sidebarHTML);
 
-     const currentFullURL = window.location.href;
-
+    const currentFullURL = window.location.href;
     document.querySelectorAll('.sidebar a').forEach(link => {
         if (link.href === currentFullURL) {
             link.classList.add('current-page-link');
         }
     });
-    
-divs = document.getElementsByClassName("exit");
-for (let i = 0; i < divs.length; i++) {
-    divs[i].onclick = function() {
 
-      
-        let parts = window.location.pathname.split("/");
-        parts.pop();
-        parts.pop();
-        let base = parts.join("/");
+    // ====== Save Category in Session Storage ======
+    document.querySelectorAll('a[href*="topicgeneral_b.html"]').forEach(link => {
+        link.addEventListener('click', () => {
+            sessionStorage.setItem('category', 'bug');
+        });
+    });
 
-        if (sessionStorage.getItem("category") == "bug") {
-            temp = base + "/topicgeneral_b.html";
-            window.location.href = temp;
-        } else {
-            temp = base + "/topicgeneral_v.html";
-            window.location.href = temp;
-        }
-    };
-}
-    // sidebar functionality
-            const menuBtn = document.getElementById('menuBtn');
-            const sidebar = document.getElementById('sidebar');
-            const sidebarOverlay = document.getElementById('sidebarOverlay');
-            const closeSidebar = document.getElementById('closeSidebar');
+    document.querySelectorAll('a[href*="topicgeneral_v.html"]').forEach(link => {
+        link.addEventListener('click', () => {
+            sessionStorage.setItem('category', 'vuln');
+        });
+    });
 
-            function openSidebar() {
-                sidebar.classList.add('active');
-                sidebarOverlay.classList.add('active');
+    // ====== "Go Back" Button ======
+    divs = document.getElementsByClassName("exit");
+    for (let i = 0; i < divs.length; i++) {
+        divs[i].onclick = function () {
+            let parts = window.location.pathname.split("/");
+            parts.pop();
+            parts.pop();
+            let base = parts.join("/");
 
-                const activeLink = sidebar ? sidebar.querySelector('.current-page-link') : null;
-                 if (activeLink) {
-                let parent = activeLink.parentElement;
-                while (parent && !parent.classList.contains('sidebar-content')) {
+            if (sessionStorage.getItem("category") == "bug") {
+                temp = base + "/topicgeneral_b.html";
+                window.location.href = temp;
+            } else {
+                temp = base + "/topicgeneral_v.html";
+                window.location.href = temp;
+            }
+        };
+    }
+
+    // Sidebar functionality
+    const menuBtn = document.getElementById('menuBtn');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const closeSidebar = document.getElementById('closeSidebar');
+
+    function openSidebar() {
+        sidebar.classList.add('active');
+        sidebarOverlay.classList.add('active');
+
+        const activeLink = sidebar ? sidebar.querySelector('.current-page-link') : null;
+        if (activeLink) {
+            let parent = activeLink.parentElement;
+            while (parent && !parent.classList.contains('sidebar-content')) {
                 if (parent.classList.contains('submenu') || parent.classList.contains('subsubmenu')) {
                     parent.classList.add('expanded');
                     const toggleBtn = sidebar.querySelector(`[data-toggle="${parent.id}"]`);
@@ -222,21 +223,20 @@ for (let i = 0; i < divs.length; i++) {
                 parent = parent.parentElement;
             }
         }
-            }
+    }
 
-            function closeSidebarFunc() {
-                sidebar.classList.remove('active');
-                sidebarOverlay.classList.remove('active');
-            }
+    function closeSidebarFunc() {
+        sidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
+    }
 
-            menuBtn.addEventListener('click', openSidebar);
-            closeSidebar.addEventListener('click', closeSidebarFunc);
-            sidebarOverlay.addEventListener('click', closeSidebarFunc);
+    menuBtn.addEventListener('click', openSidebar);
+    closeSidebar.addEventListener('click', closeSidebarFunc);
+    sidebarOverlay.addEventListener('click', closeSidebarFunc);
 
-            
-            
-            document.querySelectorAll('[data-toggle]').forEach(item => {
-            item.addEventListener('click', function (e) {
+    // Toggle submenus
+    document.querySelectorAll('[data-toggle]').forEach(item => {
+        item.addEventListener('click', function (e) {
             const rect = this.getBoundingClientRect();
             const clickX = e.clientX - rect.left;
             const isArrowArea = clickX > (rect.width - 70);
@@ -253,11 +253,11 @@ for (let i = 0; i < divs.length; i++) {
             }
         });
     });
-    divs=document.getElementsByClassName("backbta")
-for(let i=0; i<divs.length; i++){
-    divs[i].onclick=function(){
-             
-        window.location.href="../topics.html"
+
+    divs = document.getElementsByClassName("backbta");
+    for (let i = 0; i < divs.length; i++) {
+        divs[i].onclick = function () {
+            window.location.href = "../topics.html";
+        };
     }
-}
 });
