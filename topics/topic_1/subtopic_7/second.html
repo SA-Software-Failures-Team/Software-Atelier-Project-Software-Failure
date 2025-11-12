@@ -22,7 +22,7 @@
                 <ul class="nav-ul">
                     <li class="nav-li"><a href="first.html">Overview</a></li>
                     <li class="nav-li"><a href="second.html">Technical Analysis</a></li>
-                    <li class="nav-li"><a href="../generalsubtopic.html">General Subtopic</a></li>
+                    <li class="nav-li"><a href="generalsubtopic.html">General Subtopic</a></li>
                 </ul>
             </div>
         </div>
@@ -37,19 +37,22 @@
                     The Patriot system tracked time in tenths of a second using a 24-bit fixed-point register.
                     The radar miscalculated the position of an approaching missile by more than 500 meters after 100 hours of continuous operation due to a minor rounding error. 
                 </p>
-                <div class="inside">
-                    <p id="second">
+                
+                <div class="inside" style="display: block; text-align: left; margin-top: 1em;">
+                    <p id="second" style="font-weight: bold; margin-bottom: 0.5em;">
                         Timeline of the Failure:
                     </p>
-                    <ul>
+                    <ul style="margin-left: 1.5em; margin-bottom: 1em;">
                         <li>Day 0: The Patriot system began to run constantly in Dhahran.</li>
                         <li>Hour 100: Radar got imprecise due to cumulative rounding mistake.</li>
                         <li>February 25, 1991: Incoming Scud missile not intercepted.</li>
                         <li>Immediate Result: 28 killed, 100+ injured.</li>
                         <li>Aftermath: A software patch was used to regularly reset the timer.</li>
                     </ul>
-                    <img src="img/patriot_timeline.jpg" alt="Patriot Timeline">
+                    <img src="img/patriot_timeline.jpg" alt="Patriot Timeline" 
+                         style="display:block; margin:0 auto; max-width:600px; width:100%; height:auto;">
                 </div>
+
                 <p id="third">
                     Lessons Learned / Prevention:
                     <br>- Always take long-term accuracy into account while developing essential software.
