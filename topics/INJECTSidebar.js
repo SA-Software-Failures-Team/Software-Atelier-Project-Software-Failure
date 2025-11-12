@@ -147,6 +147,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     <a href="../../topic_4/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
                 </div>
             </div>
+            <a href="../../../about_us/about_us.html" class="menu-item">About us</a>
+
+            <a href="../../../table/members-contribution.html" class="menu-item">Members contribution</a>
         </div>
     </div>
     `;
