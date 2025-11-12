@@ -2,40 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Juliana Silva Costa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F22 Raptor - Overview</title>
+    <meta name="author" content="Juliana Silva Costa">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>F22 Raptor General Overview</title>
 </head>
-
 <body>
-
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_5/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Analysis</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
-        <section>
-            <h2>Background</h2>
+        <div class="content-text">
+            <h1>F22 Raptor Software Bug</h1>
             <p>
                 The F22 Raptor is an advanced stealth fighter aircraft.
                 During early operational testing, a software bug in its flight control system was discovered,
                 which could potentially cause control issues in certain edge-case scenarios.
             </p>
-        </section>
-
-        <section>
             <h2>The Bug</h2>
             <p>
                 The bug involved the flight control algorithms misinterpreting sensor data under specific conditions.
                 It did not cause any known crashes, but it required immediate correction to ensure safe operation.
             </p>
-        </section>
-
-        <section>
             <h2>Impact and Prevention</h2>
             <p>
                 The bug led to a temporary suspension of some test flights. 
                 Developers patched the software, added more rigorous simulation checks, 
                 and implemented long-term monitoring to prevent recurrence.
             </p>
-        </section>
+        </div>
+        <div class="lateral-image">
+            <img src="img/f22_bug_graphic.jpg" alt="F22 Raptor">
+        </div>
     </main>
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
 </body>
 </html>
