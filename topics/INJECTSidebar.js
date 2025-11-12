@@ -147,6 +147,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     <a href="../../topic_4/subtopic_10/generalsubtopic.html" class="subsubmenu-item">Subtopic 10</a>
                 </div>
             </div>
+            <a href="../../../about_us/about_us.html" class="menu-item">About us</a>
+
+            <a href="../../../table/members-contribution.html" class="menu-item">Members contribution</a>
         </div>
     </div>
     `;
@@ -157,15 +160,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     const currentPath = window.location.pathname;
-
     const pathParts = currentPath.split('/');
+
+    const topicFolder = pathParts.find(part => part.startsWith('topic_'));
     const subtopicFolder = pathParts.find(part => part.startsWith('subtopic_'));
 
-    if (subtopicFolder) {
+    if (topicFolder && subtopicFolder) {
+        
+        const uniquePathSegment = `${topicFolder}/${subtopicFolder}/`;
+
         document.querySelectorAll('.sidebar a').forEach(link => {
             const linkHref = link.getAttribute('href');
             
-            if (linkHref.includes(subtopicFolder + '/')) {
+            if (linkHref.includes(uniquePathSegment)) {
                 link.classList.add('current-page-link-subtopic');
             }
         });
