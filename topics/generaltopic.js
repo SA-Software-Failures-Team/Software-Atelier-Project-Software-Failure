@@ -1,11 +1,9 @@
 
-divs=document.getElementsByClassName("backbta")
-for(let i=0; i<divs.length; i++){
-    divs[i].onclick=function(){
-             
-        window.location.href="../topics.html"
-    }
-}
+/* Author: Davide Scapellato */
+
+// BACKBTA Mapping moved to injectsidebarTopicGeneral
+
+
 let n=0
 divs=document.getElementsByClassName("one")
 for(let i=0; i<divs.length; i++){

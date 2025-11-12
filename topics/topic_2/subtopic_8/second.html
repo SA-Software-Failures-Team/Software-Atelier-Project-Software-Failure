@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriele Santagostino">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Timeline of the SolarWinds Cyberattack</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">The SolarWinds Attack Overview</a></li>
+                    <li class="nav-li"><a href="first.html">What Was SolarWinds?</a></li>
+                    <li class="nav-li"><a href="second.html">Timeline of the Cyberattack</a></li>
+                    <li class="nav-li"><a href="third.html">How the Attack Worked</a></li>
+                    <li class="nav-li"><a href="fourth.html">Root Causes and Security Lessons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src='../subtopic_8/img/second.webp' alt="Cyberattack Timeline Graphic" class="header">
+    <main>
+        <div class="lateral-image">
+            <img src='../subtopic_8/img/second.wepb' alt="SolarWinds Orion Software Interface">
+        </div>
+        <div class="content-text center">
+            <h1>Timeline of the SolarWinds Cyberattack</h1>
+            <br>
+            <p id="first">
+                The attack was executed by inserting malicious code into SolarWinds’ Orion software platform, which is widely used for network monitoring and IT management. The attackers gained access to the build environment of Orion and modified the software updates to include a backdoor. Once these updates were released, thousands of customers automatically downloaded them, unknowingly installing the malicious payload.
+            </p>
+            <br><br>
+            <p id="second">
+                This supply chain compromise exploited trust at every level of software deployment, highlighting a weakness that was not specific to SolarWinds alone but indicative of broader systemic vulnerabilities in software distribution practices. The backdoor allowed attackers to communicate with affected systems remotely, access sensitive data, and move laterally across networks without triggering typical security alerts. The stealthy nature of the operation ensured that the intrusion went undetected for months, giving attackers ample time to gather intelligence.
+            </p>
+            <br><br>
+            <p id="third">
+                The sophistication of the attack required deep understanding of software development processes, digital signing mechanisms, and enterprise IT management. By compromising a single vendor, the attackers were able to gain access to multiple organizations worldwide, demonstrating how supply chain vulnerabilities can magnify the impact of a cyberattack beyond what traditional defenses are designed to handle.
+            </p>
+        </div>
+    </main>
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>
+

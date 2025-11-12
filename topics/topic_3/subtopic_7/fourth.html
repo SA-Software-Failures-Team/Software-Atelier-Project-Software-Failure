@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vittoria D'Arrigo">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>Long-Term Mitigation & Prevention</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_7/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">What happened</a></li>
+                    <li class="nav-li"><a href="second.html">Technical & Security Analysis</a></li>
+                    <li class="nav-li"><a href="third.html">Impact on Services & Data Exposure</a></li>
+                    <li class="nav-li"><a href="fourth.html">Long-Term Mitigation & Prevention</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>Long-Term Mitigation & Prevention</h1>
+            <p>
+               To protect systems from Heartbleed, the first and most important step was upgrading the vulnerable library. The bug was fixed in OpenSSL 1.0.1g (the first version of OpenSSL) and later; service providers and users were encouraged to install immediately. After patching, all private keys, session cookies, and credentials that could have been leaked had to be regarded as compromised and replaced accordingly.
+            </p>
+            <br>
+            <p>
+                Beyond immediate remediation, organizations had to rethink resilience and trust. Heartbleed showed that relying on a single library across millions of systems created a catastrophic single point of failure. In its response, the industry moved to recommend stronger redundancy, multi-region deployments, automated patching pipelines, and clearer service level guarantees about cryptographic infrastructure. Security best practices, such as key rotation, certificate lifecycle management, and continuous monitoring, became standard.
+            <br>
+            <p>
+                Finally, the incident emphasized the requirement for sustainable support for critical open-source infrastructure. The website for Heartbleed mentions that the bug was an implementation error in a part of a library used by nearly every service on the internet, maintained by a few developers. The most valuable long-term lesson to be learned from this is that trust in encryption is not only a math problem but requires funding, code review, and extensive testing. Organizations now spend money on fuzzing tools, static analysis, and secure development lifecycles to avoid such widespread vulnerabilities.
+            </p>
+            <br>
+        </div>
+        <div class="four-bottom-image">
+            <div class="footimg">
+                <img src="img/photoc.png" class="footimg" alt="">
+                <br>
+                <p class="four-image-caption">Vulnerable OpenSSL System</p>
+            </div>
+            <div class="footimg">
+                <img src="img/photol.jpg" class="footimg" alt="">
+                <br>
+                <p class="four-image-caption">Secure System</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+
+</body>
+</html>

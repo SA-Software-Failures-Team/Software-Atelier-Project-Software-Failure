@@ -87,15 +87,23 @@ document.addEventListener('DOMContentLoaded', function() {
             sidebarOverlay.addEventListener('click', closeSidebarFunc);
 
             
+            
             document.querySelectorAll('[data-toggle]').forEach(item => {
-                item.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('data-toggle');
-                    const target = document.getElementById(targetId);
-                    
-                    
-                    this.classList.toggle('expanded');
-                    target.classList.toggle('expanded');
-                });
-            });
+            item.addEventListener('click', function (e) {
+            const rect = this.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const isArrowArea = clickX > (rect.width - 70);
+
+            if (this.tagName === 'A' && !isArrowArea) {
+                return;
+            }
+
+            e.preventDefault();
+            const target = document.getElementById(this.getAttribute('data-toggle'));
+            if (target) {
+                this.classList.toggle('expanded');
+                target.classList.toggle('expanded');
+            }
+        });
+    });
         });

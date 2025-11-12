@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Samuele Bertolini">
+    <meta name="author" content="Davide Scapellato">
      <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
-    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css"> <!--Remove this one once you copy paste the template-->
     <title>Root Cause & Technical Analysis</title>
 </head>
 <body >
@@ -46,13 +45,13 @@
                 <div class="inside">
                 <p id="second">
                     Technical analyses from independent monitoring firms, such as ThousandEyes, confirmed that the outage was not caused by a cyberattack or external interference but rather by internal misconfiguration. The BGP routing issue disrupted connectivity to key Microsoft services including Teams, Outlook, Exchange Online, and SharePoint. Because these services depend heavily on Microsoft’s centralized identity and authentication systems, the routing problem had a cascading effect, preventing users from even signing in to accounts or accessing stored data. In essence, while individual data centers remained operational, they were isolated from one another due to the routing failure.       </p>
-                    <img class="secondimage" src="img/outt.png">
+                    <img class="secondimage" src="img/outt.png" alt="image of microsoft">
                 </div>
                 <p id="third">
                     Once the issue was identified, Microsoft engineers rolled back the network change and re-established stable routing sessions across its infrastructure. This rollback immediately reduced packet loss and restored normal connectivity. Microsoft later confirmed in its post-incident report that the command had been deployed without proper validation checks in place. In response, the company committed to implementing additional safeguards, including automatic “safe deployment” systems and enhanced validation protocols to prevent similar issues in the future. The incident served as a reminder that even highly automated, globally distributed cloud networks remain vulnerable to human and procedural errors.</p>
             </div>
             <br>
-            <img class="lowerimage" src="img/micb.webp">
+            <img class="lowerimage" src="img/micb.webp" alt="image of microsoft">
 
         </div>
         <!-- 
@@ -63,17 +62,17 @@
         <div class="content-sum">
             <ul class="ul-sum">
                 <li class="li-sum"><a id="n1" href="#first" class="a-sum">Microsoft</a></li>
-                <div id="one" class="sum-on-click" style="display: none;"><p>Founded in 1975 by Bill Gates and Paul Allen. It's best known for creating the Windows operating system, the Microsoft Office suite (Word, Excel, PowerPoint), and the Azure cloud platform. The company also owns LinkedIn, GitHub, and Xbox. Today, Microsoft plays a major role in software development, cloud computing, and digital innovation worldwide.</p></div>
+                <li><div id="one" class="sum-on-click" style="display: none;"><p>Founded in 1975 by Bill Gates and Paul Allen. It's best known for creating the Windows operating system, the Microsoft Office suite (Word, Excel, PowerPoint), and the Azure cloud platform. The company also owns LinkedIn, GitHub, and Xbox. Today, Microsoft plays a major role in software development, cloud computing, and digital innovation worldwide.</p></div></li>
                 <li class="li-sum"><a id="n2"  href="#second" class="a-sum ">Outlook</a></li>
-                <div  id="two"  class="sum-on-click"  style="display: none;"><p>Outlook is an email and calendar application developed by Microsoft. It's part of the Microsoft Office suite and also available as a web service through Outlook.com and Microsoft 365. Outlook lets users send and receive emails, manage contacts, schedule meetings, and organize tasks all in one place. It’s widely used by individuals and businesses for professional communication and time management.</p></div>
+                <li><div  id="two"  class="sum-on-click"  style="display: none;"><p>Outlook is an email and calendar application developed by Microsoft. It's part of the Microsoft Office suite and also available as a web service through Outlook.com and Microsoft 365. Outlook lets users send and receive emails, manage contacts, schedule meetings, and organize tasks all in one place. It’s widely used by individuals and businesses for professional communication and time management.</p></div></li>
                 <li class="li-sum"><a  id="n3" href="#third" class="a-sum ">Numbers</a></li>
-                <div  id="three" class="sum-on-click" style="display: none;"><p>approx US$ 281.7 billion for the fiscal year ended June 30 2025.</p></div>
+                <li><div  id="three" class="sum-on-click" style="display: none;"><p>approx US$ 281.7 billion for the fiscal year ended June 30 2025.</p></div></li>
                  </ul>
         </div>
     </main>
     <br>
     <script src="../../subtopic.js"></script>
-    <script src="../topics/subtopic.js"></script><!--Remove this one once you copy paste the template-->
+    <script src="../../INJECTSidebar.js"></script>
 
 
 </body>

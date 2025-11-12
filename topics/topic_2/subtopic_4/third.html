@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saeid Shirkani">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+
+    <title>2003 Blackout – Causes</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Background & Timeline</a></li>
+                    <li class="nav-li"><a href="third.html" aria-current="page">Technical & Human Causes</a></li>
+                    <li class="nav-li"><a href="fourth.html">Cascade & Impact</a></li>
+                    <li class="nav-li"><a href="fifth.html">Lessons & Recommendations</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>Technical & Human Causes Behind the Failure</h1>
+            <p id="first">
+
+                The blackout did not stem from a single fault; it emerged from interacting technical,
+                human, and institutional weaknesses. First, several high-voltage transmission lines in
+                northern Ohio tripped after sagging into vegetation. Right-of-way clearance and
+                vegetation management are fundamental reliability controls; when they fail, thermal
+                limits and safety margins vanish. Each line trip forced power to reroute across already
+                stressed corridors, increasing flows on remaining elements.
+            <br>
+            <p id="second">
+                Second, the affected utility’s Energy Management System suffered alarm/visibility failures.
+                Loss of critical alarms and stale topology data degraded operators’ situational awareness at
+                the precise moment rapid action was needed. Without accurate real-time tools—state estimation,
+                contingency analysis, and timely SCADA updates—operators could neither diagnose the unfolding
+                emergency nor mitigate it by reconfiguring the grid, reducing transfers, or shedding load early.
+            </p>
+            <br>
+            <p id="Third">
+                Third, planning and operating practices lagged best-in-class standards. Reactive power and
+                voltage support were marginal in key areas, and the system was not promptly returned to an
+                N-1 secure state after initial contingencies. Protection settings—including distance (impedance)
+                relays—allowed operations that, under large power swings, contributed to the extent of the cascade.
+                Collectively, these issues exposed gaps relative to North American reliability expectations, turning
+                local disturbances into a regional emergency.
+            </p>
+            
+            <br>
+        </div>
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src="img" style="width: 800px; height: 600px;" alt="">
+                <br>
+            </div>
+            
+        </div>
+    </main>
+
+   
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

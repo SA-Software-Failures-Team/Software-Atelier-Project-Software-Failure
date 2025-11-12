@@ -1,72 +1,82 @@
-
-/*============== CSS used for the subtopic main page ============================================*/
-
-.nav-bar{
-    background-color: white;
-}
-
-
-
-body{
+body {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
-
-}
-.getopic{
+    display: flex;
+    flex-direction: column; 
     min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    background-color: #333; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.getopic {
+    position: relative; 
+    flex-grow: 1;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.getopic .photo{
+
+.getopic .photo {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width:35%;
-    
+    width: 35%;
+    min-height: 500px; 
 }
-.getopic .description{
-    
-    width:65%;
+
+.getopic .description {
+    width: 65%;
     background-color: #f2f2f2;
     box-sizing: border-box;
-    
+    padding: 20px;
+}
 
-}
-.getopic h2{
-    font-size: 30pt;
-    width: 95%;
+.getopic h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     padding: 1.5rem;
-    margin-top: 0;
+    margin: 0 0 20px 0;
     color: white;
-    background-color: rgb(0, 0, 0)
+    background-color: rgb(0, 0, 0);
 }
-.getopic p{
-    font-size: 15pt;
+
+.getopic p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
     padding: 1.25rem;
-    line-height: 1.5;
-    width: min(60%, 800px);
-    margin: auto;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
 }
-.getopic .description .contdivbut{
+
+.contdivbut {
     text-align: center;
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
-}
-.getopic .description .contdivbut .innercont{
-    margin: auto;
-    margin-top: 1.25rem;
-    width: min(35%, 400px);
+    gap: 1rem;
+    padding: 20px;
 }
 
-.exit{
+.contdivbut .innercont {
+    margin: 0 auto;
+    width: min(90%, 400px);
+}
 
-    position:absolute;
-    bottom:5%;
-    right:5%;
-    width:fit-content;
+header .exit {
+    position: relative;
+    margin: 0px;
+    top: 0px;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+.backbta{
+
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: -1.5vh;
 
 }
 
