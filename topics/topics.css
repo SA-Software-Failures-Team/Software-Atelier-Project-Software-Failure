@@ -200,9 +200,9 @@ transition: background-image 1s ease-in-out; /* Smooth fade */
 
 .maingeneraltopic .first, .second, .third{
 
-    width:90%;
+    width:100%;
     padding:5%;
-    margin:auto;
+   
 
 }
 .maingeneraltopic .first{
@@ -238,9 +238,12 @@ transition: background-image 1s ease-in-out; /* Smooth fade */
   display: flex;
   background-color:gray;
   backdrop-filter: blur(10px);
-  font-size: 20px;
+  font-size: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  padding-top:2%;
+  padding-bottom:2%;
+
 
 }
 
@@ -312,7 +315,7 @@ transition: background-image 1s ease-in-out; /* Smooth fade */
     background-color: black;
     width:100%;
     height:fit-content;
-    font-size: 16pt;
+    font-size: 12pt;
     position: relative;
     top:100%;
     transform: translateY(-100%);

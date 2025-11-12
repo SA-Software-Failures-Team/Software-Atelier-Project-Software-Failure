@@ -1,68 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Davide Scapellato">
-    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
-    <title>Microsoft Outage 2023 - What Happened</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Todor Delipetrev">
+   <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+   <title>Deepwater Horizon – What Happened</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-button">
-            <button class="hamburger-icon" onclick="toggleMenu()">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-        <div id="nav-links">
-            <div class="nav-bar">
-                <ul class="nav-ul">
-                    <li class="nav-li"><a href="../subtopic_3/generalsubtopic.html">General overview</a></li>
-                    <li class="nav-li"><a href="Ex-Page1.html">What Happened</a></li>
-                    <li class="nav-li"><a href="Ex-Page2.html">Root Cause &amp; Technical Analysis</a></li>
-                    <li class="nav-li"><a href="Ex-page3.html">Impact &amp; Scope</a></li>
-                    <li class="nav-li"><a href="Ex-page4.html">Lessons &amp; Broader Implications</a></li>
-                    <li class="nav-li"><a href="Ex-Page5.html">Outlook &amp; Mitigation</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+   <nav class="nav">
+       <div class="nav-button">
+           <button class="hamburger-icon" onclick="toggleMenu()">
+               <span></span>
+               <span></span>
+               <span></span>
+           </button>
+       </div>
+       <div id="nav-links">
+           <div class="nav-bar">
+               <ul class="nav-ul">
+                   <li class="nav-li"><a href="./generalsubtopic.html">General subtopic</a></li>
+                   <li class="nav-li"><a href="./first.html">What Happened</a></li>
+                   <li class="nav-li"><a href="./second.html">Software & Control Systems</a></li>
+                   <li class="nav-li"><a href="./third.html">Failures & Human Factors</a></li>
+                   <li class="nav-li"><a href="./fourth.html">Impact on Energy Infrastructure</a></li>
+               </ul>
+           </div>
+       </div>
+   </nav>
 
-    <img src="../template/image/ex.jpeg" alt="background" class="header">
+   <main>
+       <img class="lateral-image l1" src="img/2.jpg" alt="Deepwater Horizon drilling rig before the incident">
 
-    <main>
-        <div class="lateral-image">
-            <img src="../template/image/img2.jpeg" alt="Microsoft datacenter">
-        </div>
+       <div class="columnarticle">
+           <h2>Deepwater Horizon: What Happened?</h2>
+           <p>
+               On 20 April 2010, the Deepwater Horizon semi-submersible drilling rig was completing work on the Macondo
+               well in the Gulf of Mexico, a deepwater oil reservoir that was part of BP’s wider energy infrastructure.
+               During the temporary abandonment phase, critical pressure tests were misinterpreted, and signs of an
+               unstable well were ignored.
+               <br><br>
+               As control operations continued, hydrocarbons entered the wellbore and travelled up towards the rig.
+               Gas reached the rig floor, ignited, and triggered powerful explosions and a large fire. Eleven workers
+               were killed, and after burning for about two days, the rig sank.
+               <br><br>
+               The subsea blowout preventer (BOP), positioned on the seafloor to seal the well in emergencies, failed
+               to fully close. Oil and gas then flowed freely into the Gulf of Mexico for 87 days, releasing millions
+               of barrels of oil.
+               <br><br>
+               What began as a technical and procedural failure on one platform quickly became a major energy, economic
+               and environmental crisis, showing how dependent modern society is on the safe operation of complex
+               offshore infrastructure.
+           </p>
+       </div>
 
-        <div class="content-text center">
-            <h1>What Happened</h1>
-            <br>
-            <p id="first">
-                In the early morning of 25 January 2023 (UTC), users worldwide began to experience problems accessing
-                Microsoft 365 and Azure services. Teams calls failed to connect, Outlook and Exchange Online showed
-                errors, SharePoint and OneDrive were slow or unreachable, and some Azure resources could not be reached.
-                For many organisations, it looked like “the whole Microsoft cloud” was unstable at the same time.
-            </p>
-            <br><br>
-            <p id="second">
-                Microsoft quickly confirmed a “networking issue” affecting connectivity to multiple services. The impact
-                was broad but temporary: most core services were significantly affected for around 60–90 minutes, with
-                residual issues continuing for some customers for a bit longer while traffic was rebalanced and systems
-                recovered.
-            </p>
-            <br><br>
-            <p id="third">
-                Even though the outage was relatively short, it exposed how deeply companies, schools, and public
-                institutions rely on Microsoft’s cloud for everyday operations. One internal change inside Microsoft’s
-                backbone network was enough to disrupt communication, collaboration and access to business-critical
-                workloads on a global scale.
-            </p>
-        </div>
-    </main>
+       <img class="lateral-image l1" src="img/3.jpg" alt="Deepwater Horizon rig burning at night">
+   </main>
 
-    <br>
-    <script src="../../subtopic.js"></script>
-    <script src="../../INJECTSidebar.js"></script>
+   <script src="../../subtopic.js"></script>
+   <script src="../../INJECTSidebar.js"></script>
 </body>
 </html>

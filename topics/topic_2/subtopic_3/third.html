@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Todor Delipetrev">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Deepwater Horizon – Failures &amp; Human Factors</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="./generalsubtopic.html">General subtopic</a></li>
+                   <li class="nav-li"><a href="./first.html">What Happened</a></li>
+                   <li class="nav-li"><a href="./second.html">Software & Control Systems</a></li>
+                   <li class="nav-li"><a href="./third.html">Failures & Human Factors</a></li>
+                   <li class="nav-li"><a href="./fourth.html">Impact on Energy Infrastructure</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-text">
+            <h1>Failures &amp; Human Factors</h1>
+            <br>
+            <div id="main">
+                <p id="first">
+                    Investigations showed that several key alarms and safety notifications on Deepwater Horizon were
+                    disabled or configured not to disturb operators. This reduced “alarm noise”, but also removed an
+                    essential barrier that should have highlighted abnormal well conditions.
+                </p>
+                <div class="inside">
+                    <p id="second">
+                        Under commercial and time pressure, the crew misinterpreted a critical negative pressure test.
+                        The human–machine interface did not clearly distinguish safe from unsafe readings, and important
+                        trends were hidden among other data. The software was available, but the way information was
+                        presented and understood failed.
+                    </p>
+                    <img src="img/5.jpg" alt="Offshore rig control areas at night">
+                </div>
+                <p id="third">
+                    Behind the technical issues was a cultural problem: digital safety systems were treated as adjustable
+                    conveniences instead of strict safeguards. Allowing muted alarms and unclear ownership over risk
+                    created a fragile environment, where a chain of small decisions could lead to a catastrophic outcome.
+                </p>
+            </div>
+            <br>
+            <img class="lowerimage" src="img/6.jpg" alt="Flare and smoke from offshore installation">
+        </div>
+
+       <div class="content-sum">
+    <ul class="ul-sum">
+        <li class="li-sum">
+            <a id="n1" href="#first" class="a-sum">Silenced Alarms</a>
+            <div id="one" class="sum-on-click" style="display: none;">
+                <p>Key safety alarms were inhibited, weakening automated protection.</p>
+            </div>
+        </li>
+
+        <li class="li-sum">
+            <a id="n2" href="#second" class="a-sum">Misread Signals</a>
+            <div id="two" class="sum-on-click" style="display: none;">
+                <p>Complex data displays and pressure led to wrong interpretations.</p>
+            </div>
+        </li>
+
+        <li class="li-sum">
+            <a id="n3" href="#third" class="a-sum">Safety Culture</a>
+            <div id="three" class="sum-on-click" style="display: none;">
+                <p>A weak safety culture allowed unsafe use of critical digital systems.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+    </main>
+    <br>
+
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
