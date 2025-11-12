@@ -9,9 +9,6 @@ function toggleMenu() {
 }
 
 
-
-
-
 var link1 = { val:false};
 var link2 = { val:false};
 var link3 = { val:false};
