@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CLAUDIO_ROSCIO">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css"> <title>Legacy Vulnerabilities (Part 1: The Databus)</title>
+</head>
+<body>
+    
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="generalsubtopic.html">General Overview</a></li>
+                    <li class="nav-li"><a href="first.html">Part 1: The Databus Flaw</a></li>
+                    <li class="nav-li"><a href="second.html">Part 2: Modern Attack Vectors</a></li>
+                    <li class="nav-li"><a href="third.html">Part 3: The Patching Challenge</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <img src="https://source.unsplash.com/800x400/?f-16-cockpit" alt="F-16 cockpit (older, analog-style)" class="header">
+    
+    <main>
+        <div class="lateral-image">
+            <img src="https://source.unsplash.com/800x400/?computer-bus-diagram" alt="Diagram of a computer databus">
+        </div>
+        
+        <div class="content-text center">
+            <h2>Part 1: The "Original Sin" of Legacy Design</h2>
+            <p>
+                While the F-35 suffers from the "growing pains" of new code, legacy platforms like the F-15 Eagle and F-16 Fighting Falcon face a more fundamental problem: their age *is* the vulnerability. These jets were designed in the 1970s, an analog era where the concept of a "cyber-attack" was science fiction. Their core architecture was built for efficiency and reliability, not security.
+            </p>
+            <p>
+                Their software failure isn't a "bug" in the code, but a "flaw" in the entire design philosophy. For decades, their security was based on being physically isolated ("security by obscurity"). In a modern, networked battlefield, that defense is obsolete.
+            </p>
+            <br>
+            <h2>The MIL-STD-1553 Databus: A 1970s "Party Line"</h2>
+            <p>
+                The single greatest vulnerability in these aircraft is the <strong>MIL-STD-1553 databus</strong>. This is the "nervous system" of the jet, the wire that connects all the critical avionics: the radar, the flight controls, the displays, the navigation system, and the weapons.
+            </p>
+            <p>
+                This bus, designed in 1973, operates on a principle of <strong>blind trust</strong>. It's like a telephone party line where everyone can talk and everyone can listen:
+            </p>
+            <ul>
+                <li><strong>No Encryption:</strong> All data sent over the bus is in the clear. Anyone who can "tap" the wire can read everything.</li>
+                <li><strong>No Authentication:</strong> The bus has no way of verifying *who* is sending a message. The flight computer simply accepts a command from "the radar" without any way to know if it's *really* the radar or an enemy device spoofing it.</li>
+            </ul>
+            <br>
+            <h2>Why Was It Designed This Way?</h2>
+            <p>
+                In the 1970s, this was a brilliant design. It was extremely reliable, simple, and used very little computing power (which was scarce and expensive). The only way an enemy could access the bus was by physically boarding the plane. The designers never envisioned a world where a "smart" pod attached to the wing or a compromised maintenance port could be used to inject malicious data directly into the jet's central nervous system.
+            </p>
+            <p>
+                This single, fundamental flaw is the root vulnerability that enables all the modern attacks discussed in the next section.
+            </p>
+        </div>
+    </main>
+    <br>
+    
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script><script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>
