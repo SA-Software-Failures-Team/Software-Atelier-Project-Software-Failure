@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="author" content="Gabriele Santagostino"> 
+<link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css"> 
+<title>The Root Cause of the SolarWinds Attack</title> 
+</head> 
+<body> 
+<nav class="nav"> 
+<div class="nav-button"> 
+<button class="hamburger-icon" onclick="toggleMenu()"> 
+<span></span> 
+<span></span> 
+<span></span> 
+</button> 
+</div> 
+<div id="nav-links"> 
+<div class="nav-bar"> 
+<ul class="nav-ul"> 
+<li class="nav-li"><a href="generalsubtopic.html">The SolarWinds Attack</a></li> 
+<li class="nav-li"><a href="first.html">What Was SolarWinds?</a></li> 
+<li class="nav-li"><a href="second.html">Timeline of the Breach</a></li> 
+<li class="nav-li"><a href="third.html">The Root Cause: Weak Security Practices</a></li> 
+<li class="nav-li"><a href="fourth.html">Aftermath & The Push for Supply Chain Security</a></li> 
+</ul> 
+</div> 
+</div> 
+</nav> 
+
+<main class="five-template"> 
+<div class="content-text full"> 
+<h1>The Root Cause: A Compromised Build Environment</h1> 
+<p> The SolarWinds attack revealed critical failures in software security and enterprise system monitoring. The build environment used by SolarWinds was insufficiently isolated and monitored, allowing attackers to inject malicious code without detection. Code signing processes, which are meant to verify the authenticity of software, failed to prevent the compromised updates from being distributed to clients. </p> 
+<br> 
+<p> Enterprise monitoring systems were unable to identify abnormal behavior caused by the backdoor. The malware blended seamlessly into legitimate network activity, taking advantage of trusted administrative accounts and encrypted communications. Detection relied heavily on conventional threat signatures, which were inadequate against such a stealthy and tailored intrusion. This lack of visibility and reliance on reactive defenses contributed to the prolonged undetected presence of the attackers. </p> 
+<br> 
+<p> The incident emphasizes the need for stronger validation of software supply chains, continuous auditing of build environments, and enhanced anomaly detection in enterprise networks. System failures in design, monitoring, and response coordination allowed a single compromised vendor to affect multiple organizations globally, demonstrating the catastrophic potential of weaknesses in modern software infrastructures. </p> 
+<br> 
+</div> 
+
+<div class="four-bottom-image"> 
+<div class="img1"> 
+<img src='../subtopic_8/img/first.jpeg' alt="" width="400" height="300"> 
+<br> 
+<p class="four-image-caption">Compromised Build Environment</p> 
+</div> 
+
+<div class="img2"> 
+<img src='../subtopic_8/img/second.jpeg' alt="" width="400" height="300"> 
+<br> 
+<p class="four-image-caption">Supply Chain Vulnerability</p> 
+</div> 
+
+
+<br> 
+</div> 
+
+</main> 
+
+<script src="../../subtopic.js"></script> 
+<script src="../../INJECTSidebar.js"></script> 
+</body> 
+</html>

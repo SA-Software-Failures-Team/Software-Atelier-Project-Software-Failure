@@ -21,7 +21,7 @@ If you have questions, please contact the correct leader:
 * **Project Leader:** `Emira Çitaku	/ @emiraqitaku3`, `Leonardo Gabriel Bolcau	/ @Lanae99`
 * **Git Leader:** `Piotr Wilinski / @piotrwilinski`
 * **Git Co-Leader:** `Samuele Bertolini / @SamueleBertolini04`
-* **CSS Leaders:** `Davide Scapellato / @FullMonkey`, `Maks Brinjevec / @Maks0417`, `Bastav Chatterjee / @BastavChatterjee`
+* **CSS Leaders:** `Davide Scapellato / @FullMonkey`, `Samuele Bertolini / @SamueleBertolini04`
 * **Topic 1 Leader:** `Sanjay Skaria / @skariausi`
 * **Topic 2 Leader:** `Kilian	Rissone / @BigbyWere`
 * **Topic 3 Leader:** `Davide Scapellato / @FullMonkey`

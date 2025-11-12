@@ -1,178 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UK NHS WannaCry Ransomware Attack (2017)</title>
-    <link href="style.css" rel="stylesheet">
+    <meta name="author" content="Alexander Lazarevic">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css">
+    <title>The Excel Blunder Incident</title>
 </head>
-
 <body>
-    <!-- Header -->
-    <header class="header">
-        <h1>UK NHS WannaCry Ransomware Attack (2017)</h1>
-        <p>A Global Cybersecurity Crisis with Severe Healthcare Consequences</p>
-    </header>
-
-    <!-- Main -->
-    <main class="main-body">
-        <!-- Timeline -->
-        <section class="timeline">
-
-            <div class="timeline-flex">
-
-                <div class="timeline-div">
-                    <h3>March 2017</h3>
-                    <p>Microsoft releases security patch for EternalBlue vulnerability</p>
-                </div>
-
-                <div class="timeline-div">
-                    <h3>April 2017</h3>
-                    <p>Shadow Brokers leak EternalBlue exploit online
-                    </p>
-                </div>
-
-                <div class="timeline-div">
-                    <h3>May 12, 2017</h3>
-                    <p>WannaCry ransomware attack begins globally</p>
-                </div>
-                <div class="timeline-div">
-                    <h3>May 13, 2017</h3>
-                    <p>Researcher discovers kill switch, slowing the spread</p>
-                </div>
-
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_3/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">The Incident Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Technical Failure</a></li>
+                    <li class="nav-li"><a href="fifth.html">Lessons Learned</a></li>
+                </ul>
             </div>
-        </section>
-
-        <!-- Context -->
-        <section class="context-section">
-            <h2>Context</h2>
-            <div class="context-grid">
-                <div class="context-text">
-                    <p>The WannaCry attack was a widespread ransomware cyberattack that occurred in May 2017. Ransomware
-                        is a type of malware that encrypts a victim's files, making them inaccessible, and demands
-                        payment to restore access. If payment is not made before the deadline, the victim risks
-                        permanent data loss.</p>
-
-                    <p>WannaCry spread rapidly across the world, infecting hundreds of thousands of computers in over
-                        150 countries. Many cybersecurity agencies and governments have attributed the creation and
-                        deployment of WannaCry to state-sponsored hackers linked to North Korea, who were allegedly
-                        motivated by financial gain and possibly by political goals.</p>
-
-                    <div class="highlight-box">
-                        <p>North Korea has been linked to several criminal activities like counterfeiting money and
-                            pharmaceuticals as they needed ways to raise money after being heavily sanctioned. They also
-                            started launching multiple cyber attacks around the globe as another criminal way to get
-                            money. At one point, a majority of cyber attacks in South Korea were believed to come from
-                            North Korea, a country with less than 10,000 IP addresses.</p>
-                    </div>
-
-                    <p>The malware demanded payment in Bitcoin to a specific non-traceable wallet that would supposedly
-                        unlock infected systems once payment was received. The usage of cryptocurrency made tracing the
-                        attackers more difficult.</p>
-                </div>
-                <div class="context-image">
-                    <img src="images/ransom.png" class="image" alt="image">
-                </div>
-            </div>
-        </section>
-
-        <!-- Cause Section -->
-        <section class="cause-section">
-            <h2>Cause</h2>
-            <div class="cause-grid">
-                <div class="cause-image">
-                    <img src="images/cyber.jpg" class="image-2" alt="image">
-                </div>
-                <div class="cause-text">
-                    <p>This attack was made possible due to a serious security vulnerability present in Microsoft
-                        Windows known as EternalBlue, which had originally been discovered by the U.S. National Security
-                        Agency (NSA) months prior to the actual attack.</p>
-
-                    <p>Instead of reporting the flaw to Microsoft immediately and risking the information getting leaked
-                        and vulnerability exploited, the NSA allegedly kept it as a powerful cyber weapon for
-                        intelligence operations.</p>
-
-                    <div class="highlight-box">
-                        <p>The hacking group Shadow Brokers later leaked the vulnerability online in various illegal
-                            hacker forums, allowing criminal groups to develop ransomware using it. The difficulty was
-                            that even though many hackers now had access to this dangerous cyber weapon, they still
-                            hadn't figured out how to use it correctly. The North Korean hackers were the first to do
-                            so, having full access and understanding of this leaked information.</p>
-                    </div>
-
-                    <p>Once a machine was infected, WannaCry would automatically spread across networks without user
-                        action, keeping a low profile but without doing catastrophic damage immediately. Instead, it
-                        gave attackers the option to put more malicious content into the system, while also encrypting
-                        files and displaying a ransom note that threatened permanent data loss if payment was not made.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Impact -->
-        <section class="impact-section">
-            <h2>Impact</h2>
-            <div class="impact-content">
-
-                <p>The UK's National Health Service (NHS) was among the most heavily affected organizations because
-                    many of its computers were still running outdated Windows systems lacking important security
-                    patches. In fact, a patch was released a week prior to the attack that actually fixed the
-                    exploited vulnerability. The issue was that many people were not updating their systems due to
-                    laziness, habit, or convenience.</p>
-
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <h3 class="stat-number">80+</h3>
-                        <p>NHS trusts disrupted</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3 class="stat-number">1/3</h3>
-                        <p>Medical institutions in the UK affected</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3 class="stat-number">£92M</h3>
-                        <p>Estimated cost to the NHS</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3 class="stat-number">19,000</h3>
-                        <p>Appointments cancelled</p>
-                    </div>
-                </div>
-
-                <p>As a result, over 80 NHS trusts were disrupted, and hospitals lost access to critical digital
-                    systems, including patient records, appointment schedules, and diagnostic equipment. Ambulances
-                    had to be diverted, surgeries were delayed or cancelled, and medical staff were forced to rely
-                    on paper-based procedures.</p>
-
-                <div class="highlight-box">
-                    <p>The temporary solution was to keep doing what they did in the past - operating the healthcare
-                        system in an "old fashioned way" without computers. While no patient deaths were directly
-                        attributed to the attack, it significantly reduced the NHS's ability to deliver urgent care.
-                    </p>
-                </div>
-
-                <p>Overall, the WannaCry attack became a wake-up call in the field of informatics, healthcare
-                    technology, and especially cybersecurity. It showed how dependent essential public services have
-                    become on digital infrastructure and how a single vulnerability can lead to massive real-world
-                    consequences that may also cause death in the worst case.</p>
-
-                <p>The incident pushed governments and healthcare institutions worldwide to prioritize regular
-                    system updates, network segmentation, data backups, and stronger cybersecurity policies.
-                    WannaCry also highlighted the growing risks of cyberwarfare tools falling into the hands of
-                    criminals, reinforcing the need for global cooperation in protecting critical infrastructure
-                    from future cyberattacks.</p>
-
-            </div>
-        </section>
+        </div>
+    </nav>
+    <img src="img/covid_image_1.png" alt="COVID-19 data tracking" class="header">
+    <main>
+        <div class="lateral-image">
+            <img src="img/Ex-Page1.html2.jpg" alt="Excel spreadsheet">
+        </div>
+        <div class="content-text center">
+            <h1>The COVID-19 Excel Data Loss Incident</h1>
+            <br>
+            <p id="first">
+                In the autumn season of the year 2020, as the world struggled with the relentless spread of the COVID-19 virus, the United Kingdom's fight against the pandemic was dealt a severe, self inflicted blow. This crisis was not caused by a new variant or a shortage of vaccines but a profound and serious software failure: the loss of 15,841 positive COVID-19 test results due to the reliance on a Microsoft Excel spreadsheet for critical national data aggregation.
+            </p>
+            <br><br>
+            <p id="second">
+                This incident, now infamous as the "Excel blunder," transcends a simple but critical technical glitch. It stands as a stark, modern parable about the catastrophic consequences that arise when inappropriate software tools or fragile processes, and a fundamental misunderstanding of scalability are deployed in certain high-stakes, life or death environment and situations. The failure exposed a dangerous relation between the urgent needs of public health infrastructure and the ad-hoc, legacy systems upon which it sometimes precariously rests.
+            </p>
+            <br><br>
+            <p id="third">
+                The context of this failure was the UK's test-and-trace system, a cornerstone of its strategy to control viral transmission. Positive test results from swabs processed by commercial and public health labs needed to be consolidated into a single, central system managed by Public Health England (PHE). The critical flaw in this pipeline was the mechanism for data transfer that would prove disastrous for the nation's pandemic response.
+            </p>
+        </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>UK NHS WannaCry Ransomware Attack (2017) - Cybersecurity Case Study</p>
-        <p class="copy">&copy; Copyright 2025. All rights reserved.</p>
-    </footer>
-
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../topics/subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
 </body>
 </html>
