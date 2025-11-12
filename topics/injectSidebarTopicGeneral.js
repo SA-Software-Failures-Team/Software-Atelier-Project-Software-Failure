@@ -154,7 +154,7 @@ const sidebarHTML = `
                     
                 </ul>
             
-            <div class="bta exit" style="font-size: 15px;">
+            <div class="bta backbta" style="font-size: 15px;">
                 Go Back
             </div>
             
@@ -250,4 +250,11 @@ for (let i = 0; i < divs.length; i++) {
             }
         });
     });
+    divs=document.getElementsByClassName("backbta")
+for(let i=0; i<divs.length; i++){
+    divs[i].onclick=function(){
+             
+        window.location.href="../topics.html"
+    }
+}
 });
