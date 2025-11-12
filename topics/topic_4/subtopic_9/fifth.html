@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricetti Leonardo">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <title>Mitigation for the Future - Philips IntelliBridge EC40/80 Gateways (2022)</title>
+    <style>
+        .i {
+            width: 300px;
+        }
+        .w {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_9/generalsubtopic.html">Introduction</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/first.html">What Happened</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/second.html">Root Cause & Technical Analysis</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/third.html">Impact & Scope</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/fourth.html">Lessons Learned & Broader Implications</a></li>
+                    <li class="nav-li"><a href="../subtopic_9/fifth.html">Mitigation for the Future</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-text">
+            <h1>Mitigation for the Future - Philips IntelliBridge EC40/80 Gateways (2022)</h1>
+            <br>
+
+            <div id="main">
+                <p id="first">
+                    The Philips IntelliBridge EC40/80 vulnerability incident emphasized the urgent need to strengthen cybersecurity controls across medical device ecosystems. 
+                    Future mitigation must focus on eliminating legacy practices such as hard-coded credentials and inadequate authentication, while adopting modern frameworks for secure device management and monitoring. 
+                    A proactive and collaborative security model is essential to ensure the safety and integrity of connected healthcare systems.
+                </p>
+
+                <div class="inside">
+                    <p id="second">
+                        One of the most important mitigation strategies involves enforcing <strong>strong identity and access management (IAM)</strong> across all medical devices. 
+                        Manufacturers should implement unique, changeable credentials for each device, disable default logins, and require multifactor authentication (MFA) for administrative access. 
+                        Healthcare providers must also maintain strict access control policies to ensure that only authorized personnel can interact with patient-monitoring systems.
+                        <br>Another key step is <strong>network segmentation and continuous monitoring</strong>. 
+                        Medical gateways should always operate on isolated networks, separated from hospital administrative or public-facing systems. 
+                        Implementing intrusion detection systems (IDS) and continuous logging helps detect unauthorized access attempts early. 
+                        Regular penetration testing, vulnerability scanning, and firmware audits should be scheduled to ensure that device software remains secure throughout its lifecycle.
+                    </p>
+                    <img src="img/5_1.jpg" alt="Device Security Controls" class="i">
+                </div>
+                <p id="fourth">
+                    From a governance perspective, mitigation requires <strong>shared accountability</strong> between manufacturers, healthcare institutions, and regulators. 
+                    Establishing standard protocols for vulnerability disclosure and timely patch management ensures faster response when flaws are discovered. 
+                    Training biomedical and IT staff on device cybersecurity best practices can further reduce risks arising from human error or misconfiguration.
+                </p>
+
+                <p id="fifth">
+                    Finally, the healthcare sector must invest in <strong>cyber resilience and secure design culture</strong>. 
+                    This means integrating cybersecurity into every stage of a product's lifecycle — from concept and development to deployment and decommissioning. 
+                    Future medical devices must be built with the expectation of cyber threats, not the assumption of safety. 
+                    The Philips IntelliBridge case serves as a lasting reminder that patient safety and cybersecurity are inseparable, and that prevention through design is the only sustainable path forward.
+                </p>
+            </div>
+
+            <br>
+            <img class="lowerimage w" src="img/5_2.jpg" alt="Future of Medical Device Cybersecurity">
+        </div>
+    </main>
+
+    <br>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+</body>
+</html>
