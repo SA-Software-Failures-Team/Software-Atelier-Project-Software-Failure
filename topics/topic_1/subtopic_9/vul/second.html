@@ -1,0 +1,43 @@
+
+<html lang="en">
+<head>
+       <meta name="author" content="CLAUDIO_ROSCIO">
+    <title>Legacy Vulnerabilities (Part 2: Modern Attack Vectors)</title>
+        <link rel="stylesheet" href="../../subtopic_styles/general_subtopic_index.css">
+        <link rel="stylesheet" href="../../topics.css">
+    </head>
+<body>
+    <header>
+        <h1>Project Software Failure: Legacy Vulnerabilities in F-15 & F-16</h1>
+    </header>
+    
+    <nav>
+        <a href="legacy_page1_databus.html">Part 1: The Databus Flaw</a> |
+        <a href="legacy_page2_vectors.html" class="active">Part 2: Modern Attack Vectors</a> |
+        <a href="legacy_page3_patching.html">Part 3: The Patching Challenge</a>
+    </nav>
+
+    <main class="container">
+        <h2>Part 2: How to Exploit a 1970s Architecture</h2>
+        <p>The insecure MIL-STD-1553 databus (discussed in Part 1) is a "sleeping" vulnerability. It only becomes a critical failure when an adversary finds a modern "attack vector" to gain access to it. The retrofitting of these old jets with modern, networked technology has provided exactly those entry points.</p>
+
+        <img src="https://source.unsplash.com/800x400/?f-16-pods" alt="F-16 with wing-mounted targeting pods">
+
+        <h2>The "Trojan Horse" Pod</h2>
+        <p>To keep them relevant, F-15s and F-16s are constantly fitted with new "bolt-on" pods for targeting, navigation, or electronic warfare. These pods are often built by third-party contractors and are, by necessity, plugged directly into the insecure 1553 databus to communicate with the jet.</p>
+        <p>This creates a massive vulnerability. An adversary doesn't need to hack the jet; they only need to hack the *pod*. A compromised targeting pod could, in theory:</p>
+        <ul>
+            <li><strong>Inject False Data:</strong> Tell the pilot's display he is "locked on" to a target, while secretly feeding the missile bad coordinates.</li>
+            <li><strong>Impersonate Other Systems:</strong> Send false commands that *look* like they're from the navigation system, causing the jet's autopilot to drift off course.</li>
+            <li><strong>Cause a Denial of Service (DoS):</strong> Simply "flood" the databus with junk data, effectively blinding the pilot and crashing his displays and sensors.</li>
+        </ul>
+
+        <h2>GPS Spoofing & IFF Hacking</h2>
+        <p>Beyond the databus, the jet's other legacy systems are equally vulnerable. Their older GPS receivers, which are critical for navigation and "smart" bombs (like JDAMs), are highly susceptible to <strong>jamming</strong> (denying the signal) and <strong>spoofing</strong> (feeding the jet a false position).</p>
+        <p>An adversary could make a pilot think they are 20 miles off course, or cause their GPS-guided bomb to miss its target by hundreds of meters. A similar vulnerability exists in the <strong>Identification Friend or Foe (IFF)</strong> system. A sophisticated attacker could "spoof" this signal, making a hostile aircraft appear as a "friendly" on the pilot's radar, or vice-versa, with catastrophic consequences.</p>
+        
+        <img src="https://source.unsplash.com/800x400/?satellite-dish" alt="Satellite or GPS antenna">
+    </main>
+
+</body>
+</html>

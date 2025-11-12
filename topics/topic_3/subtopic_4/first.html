@@ -52,7 +52,7 @@
                     However, instead of rounding the result of each recalculation to a reasonable level of precision or keeping the full number internally, the software truncated it after three decimal places.<br>
                     At first, this loss of 0.000456 points seems insignificant, less than a thousandth of a point. But because the system recalculated the index hundreds or even thousands of times per day, each small error carried over to the next computation. Over time, those tiny truncations accumulated, producing a measurable downward drift in the index value.
                 </p>
-                    <img src="img/error-example.png" width="220px">
+                    <img src="img/error-example.png" width="220" alt="error example">
                 </div>
                 <p id="third">
                     To correct the problem, the developers first eliminated the truncation process that occurred after each calculation, allowing the system to maintain full numerical precision throughout all computational operations. Secondly, the program was modified to implement proper mathematical rounding instead of direct truncation, ensuring that values were approximated to the nearest number rather than consistently reduced. This change effectively removed the downward bias that had caused the index to drift and allowed minor rounding errors to balance out over time.<br>
@@ -60,7 +60,7 @@
                 </p>
             </div>
             <br>
-            <img class="lowerimage" src="img/Market-chart.jpeg">
+            <img class="lowerimage" src="img/Market-chart.jpeg" alt="Market chart image">
 
         </div>
         <!-- 
@@ -71,14 +71,15 @@
         <div class="content-sum">
             <ul class="ul-sum">
                 <li class="li-sum"><a id="n1" href="#first" class="a-sum">Stock Exchange</a></li>
-                <div id="one" class="sum-on-click" style="display: none;"><p>A stock exchange, securities exchange, or bourse is an exchange where stockbrokers and traders can buy and sell securities, such as shares of stock, bonds and other financial instruments.</p></div>
+                <li><div id="one" class="sum-on-click" style="display: none;"><p>A stock exchange, securities exchange, or bourse is an exchange where stockbrokers and traders can buy and sell securities, such as shares of stock, bonds and other financial instruments.</p></div></li>
                 <li class="li-sum"><a id="n2"  href="#second" class="a-sum ">Vancouver Stock Exchange</a></li>
-                <div  id="two"  class="sum-on-click"  style="display: none;"><p>The Vancouver Stock Exchange (VSE) was a stock exchange based in Vancouver, British Columbia. It was incorporated 1906. On November 29, 1999, the VSE was merged into the Canadian Venture Exchange (CDNX).</p></div>
+                <li><div  id="two"  class="sum-on-click"  style="display: none;"><p>The Vancouver Stock Exchange (VSE) was a stock exchange based in Vancouver, British Columbia. It was incorporated 1906. On November 29, 1999, the VSE was merged into the Canadian Venture Exchange (CDNX).</p></div></li>
             </ul>
         </div>
     </main>
     <br>
     <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
 
 </body>
 </html>

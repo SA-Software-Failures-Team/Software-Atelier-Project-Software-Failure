@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saeid Shirkani">
+    <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
+    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css"> <!--Remove this one once you copy paste the template-->
+
+    <title>Stuxnet – Infection Vectors & Zero-days</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-button">
+            <button class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="nav-links">
+            <div class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../subtopic_6/generalsubtopic.html">General subtopic</a></li>
+                    <li class="nav-li"><a href="first.html">Overview</a></li>
+                    <li class="nav-li"><a href="second.html">Infection Vectors</a></li>
+                    <li class="nav-li"><a href="third.html">PLC Payload</a></li>
+                    <li class="nav-li"><a href="fourth.html">Impact & Lessons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="five-template">
+        <div class="content-text full">
+            <h1>USB and LNK Exploit</h1>
+            <p id="first">
+            Stuxnet spread initially via infected USB drives. It used a malicious <code>.LNK</code> shortcut exploit
+            that executed automatically when viewed in Windows Explorer, enabling the worm to cross air-gapped networks.
+            </p>
+            <br>
+            <p id="second">
+            <strong>Spooler Vulnerability (MS10-061)</strong>
+            <br>
+            Another vector exploited the Windows Print Spooler service to allow remote or local file writes with system
+            privileges, helping Stuxnet propagate through corporate or plant networks.
+            </p>
+            <br>
+            <p id="third">
+            <strong>Pilegeriv Escalation and Persistence</strong>
+            Used multiple kernel-level privilege escalation vulnerabilities.
+            Employed stolen digital certificates from Realtek and JMicron for driver signing to appear legitimate.
+            </p>
+            <br>
+            <p id="fourth">
+            <strong>Command & Control (C2) Servers</strong>
+            Stuxnet connected via HTTP to specific hardcoded domains, uploading telemetry and receiving updates.
+            Analysis indicated most infections occurred in Iran, but spread was observed in over 150 countries.
+            </p>
+            <br>
+        </div>
+        <div class="four-bottom-image">
+            <div class="img1">
+                <img src="img/image2.png" style="width: 800px; height: 600px;" alt="">
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="../../injectSidebarGeneralSubtopic.js"></script>
+    <script src="../../subtopic.js"></script>
+    <script src="../../INJECTSidebar.js"></script>
+
+</body>
+</html>

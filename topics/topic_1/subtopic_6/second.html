@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Samuele Bertolini">
+    <meta name="author" content="Sanjay Skaria">
       <link rel="stylesheet" href="../../subtopic_styles/general_template_styles.css">
-    <link rel="stylesheet" href="../topics/subtopic_styles/general_template_styles.css"> <!--Remove this one once you copy paste the template-->
-    <title>Ariane 5: Root Cause & Technical Analysis</title>
+    <title>Boeing 737 MAX: Root Cause & Technical Analysis</title>
 </head>
 <body>
     <nav class="nav">
@@ -20,7 +19,7 @@
         <div id="nav-links">
             <div class="nav-bar">
                 <ul class="nav-ul">
-                    <li class="nav-li"><a href="../subtopic_1/generalsubtopic.html">Ariane 5 General Overview</a></li>
+                    <li class="nav-li"><a href="../subtopic_6/generalsubtopic.html">Boeing 737 MAX: General Overview</a></li>
                     <li class="nav-li"><a href="first.html">What Happened</a></li>
                     <li class="nav-li"><a href="second.html">Root Cause & Technical Analysis</a></li>
                     <li class="nav-li"><a href="third.html">Impact & Scope of the Outage</a></li>
@@ -32,28 +31,28 @@
     </nav>
     <main>
         <div class="content-text">
-            <h1>Root Cause: Software Reuse and System Engineering Flaws</h1>
+            <h1>Root Cause: Design, Business, and Regulatory Flaws</h1>
             <p>
-                The core issue behind the Ariane 5 disaster was a failure in system-level analysis stemming from the reuse of legacy code, leading to an unhandled software exception. The technical trigger was an arithmetic overflow within an alignment function in the Inertial Reference System (IRS). Specifically, the software attempted to convert a 64-bit floating-point number, which represented the rocket's horizontal velocity component (known as the "Horizontal Bias"), into a much smaller 16-bit signed integer. This specific piece of code, inherited from the older Ariane 4 rocket, never caused an issue previously because the Ariane 4's flight path and lower velocity ensured the value never exceeded the 16-bit integer's maximum capacity (approximately 32,767).
+                Design Flaw in MCAS: The MCAS was introduced to make the 737 MAX, with its larger, re-positioned engines, handle similarly to previous 737 models. Crucially, the final MCAS design used input from only one of the aircraft's two AoA sensors. This created a single point of failure: a malfunction in just one sensor could lead to the system's erroneous activation with no cross-check from the second sensor. Furthermore, the system was given excessive authority to move the stabilizer and could repeat its inputs.
             <br>
             <p>
-                However, the Ariane 5's new, more powerful boosters and different flight trajectory generated significantly higher horizontal velocity values in the initial seconds of flight, which instantly exceeded the 16-bit limit. This overflow caused the unhandled software exception, leading directly to the processors shutting down. Compounding this technical flaw was the presence of unnecessary code: the alignment function containing the problematic conversion was only required before lift-off and served no function during the flight phase. It was left running for a defined period based on an outdated Ariane 4 requirement, demonstrating a critical failure to evaluate and prune "dead code" for the new vehicle.
+                Business Pressure and Non-Disclosure: Boeing's decision to update the 737 platform, rather than build an all-new jet, was driven by the need to compete with the Airbus A320neo and allow airlines to transition pilots with minimal extra training (avoiding costly simulator training and a full aircraft recertification). To achieve this, Boeing initially failed to disclose the existence of the MCAS to pilots in flight manuals, judging its operation to be transparent and background-only.
             </p>
             <br>
             <p>
-                Ultimately, two profound system engineering flaws turned the bug into a catastrophe. Firstly, the design suffered from a critical lack of diversity: the backup IRS module was an exact clone running the identical software, guaranteeing it would fail in the exact same manner just 72 milliseconds after the primary unit. Secondly, the inadequate exception handling proved fatal; the software's default response to the unhandled arithmetic overflow was a processor shutdown. This catastrophic failure mode, rather than a controlled, graceful degradation, eliminated all guidance and attitude information, directly leading to the rocket's self-destruction.
+                Regulatory Oversight Shortcomings: The U.S. Federal Aviation Administration (FAA) delegated a significant portion of the certification work for the 737 MAX to Boeing employees, a process known as Organization Designation Authorization (ODA). This lack of rigorous, independent scrutiny over the new, critical flight control system design was a key enabler of the flawed design being approved.
             </p>
             
             <br>
         </div>
             <div class="lateral-image">
-                <img src="../template/image/img2.jpeg" alt="">
+                <img src="img/boeing3.jpg" alt="">
             </div>
     </main>
 
 
     <script src="../../subtopic.js"></script>
-    <script src="../topics/subtopic.js"></script><!--Remove this one once you copy paste the template-->
+
     <script src="../../INJECTSidebar.js"></script>
 
 </body>
